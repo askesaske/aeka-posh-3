@@ -1,0 +1,6 @@
+.button {
+  @include text-style(2.4rem, 600, $white);
+  padding: 16px 40px;
+  border-radius: 4px;
+  background: linear-gradient(92.38deg, #7C159D -18.89%, #AB0090 42.05%, #B8275D 101.68%);
+}

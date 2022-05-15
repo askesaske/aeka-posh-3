@@ -1,0 +1,74 @@
+.review-section {
+  padding-bottom: 64px;
+  background-color: #F3D2DF;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__heading {
+    @include text-style(6.4rem, 400, #120011);
+    line-height: 73px;
+    text-align: center;
+    margin-bottom: 82px;
+  }
+
+  &__splide {
+    margin-bottom: 56px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    svg {
+      fill: #B32C7D;
+    }
+
+    &:disabled {
+      svg {
+        fill: #BA95A3;
+      }
+    }
+
+    &--prev {
+      svg {
+        transform: rotate(-180deg);
+      }
+
+      right: calc(100% + 30px);
+    }
+
+    &--next {
+      left: calc(100% + 30px);
+    }
+  }
+
+  &__pagination {
+    padding-top: 64px;
+  }
+
+  &__pagination-page {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #B32C7D;
+    border-radius: 50%;
+
+    margin-right: 8px;
+  }
+
+  &__pagination-page.is-active {
+    background-color: #B32C7D;
+    border: 1px solid #B32C7D;
+  }
+}

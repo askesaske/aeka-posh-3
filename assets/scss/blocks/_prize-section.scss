@@ -1,0 +1,45 @@
+.prize-section {
+
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 545px;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    @include text-style(6.4rem, 400, $white);
+    line-height: 73px;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    @include text-style(4rem, 600, $white);
+    line-height: 46px;
+    font-style: italic;
+    margin-bottom: 64px;
+  }
+
+  &__btn {
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__arrow {
+    margin-bottom: 10px;
+  }
+
+  &__wheel {
+    width: 416px;
+  }
+}

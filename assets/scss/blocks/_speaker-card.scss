@@ -1,0 +1,58 @@
+.speaker-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__img {
+    flex-shrink: 0;
+    width: 524px;
+  }
+
+  &__box {
+    padding: 48px 32px 40px;
+    border-radius: 4px;
+    background-color: #F3D2DF;
+    width: 632px;
+    flex-shrink: 0;
+    margin-bottom: 64px;
+  }
+
+  &__name {
+    @include text-style(3.2rem, 400, #120011);
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+
+  &__inst {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    position: relative;
+    margin-bottom: 24px;
+
+    svg {
+      margin-right: 4px;
+    }
+
+    span {
+      @include text-style(1.6rem, 600, #B32C7D);
+      font-family: $cormorant;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 100px;
+      background-color: #BA95A3;
+    }
+  }
+
+  &__text {
+    @include text-style(1.6rem, 600, #120011);
+    font-family: $montserrat;
+    line-height: 19.5px;
+  }
+}

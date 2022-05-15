@@ -1,0 +1,44 @@
+.header {
+  padding: 40px 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    @include text-style(2.4rem, 400, $white);
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: linear-gradient(92.38deg, #7C159D -18.89%, #AB0090 42.05%, #B8275D 101.68%);
+
+    svg {
+      margin-right: 7px;
+    }
+
+    span {
+      @include text-style(1.6rem, 700, $white);
+    }
+  }
+}

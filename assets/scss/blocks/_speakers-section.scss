@@ -1,0 +1,67 @@
+.speakers-section {
+  padding-bottom: 120px;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__heading {
+    @include text-style(6.4rem, 400, $white);
+    line-height: 72px;
+    margin-bottom: 96px;
+  }
+
+  &__splide {
+
+  }
+
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    svg {
+      fill: #B32C7D;
+    }
+
+    &:disabled {
+      svg {
+        fill: #BA95A3;
+      }
+    }
+
+    &--prev {
+      svg {
+        transform: rotate(-180deg);
+      }
+
+      right: calc(100% + 30px);
+    }
+
+    &--next {
+      left: calc(100% + 30px);
+    }
+  }
+
+  &__pagination {
+    padding-top: 64px;
+  }
+
+  &__pagination-page {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    margin-right: 8px;
+  }
+
+  &__pagination-page.is-active {
+    background-color: #B32C7D;
+    border: 1px solid #B32C7D;
+  }
+}

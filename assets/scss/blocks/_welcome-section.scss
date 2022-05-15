@@ -1,0 +1,75 @@
+.welcome-section {
+
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    flex-shrink: 0;
+    width: 428px;
+  }
+
+  &__heading {
+    @include text-style(9.6rem, 400, $white);
+    line-height: 110px;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    @include text-style(3.2rem, 500, $dusty-purple);
+    line-height: 39px;
+    font-family: $montserrat;
+    margin-bottom: 72px;
+  }
+
+  &__price-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 54px;
+  }
+
+  &__price {
+    padding-left: 12px;
+    border-left: 3px solid #B32C7D;
+    margin-right: 30px;
+  }
+
+  &__first {
+    @include text-style(2.4rem, 500, $dusty-purple);
+    font-family: $montserrat;
+    line-height: 29px;
+    margin-bottom: 4px;
+    text-decoration: line-through;
+  }
+
+  &__second {
+    @include text-style(4rem, 700, $white);
+    line-height: 48px;
+  }
+
+  &__btn {
+
+    margin-bottom: 56px;
+  }
+
+  &__date {
+    span {
+      @include text-style(1.8rem, 500, $dusty-purple);
+      font-family: $montserrat;
+      line-height: 22px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      @include text-style(3.2rem, 600, $white);
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+    width: 740px;
+  }
+}

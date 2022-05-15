@@ -1,0 +1,42 @@
+.quote-section {
+  position: relative;
+
+  &__left {
+    position: absolute;
+    left: 0;
+    bottom: -210px;
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    top: -160px;
+  }
+
+  &__container {
+    @extend %container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__stars {
+    margin-bottom: 56px;
+  }
+
+  &__title {
+    @include text-style(5.6rem, 400, $white);
+    font-style: italic;
+    line-height: 63px;
+    text-align: center;
+
+    margin-bottom: 112px;
+  }
+
+  &__border {
+    stroke: #BA95A3;
+  }
+}
