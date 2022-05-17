@@ -25,7 +25,7 @@
             </svg>
           </div>
 
-          <button class="welcome-section__btn button">
+          <button class="welcome-section__btn button" @click="openModal">
             Хочу записаться
           </button>
 
@@ -536,13 +536,29 @@
         </button>
       </div>
     </section>
+
+    <Modal @close="modalState = false" :class="{'modal--active' : modalState}" />
   </main>
 </template>
 
 <script>
 import {Splide} from '@splidejs/splide';
+import Modal from "@/components/Modal";
 
 export default {
+  components: {
+    Modal
+  },
+  data() {
+    return {
+      modalState: false
+    };
+  },
+  methods: {
+    openModal() {
+      this.modalState = true
+    }
+  },
   mounted() {
     new Splide('.prize-section__splide', {
       classes: {
