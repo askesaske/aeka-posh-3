@@ -3,4 +3,10 @@
   padding: 16px 40px;
   border-radius: 4px;
   background: linear-gradient(92.38deg, #7C159D -18.89%, #AB0090 42.05%, #B8275D 101.68%);
+
+  @include respond(phone) {
+    padding: 20px;
+    width: 100%;
+    font-size: 2.8rem;
+  }
 }

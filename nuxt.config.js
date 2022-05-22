@@ -22,6 +22,7 @@ export default {
     plugins: [
         '@plugins/v-mask.js',
         '@plugins/repositories.js',
+        '@plugins/wheel.js',
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,7 +48,9 @@ export default {
         }]
     ],
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
-    axios: {},
+    axios: {
+        baseURL: 'https://womenscommunity.kz:8443/',
+    },
 
     // PWA module configuration: https://go.nuxtjs.dev/pwa
     pwa: {

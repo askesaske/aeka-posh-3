@@ -39,4 +39,40 @@
   &__border {
     stroke: #BA95A3;
   }
+
+  @include respond(tab-land) {
+    &__title {
+      @include text-style(4.8rem, 400, $white);
+      font-style: italic;
+      line-height: 50px;
+      text-align: center;
+
+      margin-bottom: 112px;
+    }
+  }
+
+  @include respond(phone) {
+    &__left {
+      position: absolute;
+      left: 0;
+      bottom: -210px;
+    }
+
+    &__right {
+      position: absolute;
+      right: 0;
+      top: -160px;
+    }
+
+    &__stars {
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      @include text-style(3.2rem, 400, $white);
+      line-height: 36px;
+
+      margin-bottom: 160px;
+    }
+  }
 }

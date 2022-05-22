@@ -41,4 +41,18 @@
       @include text-style(1.6rem, 700, $white);
     }
   }
+
+  &__burger {
+    display: none;
+  }
+
+  @include respond(tab-land) {
+    &__links {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
 }

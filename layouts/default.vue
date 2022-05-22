@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position: relative">
     <TheHeader/>
     <Nuxt/>
     <TheFooter/>

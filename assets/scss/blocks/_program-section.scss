@@ -64,4 +64,88 @@
     display: block;
     margin: 0 auto;
   }
+
+  @include respond(tab-land) {
+    &__heading {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+
+    &__items {
+      margin-bottom: 96px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      padding-bottom: 0;
+      border-bottom: unset;
+
+      &:not(:last-child) {
+        margin-bottom: 48px;
+      }
+    }
+
+    &__date {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 16px;
+
+      svg {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+
+      span {
+        @include text-style(4rem, 400, #B32C7D);
+      }
+    }
+
+    &__info {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    &__text {
+      @include text-style(2.4rem, 500, #120011);
+      line-height: 29px;
+      margin-bottom: 16px;
+      font-family: $montserrat;
+      text-align: center;
+    }
+
+    &__name {
+      @include text-style(2rem, 400, #B32C7D);
+      font-style: italic;
+      text-align: center;
+    }
+
+    &__border {
+      stroke: #B32C7D;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  @include respond(phone) {
+    &__heading {
+      @include text-style(4.8rem, 400, #120011);
+      line-height: 54px;
+    }
+
+    &__date {
+      span {
+        @include text-style(3.2rem, 400, #B32C7D);
+      }
+    }
+
+    &__text {
+      @include text-style(1.6rem, 500, #120011);
+      line-height: 19px;
+    }
+  }
 }

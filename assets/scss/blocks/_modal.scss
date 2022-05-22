@@ -31,6 +31,10 @@
   &__container {
     @extend %container;
     padding-top: 100px;
+
+    &--sm {
+      padding-top: 0px;
+    }
   }
 
   &__back {
@@ -107,7 +111,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 42px;
 
     img {
       width: 220px;
@@ -124,6 +128,19 @@
       @include text-style(3.2rem, 600, $white);
       font-family: $montserrat;
       line-height: 39px;
+      text-align: center;
+    }
+  }
+
+  &__under-text {
+    @include text-style(1.8rem, 600, $white);
+    font-family: $montserrat;
+    line-height: 22px;
+    margin-bottom: 56px;
+    text-align: center;
+
+    span {
+      font-weight: 700;
     }
   }
 
@@ -147,6 +164,88 @@
       @include text-style(1.4rem, 700, $dusty-purple);
       svg {
         margin-right: 8px;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    &__container {
+      padding-top: 26px;
+    }
+
+    &__wrapper {
+      padding-top: 42px;
+    }
+
+    &__title {
+      @include text-style(3.2rem, 400, #FFF1E3);
+      line-height: 36px;
+
+      &--mb40 {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__subtitle {
+      @include text-style(2.4rem, 400, #FFF1E3);
+      line-height: 27px;
+      max-width: 100%;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    &__input-block {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__btn {
+      display: block;
+      margin: 80px auto 0;
+    }
+
+    &__wheel {
+      width: 100%;
+    }
+
+    &__prize-box {
+      width: 100%;
+      padding: 32px 40px;
+
+      img {
+        width: 115px;
+        margin-bottom: 36px;
+      }
+
+      p {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__links {
+      width: 343px;
+      margin: 60px auto 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        @include text-style(1.2rem, 500, $dusty-purple);
+        line-height: 14.6px;
+        margin-bottom: 8px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        @include text-style(1.4rem, 700, $dusty-purple);
+        svg {
+          margin-right: 8px;
+        }
       }
     }
   }

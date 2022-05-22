@@ -1,6 +1,9 @@
 <template>
   <header class="header">
     <div class="header__container">
+      <svg class="header__burger" width="32" height="32" @click="sidebar = true">
+        <use href="../assets/img/icons.svg#burger"></use>
+      </svg>
       <ul class="header__links">
         <li class="header__link">Главная</li>
         <li class="header__link">Выиграть приз</li>
@@ -17,9 +20,21 @@
         <span>+7 778 233 6655</span>
       </a>
     </div>
+
+    <Sidebar :class="{'sidebar--active' : sidebar}" @close="sidebar = false" />
   </header>
 </template>
 
 <script>
-export default {}
+import Sidebar from "@/components/Sidebar";
+export default {
+  components: {
+    Sidebar
+  },
+  data() {
+    return {
+      sidebar: false
+    }
+  }
+}
 </script>

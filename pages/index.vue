@@ -70,7 +70,7 @@
             прямо сейчас!
           </div>
 
-          <button class="prize-section__btn button">
+          <button class="prize-section__btn prize-section__btn--desktop button">
             Забрать приз
           </button>
         </div>
@@ -79,6 +79,10 @@
           <img src="../assets/img/prize-arrow.svg" alt="" class="prize-section__arrow">
           <img src="../assets/img/wheel-of-fortune.png" alt="" class="prize-section__wheel">
         </div>
+
+        <button class="prize-section__btn prize-section__btn--tab button">
+          Забрать приз
+        </button>
       </div>
     </section>
 
@@ -86,7 +90,7 @@
       <div class="speakers-section__container">
         <h2 class="speakers-section__heading">Наши спикеры</h2>
 
-        <div class="prize-section__splide splide">
+        <div class="speakers-section__splide splide">
           <div class="splide__arrows">
             <button class="splide__arrow splide__arrow--prev speakers-section__arrow speakers-section__arrow--prev">
               <svg width="40" height="40">
@@ -240,6 +244,10 @@
             </ul>
           </div>
         </div>
+
+        <button class="speakers-section__btn button">
+          Хочу записаться
+        </button>
       </div>
     </section>
 
@@ -560,7 +568,7 @@ export default {
     }
   },
   mounted() {
-    new Splide('.prize-section__splide', {
+    new Splide('.speakers-section__splide', {
       classes: {
         pagination: 'splide__pagination speakers-section__pagination',
         page: 'splide__pagination__page speakers-section__pagination-page',
@@ -574,6 +582,14 @@ export default {
         pagination: 'splide__pagination review-section__pagination',
         page: 'splide__pagination__page review-section__pagination-page',
       },
+      breakpoints: {
+        1279: {
+          perPage: 2,
+        },
+        767: {
+          perPage: 1,
+        }
+      }
     }).mount();
   }
 };

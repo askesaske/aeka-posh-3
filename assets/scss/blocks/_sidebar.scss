@@ -1,0 +1,66 @@
+.sidebar {
+  background-color: #120011;
+  position: fixed;
+  top: 0;
+  left: -120%;
+  width: 100vw;
+  height: 100vh;
+  padding: 24px 16px;
+  z-index: 1000;
+
+  transition: all .3s;
+
+  &--active {
+    left: 0;
+  }
+
+  &__shadow {
+    position: absolute;
+
+    &--right {
+      top: 70px;
+      right: 0;
+    }
+
+    &--left {
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__close {
+    display: flex;
+    align-items: center;
+
+    @include text-style(1.6rem, 500, $white);
+    font-family: $montserrat;
+
+    margin-bottom: 170px;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  &__links {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 160px;
+  }
+
+  &__link {
+    @include text-style(3.2rem, 400, $white);
+    line-height: 36px;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__btn {
+    font-size: 2.8rem;
+    min-width: 343px;
+    position: relative;
+    z-index: 2;
+  }
+}

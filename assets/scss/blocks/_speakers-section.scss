@@ -64,4 +64,65 @@
     background-color: #B32C7D;
     border: 1px solid #B32C7D;
   }
+
+  &__btn {
+    width: 343px;
+    display: none;
+  }
+
+  @include respond(tab-land) {
+    &__heading {
+      text-align: center;
+    }
+
+    &__arrow {
+      top: 300px;
+      transform: none;
+      z-index: 1000;
+
+      &--prev {
+        right: unset;
+        left: 30px;
+      }
+
+      &--next {
+        left: unset;
+        right: 30px;
+      }
+    }
+
+    &__btn {
+      margin: 0 auto;
+      display: block;
+    }
+
+    &__splide {
+      margin-bottom: 56px;
+    }
+  }
+
+  @include respond(phone) {
+    &__heading {
+      @include text-style(4.8rem, 400, $white);
+      line-height: 54px;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    &__arrow {
+      top: 110px;
+      transform: none;
+      z-index: 1000;
+
+      &--prev {
+        right: unset;
+        left: 0;
+      }
+
+      &--next {
+        left: unset;
+        right: 0;
+      }
+    }
+  }
 }

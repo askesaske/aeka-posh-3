@@ -5,7 +5,7 @@
         <div class="footer__info">
           <div class="footer__heading">Участвуй в интенсиве</div>
           <div class="footer__title">и выигрывай призы!</div>
-          <button class="footer__btn button">Записаться</button>
+          <button class="footer__btn footer__btn--desktop button">Записаться</button>
         </div>
 
         <div class="footer__price-box">
@@ -31,6 +31,8 @@
       </div>
     </div>
 
+    <button class="footer__btn footer__btn--tab button">Записаться</button>
+
     <img src="../assets/img/long-border.svg" alt="" class="footer__border">
 
     <div class="footer__bottom">
@@ -51,8 +53,8 @@
         </div>
 
         <div class="footer__links">
-          <div class="footer__link">Договор публичной оферты</div>
-          <div class="footer__link">Политика конфиденциальности</div>
+          <a href="https://womenscommunity/offer" target="_blank" class="footer__link">Договор публичной оферты</a>
+          <a href="https://womenscommunity.kz/confidential" target="_blank" class="footer__link">Политика конфиденциальности</a>
         </div>
       </div>
     </div>

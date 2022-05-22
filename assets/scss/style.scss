@@ -27,11 +27,13 @@
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/input-block";
+@import "blocks/sidebar";
 
 html, body {
   font-size: 62.5%;
   font-family: $base-font;
   background-color: #120011;
+  overflow-x: hidden;
 }
 
 img {

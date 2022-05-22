@@ -15,4 +15,21 @@
       margin-bottom: 250px;
     }
   }
+
+  @include respond(phone) {
+    &__section {
+
+      &--mb190 {
+        margin-bottom: 100px;
+      }
+
+      &--mb130 {
+        margin-bottom: 50px;
+      }
+
+      &--mb250 {
+        margin-bottom: 140px;
+      }
+    }
+  }
 }

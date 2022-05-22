@@ -48,6 +48,7 @@
   &__second {
     @include text-style(4rem, 700, $white);
     line-height: 48px;
+    font-family: $montserrat;
   }
 
   &__btn {
@@ -61,6 +62,7 @@
       font-family: $montserrat;
       line-height: 22px;
       margin-bottom: 12px;
+      display: block;
     }
 
     p {
@@ -71,5 +73,148 @@
   &__img {
     flex-shrink: 0;
     width: 740px;
+  }
+
+  @include respond(tab-land) {
+    &__container {
+      @extend %container;
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+
+    &__info {
+      flex-shrink: 0;
+      width: 100%;
+    }
+
+    &__heading {
+      @include text-style(9.6rem, 400, $white);
+      line-height: 110px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    &__title {
+      @include text-style(3.2rem, 500, $dusty-purple);
+      line-height: 39px;
+      font-family: $montserrat;
+      margin-bottom: 72px;
+      text-align: center;
+    }
+
+    &__price-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 54px;
+    }
+
+    &__price {
+      padding-left: 12px;
+      border-left: 3px solid #B32C7D;
+      margin-right: 30px;
+    }
+
+    &__first {
+      @include text-style(2.4rem, 500, $dusty-purple);
+      font-family: $montserrat;
+      line-height: 29px;
+      margin-bottom: 4px;
+      text-decoration: line-through;
+    }
+
+    &__second {
+      @include text-style(4rem, 700, $white);
+      line-height: 48px;
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto 56px;
+    }
+
+    &__date {
+      text-align: center;
+      span {
+        @include text-style(1.8rem, 500, $dusty-purple);
+        font-family: $montserrat;
+        line-height: 22px;
+        margin-bottom: 12px;
+        display: block;
+      }
+
+      p {
+        @include text-style(3.2rem, 600, $white);
+      }
+    }
+
+    &__img {
+      flex-shrink: 0;
+      width: 100%;
+    }
+  }
+
+  @include respond(phone) {
+    &__heading {
+      @include text-style(5.6rem, 400, $white);
+      line-height: 64px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    &__title {
+      @include text-style(2.2rem, 500, $dusty-purple);
+      line-height: 26px;
+      font-family: $montserrat;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    &__price {
+      padding-left: 12px;
+      border-left: 3px solid #B32C7D;
+      margin-right: 26px;
+    }
+
+    &__first {
+      @include text-style(2rem, 500, $dusty-purple);
+      font-family: $montserrat;
+      line-height: 24px;
+      margin-bottom: 4px;
+      text-decoration: line-through;
+    }
+
+    &__second {
+      @include text-style(2.8rem, 700, $white);
+      line-height: 34px;
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto 56px;
+      width: 100%;
+    }
+
+    &__date {
+      text-align: center;
+
+      span {
+        @include text-style(2.4rem, 500, $dusty-purple);
+        font-family: $montserrat;
+        line-height: 22px;
+        margin-bottom: 12px;
+      }
+
+      p {
+        @include text-style(4rem, 600, $white);
+      }
+    }
+
+    &__img {
+      flex-shrink: 0;
+      width: 100%;
+    }
   }
 }
