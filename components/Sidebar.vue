@@ -12,19 +12,25 @@
     </div>
 
     <div class="sidebar__links">
-      <div class="sidebar__link">Главная</div>
-      <div class="sidebar__link">Выиграть приз</div>
-      <div class="sidebar__link">Наши спикеры</div>
-      <div class="sidebar__link">Программа интенсива</div>
-      <div class="sidebar__link">Отзывы</div>
+      <div class="sidebar__link" >Главная</div>
+      <div class="sidebar__link" v-scroll-to="{el: '#prize', offset: -100}" @click.passive="$emit('close')">Выиграть приз</div>
+      <div class="sidebar__link" v-scroll-to="{el: '#speakers', offset: -100}" @click.passive="$emit('close')">Наши спикеры</div>
+      <div class="sidebar__link" v-scroll-to="{el: '#program', offset: -100}" @click.passive="$emit('close')">Программа интенсива</div>
+      <div class="sidebar__link" v-scroll-to="{el: '#reviews', offset: -100}" @click.passive="$emit('close')">Отзывы</div>
     </div>
 
-    <button class="sidebar__btn button">
+    <button class="sidebar__btn button" @click="openModal">
       Участвовать
     </button>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    openModal() {
+      this.$store.dispatch('setModalState', true)
+    }
+  }
+}
 </script>

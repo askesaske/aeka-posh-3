@@ -5,7 +5,7 @@
         <div class="footer__info">
           <div class="footer__heading">Участвуй в интенсиве</div>
           <div class="footer__title">и выигрывай призы!</div>
-          <button class="footer__btn footer__btn--desktop button">Записаться</button>
+          <button class="footer__btn footer__btn--desktop button" @click="openModal">Записаться</button>
         </div>
 
         <div class="footer__price-box">
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <button class="footer__btn footer__btn--tab button">Записаться</button>
+    <button class="footer__btn footer__btn--tab button" @click="openModal">Записаться</button>
 
     <img src="../assets/img/long-border.svg" alt="" class="footer__border">
 
@@ -62,5 +62,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    openModal() {
+      this.$store.dispatch('setModalState', true)
+    }
+  }
+}
 </script>

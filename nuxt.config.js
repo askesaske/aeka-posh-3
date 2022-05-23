@@ -23,6 +23,7 @@ export default {
         '@plugins/v-mask.js',
         '@plugins/repositories.js',
         '@plugins/wheel.js',
+        '@plugins/v-scroll.js',
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components

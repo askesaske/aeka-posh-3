@@ -6,13 +6,13 @@
       </svg>
       <ul class="header__links">
         <li class="header__link">Главная</li>
-        <li class="header__link">Выиграть приз</li>
-        <li class="header__link">Наши спикеры</li>
-        <li class="header__link">Программа интенсива</li>
-        <li class="header__link">Отзывы</li>
+        <li class="header__link" v-scroll-to="{el: '#prize', offset: -100}">Выиграть приз</li>
+        <li class="header__link" v-scroll-to="{el: '#speakers', offset: -100}">Наши спикеры</li>
+        <li class="header__link" v-scroll-to="{el: '#program', offset: -100}">Программа интенсива</li>
+        <li class="header__link" v-scroll-to="{el: '#reviews', offset: -100}">Отзывы</li>
       </ul>
 
-      <a href="#" class="header__btn">
+      <a href="https://api.whatsapp.com/send?phone=77782336655" class="header__btn" target="_blank">
         <svg width="24" height="24">
           <use href="../assets/img/icons.svg#wpp"></use>
         </svg>

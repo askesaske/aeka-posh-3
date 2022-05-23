@@ -60,7 +60,7 @@
       </div>
     </section>
 
-    <section class="main__section main__section--mb250 prize-section">
+    <section class="main__section main__section--mb250 prize-section" id="prize">
       <div class="prize-section__container">
         <div class="prize-section__left">
           <div class="prize-section__title">
@@ -70,7 +70,7 @@
             прямо сейчас!
           </div>
 
-          <button class="prize-section__btn prize-section__btn--desktop button">
+          <button class="prize-section__btn prize-section__btn--desktop button" @click="openModal">
             Забрать приз
           </button>
         </div>
@@ -80,13 +80,13 @@
           <img src="../assets/img/wheel-of-fortune.png" alt="" class="prize-section__wheel">
         </div>
 
-        <button class="prize-section__btn prize-section__btn--tab button">
+        <button class="prize-section__btn prize-section__btn--tab button" @click="openModal">
           Забрать приз
         </button>
       </div>
     </section>
 
-    <section class="main__section speakers-section">
+    <section class="main__section speakers-section" id="speakers">
       <div class="speakers-section__container">
         <h2 class="speakers-section__heading">Наши спикеры</h2>
 
@@ -122,7 +122,7 @@
                       Журналист, предприниматель, ведущая, фэшн-продюсер, дизайнер
                     </div>
                   </div>
-                  <button class="speaker-card__btn button">
+                  <button class="speaker-card__btn button" @click="openModal">
                     Хочу записаться
                   </button>
                 </div>
@@ -145,7 +145,7 @@
                       для многих сотен людей
                     </div>
                   </div>
-                  <button class="speaker-card__btn button">
+                  <button class="speaker-card__btn button" @click="openModal">
                     Хочу записаться
                   </button>
                 </div>
@@ -167,7 +167,7 @@
                       Финансист-практик с общим скажем 13 лет
                     </div>
                   </div>
-                  <button class="speaker-card__btn button">
+                  <button class="speaker-card__btn button" @click="openModal">
                     Хочу записаться
                   </button>
                 </div>
@@ -190,7 +190,7 @@
                       Является членом Американской Психологической Ассоциации (APA)
                     </div>
                   </div>
-                  <button class="speaker-card__btn button">
+                  <button class="speaker-card__btn button" @click="openModal">
                     Хочу записаться
                   </button>
                 </div>
@@ -213,7 +213,7 @@
                       и социолог
                     </div>
                   </div>
-                  <button class="speaker-card__btn button">
+                  <button class="speaker-card__btn button" @click="openModal">
                     Хочу записаться
                   </button>
                 </div>
@@ -235,7 +235,7 @@
                       Психолог и Сексолог
                     </div>
                   </div>
-                  <button class="speaker-card__btn button">
+                  <button class="speaker-card__btn button" @click="openModal">
                     Хочу записаться
                   </button>
                 </div>
@@ -245,13 +245,13 @@
           </div>
         </div>
 
-        <button class="speakers-section__btn button">
+        <button class="speakers-section__btn button" @click="openModal">
           Хочу записаться
         </button>
       </div>
     </section>
 
-    <section class="main__section program-section">
+    <section class="main__section program-section" id="program">
       <div class="program-section__container">
         <div class="program-section__heading">
           Программа интенсива
@@ -378,7 +378,7 @@
       </div>
     </section>
 
-    <section class="main__section review-section">
+    <section class="main__section review-section" id="reviews">
       <div class="review-section__container">
         <div class="review-section__heading">
           Отзывы участников
@@ -539,13 +539,13 @@
 
         </div>
 
-        <button class="review-section__btn button">
+        <button class="review-section__btn button" @click="openModal">
           Хочу так же
         </button>
       </div>
     </section>
 
-    <Modal @close="modalState = false" :class="{'modal--active' : modalState}" />
+    <Modal @close="closeModal" :class="{'modal--active' : loadedModalState}" />
   </main>
 </template>
 
@@ -564,7 +564,15 @@ export default {
   },
   methods: {
     openModal() {
-      this.modalState = true
+      this.$store.dispatch('setModalState', true)
+    },
+    closeModal() {
+      this.$store.dispatch('setModalState', false)
+    }
+  },
+  computed: {
+    loadedModalState() {
+      return this.$store.getters.loadedModalState
     }
   },
   mounted() {
