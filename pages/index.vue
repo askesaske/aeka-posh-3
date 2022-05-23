@@ -112,12 +112,14 @@
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
                     <div class="speaker-card__name">Динара Сатжан</div>
-                    <div class="speaker-card__inst">
+                    <a href="https://instagram.com/dinarasatzhan?igshid=YmMyMTA2M2Y="
+                       target="_blank"
+                       class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
                       <span>dinarasatzhan</span>
-                    </div>
+                    </a>
                     <div class="speaker-card__text">
                       Журналист, предприниматель, ведущая, фэшн-продюсер, дизайнер
                     </div>
@@ -134,12 +136,14 @@
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
                     <div class="speaker-card__name">Акрам</div>
-                    <div class="speaker-card__inst">
+                    <a href="https://instagram.com/akram_astrolog?igshid=YmMyMTA2M2Y="
+                       target="_blank"
+                       class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
                       <span>akram_astrolog</span>
-                    </div>
+                    </a>
                     <div class="speaker-card__text">
                       Астролог года 2019 по версии глянцевого журнала People and Teens. Является духовным наставником
                       для многих сотен людей
@@ -157,12 +161,14 @@
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
                     <div class="speaker-card__name">Кунекей Нурлан</div>
-                    <div class="speaker-card__inst">
+                    <a href="https://instagram.com/kunekei_finance?igshid=YmMyMTA2M2Y="
+                       target="_blank"
+                       class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
                       <span>kunekei_finance</span>
-                    </div>
+                    </a>
                     <div class="speaker-card__text">
                       Финансист-практик с общим скажем 13 лет
                     </div>
@@ -179,12 +185,14 @@
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
                     <div class="speaker-card__name">Акгул Абдали</div>
-                    <div class="speaker-card__inst">
+                    <a href="https://instagram.com/akgul.abdali?igshid=YmMyMTA2M2Y="
+                       target="_blank"
+                       class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
                       <span>akgul.abdali</span>
-                    </div>
+                    </a>
                     <div class="speaker-card__text">
                       Психолог-психотерапевт. Магистр психологии. Семейный психолог.
                       Является членом Американской Психологической Ассоциации (APA)
@@ -202,12 +210,14 @@
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
                     <div class="speaker-card__name">Акбота Аканова</div>
-                    <div class="speaker-card__inst">
+                    <a href="https://instagram.com/akanova.psy?igshid=YmMyMTA2M2Y="
+                       target="_blank"
+                       class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
                       <span>akanova.psy</span>
-                    </div>
+                    </a>
                     <div class="speaker-card__text">
                       Эксперт в сфере психологии. Квалифицированный психолог, корпоративный психолог
                       и социолог
@@ -225,12 +235,14 @@
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
                     <div class="speaker-card__name">Венера Номад</div>
-                    <div class="speaker-card__inst">
+                    <a href="https://instagram.com/venera_nomad?igshid=YmMyMTA2M2Y="
+                       target="_blank"
+                       class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
                       <span>venera_nomad</span>
-                    </div>
+                    </a>
                     <div class="speaker-card__text">
                       Психолог и Сексолог
                     </div>

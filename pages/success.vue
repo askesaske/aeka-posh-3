@@ -33,7 +33,7 @@
 
       </div>
 
-      <div class="modal__wrapper" v-else>
+      <div class="modal__wrapper">
         <div class="modal__title modal__title--mb40">
           Поздравляем!
         </div>
@@ -175,6 +175,7 @@ export default {
         })
         .then(res => {
           this.id = res.data.id
+          console.log(res)
         })
         .catch(e => console.log(e))
   }

@@ -38,18 +38,18 @@
     <div class="footer__bottom">
       <div class="footer__container">
         <div class="footer__socials">
-          <div class="footer__social">
+          <a href="https://www.instagram.com/aeka.posh/" target="_blank" class="footer__social">
             <svg width="28" height="28">
               <use href="../assets/img/icons.svg#inst-2"></use>
             </svg>
             Instagram
-          </div>
-          <div class="footer__social">
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=77782336655" target="_blank" class="footer__social">
             <svg width="28" height="28">
               <use href="../assets/img/icons.svg#wpp-2"></use>
             </svg>
             Whatsapp
-          </div>
+          </a>
         </div>
 
         <div class="footer__links">
