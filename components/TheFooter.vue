@@ -53,7 +53,7 @@
         </div>
 
         <div class="footer__links">
-          <a href="https://womenscommunity/offer" target="_blank" class="footer__link">Договор публичной оферты</a>
+          <a href="https://womenscommunity.kz/offer" target="_blank" class="footer__link">Договор публичной оферты</a>
           <a href="https://womenscommunity.kz/confidential" target="_blank" class="footer__link">Политика конфиденциальности</a>
         </div>
       </div>
