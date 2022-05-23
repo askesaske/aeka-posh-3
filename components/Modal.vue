@@ -74,35 +74,26 @@ export default {
       name: '',
       phone: '',
       email: '',
-      inst: ''
+      inst: '',
     };
   },
   methods: {
     onSubmit() {
-      // this.$axios.post('https://auth.robokassa.ru/Merchant/Index.aspx', {
-      //   MerchantLogin: 'www.womenscommunity.kz',
-      //   OutSum: '4990',
-      //   Description: 'CHECK',
-      //   SignatureValue: 'acb07b390e69dbfae29daa5896906603',
-      //   IsTest: '1',
-      //   Shp_email: this.email,
-      //   Shp_inst: this.inst,
-      //   Shp_name: this.name,
-      //   Shp_phone: this.phone,
-      // }, {
-      //   auth: {
-      //     username: 'B7PgJzPPX68SALYwngRNhmsLG5AFvV',
-      //     password: '6UJwpayBPN5akAzTUwD7R5nsNG3Nys'
-      //   }
-      // })
-      //     .then(res => {
-      //       console.log(res)
-      //     })
-      //     .catch(e => console.log(e))
-
-      this.$axios.get('https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=www.womenscommunity.kz&OutSum=4990&InvoiceID=0&Description=CHECK&SignatureValue=47628e02aef425de8263df450b2991d5&IsTest=1')
-      .then(res => console.log(res))
-      .catch(e => console.log(e))
+      this.$axios.post('attempts', {
+        name: this.name,
+        email: this.email,
+        phone_number: this.phone,
+        instagram: this.inst,
+      }, {
+        auth: {
+          username: 'B7PgJzPPX68SALYwngRNhmsLG5AFvV',
+          password: '6UJwpayBPN5akAzTUwD7R5nsNG3Nys'
+        }
+      })
+          .then(res => {
+            window.open(res.data.link, '_self');
+          })
+          .catch(e => console.log(e))
     }
   }
 }

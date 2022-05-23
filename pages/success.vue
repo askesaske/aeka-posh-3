@@ -5,7 +5,16 @@
 
     <div class="modal__container modal__container--sm">
 
-      <div class="modal__wrapper" v-if="!showPrize">
+      <div class="modal__wrapper" v-if="!valid">
+        <div class="modal__title">
+          Вы уже крутили барабан
+        </div>
+        <button class="modal__btn button" @click="$router.push('/')">
+          Хорошо
+        </button>
+      </div>
+
+      <div class="modal__wrapper" v-else-if="!showPrize && valid">
         <div class="modal__title">
           Получи свой приз!
         </div>
@@ -46,7 +55,7 @@
         </div>
 
         <div class="modal__under-text">
-          Приз и доступ к курсу придет на <span>amina.dautova@gmail.com</span>!
+          Приз и доступ к курсу придет на <span>{{ user.email }}</span>!
         </div>
 
         <button class="modal__btn button" @click="$router.push('/')">
@@ -83,7 +92,7 @@ export default {
   },
   data() {
     return {
-      id: '',
+      id: this.$route.query.Shp_id,
       prizes: [
         {
           id: 2, //* The unique id of each prize, an integer greater than 0
@@ -132,23 +141,25 @@ export default {
       disabled: false,
       showPrize: false,
       prize: {},
-      shopId: ''
+      valid: null,
+      user: {}
     }
   },
   methods: {
     onImageRotateStart() {
       this.$axios.post('prizes/random', {
-        name: 'Aske',
-        email: 'orazaliev_d2@mail.ru',
-        phone_number: '+7 (705) 575-21-44',
-        instagram: 'aske_saske',
         attempt_id: this.id
       }, {
         auth: auth
       })
           .then(res => {
             this.prizeId = res.data.prize.id
-            console.log(res.data.prize)
+            this.user = {
+              email: res.data.email,
+              inst: res.data.instagram,
+              phone: res.data.phone_number,
+              name: res.data.name,
+            }
           })
           .catch(e => {
             console.log(e)
@@ -165,17 +176,11 @@ export default {
     },
   },
   mounted() {
-    this.$axios.post('attempts', {
-          email: 'orazaliev_d2@mail.ru', // 1
-          instagram: 'aske_saske', // 2
-          name: 'Aske', // 3
-          phone_number: '+7 (705) 575-21-44', // 4
-        },
-        {
-          auth: auth
-        })
+    this.$axios.get(`/attempts/${this.id}`, {
+      auth: auth
+    })
         .then(res => {
-          this.id = res.data.id
+          this.valid = res.data.valid
         })
         .catch(e => console.log(e))
   }
