@@ -31,9 +31,11 @@
   &__container {
     @extend %container;
     padding-top: 100px;
+    position: relative;
+    z-index: 5;
 
     &--sm {
-      padding-top: 0px;
+      padding-top: 0;
     }
   }
 

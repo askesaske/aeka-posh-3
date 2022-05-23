@@ -131,7 +131,8 @@ export default {
       prizeId: null,
       disabled: false,
       showPrize: false,
-      prize: {}
+      prize: {},
+      shopId: ''
     }
   },
   methods: {
@@ -145,14 +146,14 @@ export default {
       }, {
         auth: auth
       })
-      .then(res => {
-        this.prizeId = res.data.prize.id
-        console.log(res.data.prize)
-      })
-      .catch(e => {
-        console.log(e)
-        this.disabled = true
-      })
+          .then(res => {
+            this.prizeId = res.data.prize.id
+            console.log(res.data.prize)
+          })
+          .catch(e => {
+            console.log(e)
+            this.disabled = true
+          })
     },
     onRotateEnd(prize) {
       this.prize = {
@@ -165,17 +166,16 @@ export default {
   },
   mounted() {
     this.$axios.post('attempts', {
-          name: 'Aske',
-          email: 'orazaliev_d2@mail.ru',
-          phone_number: '+7 (705) 575-21-44',
-          instagram: 'aske_saske',
+          email: 'orazaliev_d2@mail.ru', // 1
+          instagram: 'aske_saske', // 2
+          name: 'Aske', // 3
+          phone_number: '+7 (705) 575-21-44', // 4
         },
         {
           auth: auth
         })
         .then(res => {
           this.id = res.data.id
-          console.log(res)
         })
         .catch(e => console.log(e))
   }
