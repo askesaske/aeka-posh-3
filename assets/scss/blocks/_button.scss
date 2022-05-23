@@ -4,6 +4,16 @@
   border-radius: 4px;
   background: linear-gradient(92.38deg, #7C159D -18.89%, #AB0090 42.05%, #B8275D 101.68%);
 
+  transition: all .3s;
+
+  &:hover {
+    background: #5F0165;
+  }
+
+  &:active {
+    background: linear-gradient(92.38deg, #661082 -18.89%, #760089 42.05%, #5E2372 101.68%);
+  }
+
   @include respond(phone) {
     padding: 20px;
     width: 100%;

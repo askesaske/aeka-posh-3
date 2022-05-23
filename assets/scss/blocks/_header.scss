@@ -20,6 +20,17 @@
 
   &__link {
     @include text-style(2.4rem, 400, $white);
+    cursor: pointer;
+
+    transition: all .3s;
+
+    &:hover {
+      color: #B32C7D;
+    }
+
+    &:active {
+      color: #BA95A3;
+    }
 
     &:not(:last-child) {
       margin-right: 32px;
@@ -32,6 +43,16 @@
     padding: 6px 12px;
     border-radius: 4px;
     background: linear-gradient(92.38deg, #7C159D -18.89%, #AB0090 42.05%, #B8275D 101.68%);
+
+    transition: all .3s;
+
+    &:hover {
+      background: #5F0165;
+    }
+
+    &:active {
+      background: linear-gradient(92.38deg, #661082 -18.89%, #760089 42.05%, #5E2372 101.68%);
+    }
 
     svg {
       margin-right: 7px;
