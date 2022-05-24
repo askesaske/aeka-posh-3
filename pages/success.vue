@@ -92,12 +92,14 @@
       </div>
 
     </div>
+    <Spinner v-if="loader"/>
   </div>
 </template>
 
 <script>
 import FortuneWheel from 'vue-fortune-wheel'
 import 'vue-fortune-wheel/lib/vue-fortune-wheel.css'
+import Spinner from "@/components/Spinner";
 
 const auth = {
   username: 'B7PgJzPPX68SALYwngRNhmsLG5AFvV',
@@ -106,7 +108,8 @@ const auth = {
 
 export default {
   components: {
-    FortuneWheel
+    FortuneWheel,
+    Spinner
   },
   data() {
     return {
@@ -156,6 +159,7 @@ export default {
         }
       ],
       prizeId: null,
+      loader: false,
 
       prize: {},
       user: {},
@@ -168,6 +172,7 @@ export default {
   },
   methods: {
     onSubmit() {
+      this.loader = true;
       this.$axios.post('prizes/random', {
         email: this.confEmail
       }, {
@@ -190,8 +195,12 @@ export default {
             this.showEmail = false
             this.showFail = true
           })
+          .finally(() => {
+            this.loader = false
+          })
     },
-    onImageRotateStart() {},
+    onImageRotateStart() {
+    },
     onRotateEnd(prize) {
       this.prize = {
         id: prize.id,
@@ -202,7 +211,8 @@ export default {
       this.showPrize = true
     },
   },
-  mounted() {}
+  mounted() {
+  }
 }
 </script>
 
