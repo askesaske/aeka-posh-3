@@ -5,7 +5,26 @@
 
     <div class="modal__container modal__container--sm">
 
-      <div class="modal__wrapper" v-if="!valid">
+      <div class="modal__wrapper" v-if="showEmail">
+        <div class="modal__title">
+          Введите пожалуйста ваш email
+        </div>
+
+        <form class="modal__form" @submit.prevent="onSubmit">
+          <div class="modal__input-block input-block">
+            <input type="email" name="input-text" required spellcheck="false" v-model="confEmail">
+            <span class="placeholder">
+                Введите эл. почту
+              </span>
+          </div>
+
+          <button class="modal__btn button" type="submit">
+            Перейти к прокрутке барабана
+          </button>
+        </form>
+      </div>
+
+      <div class="modal__wrapper" v-if="showFail">
         <div class="modal__title">
           Вы уже крутили барабан
         </div>
@@ -14,7 +33,7 @@
         </button>
       </div>
 
-      <div class="modal__wrapper" v-else-if="!showPrize && valid">
+      <div class="modal__wrapper" v-if="showWheel">
         <div class="modal__title">
           Получи свой приз!
         </div>
@@ -33,7 +52,6 @@
               @rotateStart="onImageRotateStart"
               @rotateEnd="onRotateEnd"
               :prizeId="prizeId"
-              :disabled="disabled"
           >
             <img slot="wheel" src='../assets/img/wheel.svg'/>
             <img slot="button" src="../assets/img/wheel-btn.svg" class="wheel__btn"/>
@@ -42,7 +60,7 @@
 
       </div>
 
-      <div class="modal__wrapper" v-else>
+      <div class="modal__wrapper" v-if="showPrize">
         <div class="modal__title modal__title--mb40">
           Поздравляем!
         </div>
@@ -92,7 +110,7 @@ export default {
   },
   data() {
     return {
-      id: this.$route.query.Shp_id,
+      confEmail: '',
       prizes: [
         {
           id: 2, //* The unique id of each prize, an integer greater than 0
@@ -138,17 +156,20 @@ export default {
         }
       ],
       prizeId: null,
-      disabled: false,
-      showPrize: false,
+
       prize: {},
-      valid: null,
-      user: {}
+      user: {},
+
+      showEmail: true,
+      showFail: false,
+      showWheel: false,
+      showPrize: false,
     }
   },
   methods: {
-    onImageRotateStart() {
+    onSubmit() {
       this.$axios.post('prizes/random', {
-        attempt_id: this.id
+        email: this.confEmail
       }, {
         auth: auth
       })
@@ -160,30 +181,28 @@ export default {
               phone: res.data.phone_number,
               name: res.data.name,
             }
+            this.showEmail = false
+            this.showWheel = true
+            console.log(res)
           })
           .catch(e => {
             console.log(e)
-            this.disabled = true
+            this.showEmail = false
+            this.showFail = true
           })
     },
+    onImageRotateStart() {},
     onRotateEnd(prize) {
       this.prize = {
         id: prize.id,
         value: prize.value,
         img: prize.img
       }
+      this.showWheel = false
       this.showPrize = true
     },
   },
-  mounted() {
-    this.$axios.get(`/attempts/${this.id}`, {
-      auth: auth
-    })
-        .then(res => {
-          this.valid = res.data.valid
-        })
-        .catch(e => console.log(e))
-  }
+  mounted() {}
 }
 </script>
 
