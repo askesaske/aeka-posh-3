@@ -73,7 +73,7 @@
         </div>
 
         <div class="modal__under-text">
-          Приз и доступ к курсу придет на <span>{{ user.email }}</span>!
+         <div v-if="this.prizesOrder[this.prize.id-1].linkText">{{this.prizesOrder[this.prize.id-1].linkText}} <a :href=this.prizesOrder[this.prize.id-1].link> {{this.prizesOrder[this.prizeId-1].link}} </a>. </div> Вся необходимая информация отправлена вам на почту по адресу <span>{{ user.email }}</span>
         </div>
 
         <button class="modal__btn button" @click="$router.push('/')">
@@ -158,6 +158,54 @@ export default {
           img: 'iphone.svg'
         }
       ],
+      prizesOrder: [
+             {
+                    id: 1,
+                    value: 'IPhone 13 PRO',
+                    probability: 10,
+                    img: 'iphone.svg'
+                },
+              {
+                id: 2, //* The unique id of each prize, an integer greater than 0
+                value: '1 000 000 тг', //* Prize value, return value after spinning
+                probability: 10, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
+                img: 'million.svg'
+              },
+              {
+                id: 3,
+                value: 'Курс по face-массажу',
+                probability: 10,
+                img: 'face.svg',
+                linkText: 'Для доступа к закрытому курсу по face-массажу перейдите по ссылке',
+                link: 'https://drive.google.com/file/d/154Rp-iQZrrn17xiVLbd-YcIBH4b0-5oc/view?usp=sharing'
+              },
+              {
+                id: 4,
+                value: '10 000 тг',
+                probability: 10,
+                img: 'ten-thousand.svg'
+              },
+              {
+                id: 5,
+                value: 'Beauty-бокс',
+                probability: 10,
+                img: 'box.svg'
+              },
+              {
+                id: 6,
+                value: '50 000 тг',
+                probability: 10,
+                img: 'fifty.svg'
+              },
+              {
+                id: 7,
+                value: 'Закрытый VIP канал',
+                probability: 10,
+                img: 'chat.svg',
+                linkText: 'Для доступа к закрытому telegram каналу перейдите по ссылке',
+                link: 'https://t.me/+R3AtjIlRVCkxMzNi'
+              }
+            ],
       prizeId: null,
       loader: false,
 
@@ -188,10 +236,10 @@ export default {
             }
             this.showEmail = false
             this.showWheel = true
-            console.log(res)
+
           })
           .catch(e => {
-            console.log(e)
+
             this.showEmail = false
             this.showFail = true
           })
