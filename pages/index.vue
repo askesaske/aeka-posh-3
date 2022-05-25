@@ -170,7 +170,7 @@
                       <span>kunekei_finance</span>
                     </a>
                     <div class="speaker-card__text">
-                      Финансист-практик с общим скажем 13 лет
+                      Финансист-практик с общим стажем 13 лет
                     </div>
                   </div>
                   <button class="speaker-card__btn button" @click="openModal">
@@ -327,7 +327,7 @@
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                -
+                Почему плохо быть «хорошей девочкой»?
               </div>
               <div class="program-section__name">
                 Акгул Абдали
@@ -343,7 +343,7 @@
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                Зрелость = успех. Как к ней прийти?
+                Зрелость = успех. Как прийти к этому ?
               </div>
               <div class="program-section__name">
                 Акбота Аканова
@@ -359,7 +359,7 @@
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                -
+                Как получать от мужчины больше?
               </div>
               <div class="program-section__name">
                 Венера Номад

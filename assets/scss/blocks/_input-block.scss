@@ -2,7 +2,7 @@ div.input-block {
   position: relative;
 }
 div.input-block input {
-  @include text-style(2.4rem, 600, #495055);
+  @include text-style(2.4rem, 600, #e8e8e8);
   width: 100%;
   padding: 10px 0;
   background-color: transparent;

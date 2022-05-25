@@ -38,13 +38,13 @@
     <div class="footer__bottom">
       <div class="footer__container">
         <div class="footer__socials">
-          <a href="https://www.instagram.com/aeka.posh/" target="_blank" class="footer__social">
+          <a href="https://www.instagram.com/womenscommunity.kz/?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__social">
             <svg width="28" height="28">
               <use href="../assets/img/icons.svg#inst-2"></use>
             </svg>
             Instagram
           </a>
-          <a href="https://api.whatsapp.com/send?phone=77782336655" target="_blank" class="footer__social">
+          <a href="https://api.whatsapp.com/message/QGQGYLGDBLRVC1?autoload=1&app_absent=0" target="_blank" class="footer__social">
             <svg width="28" height="28">
               <use href="../assets/img/icons.svg#wpp-2"></use>
             </svg>

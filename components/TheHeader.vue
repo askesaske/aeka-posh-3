@@ -12,12 +12,12 @@
         <li class="header__link" v-scroll-to="{el: '#reviews', offset: -100}">Отзывы</li>
       </ul>
 
-      <a href="https://api.whatsapp.com/send?phone=77782336655" class="header__btn" target="_blank">
+      <a href="https://api.whatsapp.com/message/QGQGYLGDBLRVC1?autoload=1&app_absent=0" class="header__btn" target="_blank">
         <svg width="24" height="24">
           <use href="../assets/img/icons.svg#wpp"></use>
         </svg>
 
-        <span>+7 778 233 6655</span>
+        <span>+7 (776) 502-36-36</span>
       </a>
     </div>
 
