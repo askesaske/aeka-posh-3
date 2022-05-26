@@ -82,12 +82,15 @@
 
         <div class="modal__links">
           <p>В случае вопросов и доступа к курсу пишите на номер whatsapp </p>
-          <a href="#">
-            <svg width="16" height="17">
-              <use href="../assets/img/icons.svg#wpp-3"></use>
-            </svg>
-            +7 778 233 6655
-          </a>
+
+
+           <a href="https://api.whatsapp.com/message/QGQGYLGDBLRVC1?autoload=1&app_absent=0" class="header__btn" target="_blank">
+              <svg width="24" height="24">
+                <use href="../assets/img/icons.svg#wpp"></use>
+              </svg>
+
+              <span>+7 (776) 502-36-36</span>
+            </a>
         </div>
       </div>
 
