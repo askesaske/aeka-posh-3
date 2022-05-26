@@ -16,6 +16,10 @@
     transition: all .5s;
   }
 
+  &__error-text {
+    @include text-style(1.6rem, 400, #bd0404)
+  }
+
   &__left {
     position: absolute;
     left: 0;

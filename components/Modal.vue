@@ -43,18 +43,20 @@
               </div>
 
               <div class="modal__input-block input-block">
-                <input type="email" name="input-text" required spellcheck="false" v-model="email">
+                <input type="email" name="input-text" required spellcheck="false" v-model="email" @input="fail = false">
                 <span class="placeholder">
-                Введите эл. почту
-              </span>
+                  Введите эл. почту
+                </span>
               </div>
 
               <div class="modal__input-block input-block">
                 <input type="text" name="input-text" required spellcheck="false" v-model="inst">
                 <span class="placeholder">
-                Введите ваш инстаграм
-              </span>
+                  Введите ваш инстаграм
+                </span>
               </div>
+
+              <span class="modal__error-text" v-if="fail">Этот имейл уже крутил колесо</span>
 
               <button class="modal__btn button" type="submit">
                 Перейти к оплате
@@ -75,6 +77,7 @@ export default {
       phone: '',
       email: '',
       inst: '',
+      fail: false
     };
   },
   methods: {
@@ -93,7 +96,10 @@ export default {
           .then(res => {
             window.open(res.data.link, '_self');
           })
-          .catch(e => console.log(e))
+          .catch(e => {
+            console.log(e)
+            this.fail = true;
+          })
     }
   }
 }
