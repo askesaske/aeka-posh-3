@@ -52,6 +52,8 @@
               @rotateStart="onImageRotateStart"
               @rotateEnd="onRotateEnd"
               :prizeId="prizeId"
+              :verify="false"
+              :duration="14000"
           >
             <img slot="wheel" src='../assets/img/wheel.svg'/>
             <img slot="button" src="../assets/img/wheel-btn.svg" class="wheel__btn"/>
@@ -213,7 +215,7 @@ export default {
           link: 'https://t.me/+R3AtjIlRVCkxMzNi'
         }
       ],
-      prizeId: null,
+      prizeId: 7,
       loader: false,
 
       prize: {},
@@ -225,6 +227,11 @@ export default {
       showPrize: false,
     }
   },
+  computed: {
+    loadedConfEmail() {
+      return this.$store.getters.loadedConfEmailState;
+    }
+  },
   methods: {
     onSubmit() {
       this.loader = true;
@@ -233,6 +240,7 @@ export default {
       })
           .then(res => {
             if (res.data.valid) {
+              this.$store.dispatch('setConfEmailState', this.confEmail);
               this.user = {
                 email: res.data.email,
                 inst: res.data.instagram,
@@ -251,9 +259,9 @@ export default {
             this.loader = false
           })
     },
-    onImageRotateStart() {
-      this.$axios.post('prizes/random', {
-        email: this.confEmail
+    async onImageRotateStart() {
+      await this.$axios.post('prizes/random', {
+        email: this.loadedConfEmail
       }, {
         auth: auth
       })
@@ -261,7 +269,7 @@ export default {
             this.prizeId = res.data.prize.id
           })
           .catch(e => {
-            console.log(e)
+            this.prizeId = 7
           })
     },
     onRotateEnd(prize) {
