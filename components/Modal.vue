@@ -32,11 +32,11 @@
               </div>
 
               <div class="modal__input-block input-block">
-                <input type="text"
+                <input type="number"
                        name="input-text"
                        required
                        spellcheck="false"
-                       v-mask="'+7 (###) ###-##-##'" v-model="phone">
+                       v-model="phone">
                 <span class="placeholder">
                 Введите номер WhatsApp
               </span>

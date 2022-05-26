@@ -36,3 +36,14 @@ div.input-block input:focus + span.placeholder {
   color: #BA95A3;
   font-size: 1.4rem;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
