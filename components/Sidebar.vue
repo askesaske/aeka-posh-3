@@ -1,9 +1,6 @@
 <template>
   <div class="sidebar">
 
-    <img src="../assets/img/sidebar-shadow-right.png" alt="" class="sidebar__shadow sidebar__shadow--right">
-    <img src="../assets/img/sidebar-shadow-left.png" alt="" class="sidebar__shadow sidebar__shadow--left">
-
     <div class="sidebar__close" @click="$emit('close')">
       <svg width="24" height="24">
         <use href="../assets/img/icons.svg#close"></use>

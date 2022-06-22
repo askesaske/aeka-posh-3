@@ -19,7 +19,7 @@
   }
 
   &__link {
-    @include text-style(2.4rem, 400, $white);
+    @include text-style(2.4rem, 400, #B22C7D);
     cursor: pointer;
 
     transition: all .3s;
@@ -42,7 +42,7 @@
     align-items: center;
     padding: 6px 12px;
     border-radius: 4px;
-    background: linear-gradient(92.38deg, #7C159D -18.89%, #AB0090 42.05%, #B8275D 101.68%);
+    background: #2DACB1;
 
     transition: all .3s;
 
@@ -59,7 +59,8 @@
     }
 
     span {
-      @include text-style(1.6rem, 700, $white);
+      @include text-style(1.6rem, 500, #FEE3E2);
+      font-family: $kiev;
     }
   }
 

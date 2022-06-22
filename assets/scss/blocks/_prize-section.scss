@@ -13,9 +13,11 @@
   }
 
   &__title {
-    @include text-style(6.4rem, 400, $white);
-    line-height: 73px;
-    margin-bottom: 8px;
+    @include text-style(4.8rem, 500, #B22C7D);
+    line-height: 57px;
+    font-family: $kiev;
+    font-variation-settings: 'CONT' 469, 'MIDL' 0;
+    margin-bottom: 75px;
   }
 
   &__subtitle {
@@ -62,9 +64,10 @@
     }
 
     &__title {
-      @include text-style(6.4rem, 400, $white);
-      line-height: 73px;
-      margin-bottom: 8px;
+      @include text-style(4.8rem, 500, #B22C7D);
+      line-height: 57px;
+      font-variation-settings: 'CONT' 469, 'MIDL' 0;
+      margin-bottom: 75px;
       text-align: center;
     }
 
@@ -106,8 +109,9 @@
 
   @include respond(phone) {
     &__title {
-      @include text-style(3.2rem, 400, $white);
+      @include text-style(3.2rem, 400, #B22C7D);
       line-height: 36px;
+      margin-bottom: 40px;
     }
 
     &__subtitle {

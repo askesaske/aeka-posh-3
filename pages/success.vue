@@ -1,7 +1,7 @@
 <template>
   <div class="modal modal--active">
-    <img src="../assets/img/quote-shadow-left.png" alt="" class="modal__left">
-    <img src="../assets/img/quote-shadow-right.png" alt="" class="modal__right">
+    <img src="../assets/img/quote-shadow-left.svg" alt="" class="modal__left">
+    <img src="../assets/img/quote-shadow-right.svg" alt="" class="modal__right">
 
     <div class="modal__container modal__container--sm">
 
@@ -55,7 +55,7 @@
               :verify="false"
               :duration="14000"
           >
-            <img slot="wheel" src='../assets/img/wheel.svg'/>
+            <img slot="wheel" src='../assets/img/wheel-of-fortune.png'/>
             <img slot="button" src="../assets/img/wheel-btn.svg" class="wheel__btn"/>
           </FortuneWheel>
         </div>
@@ -89,13 +89,13 @@
           <p>В случае вопросов и доступа к курсу пишите на номер whatsapp </p>
 
 
-          <a href="https://api.whatsapp.com/message/QGQGYLGDBLRVC1?autoload=1&app_absent=0" class="header__btn"
+          <a href="https://api.whatsapp.com/message/QGQGYLGDBLRVC1?autoload=1&app_absent=0" class="success-btn"
              target="_blank">
             <svg width="24" height="24">
-              <use href="../assets/img/icons.svg#wpp"></use>
+              <use href="../assets/img/icons.svg#wpp-5"></use>
             </svg>
 
-            <span>+7 (776) 502-36-36</span>
+            <span>+7 (776) 502 36 36</span>
           </a>
         </div>
       </div>
@@ -290,7 +290,7 @@ export default {
   margin-bottom: 200px;
 
   &__arrow {
-    width: 30px;
+    width: 50px;
     margin-bottom: 10px;
   }
 

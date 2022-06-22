@@ -1,5 +1,5 @@
 .sidebar {
-  background-color: #120011;
+  background-color: #FEE3E2;
   position: fixed;
   top: 0;
   left: -120%;
@@ -32,8 +32,7 @@
     display: flex;
     align-items: center;
 
-    @include text-style(1.6rem, 500, $white);
-    font-family: $montserrat;
+    @include text-style(1.6rem, 400, #CF6E95);
 
     margin-bottom: 170px;
 
@@ -49,7 +48,7 @@
   }
 
   &__link {
-    @include text-style(3.2rem, 400, $white);
+    @include text-style(3.2rem, 400, #B22C7D);
     line-height: 36px;
 
     &:not(:last-child) {

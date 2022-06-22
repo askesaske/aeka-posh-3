@@ -9,64 +9,68 @@
 
   &__info {
     flex-shrink: 0;
-    width: 428px;
   }
 
   &__heading {
-    @include text-style(9.6rem, 400, $white);
+    @include text-style(9.6rem, 500, #B22C7D);
+    font-family: $kiev;
     line-height: 110px;
     margin-bottom: 8px;
+    font-variation-settings: 'CONT' 469;
   }
 
   &__title {
-    @include text-style(3.2rem, 500, $dusty-purple);
-    line-height: 39px;
-    font-family: $montserrat;
+    @include text-style(4rem, 400, #B22C7D);
+    line-height: 45px;
     margin-bottom: 72px;
   }
 
   &__price-box {
     display: flex;
     align-items: center;
-    margin-bottom: 54px;
+    margin-bottom: 64px;
+    position: relative;
+  }
+
+  &__sale-price {
+    position: absolute;
+    left: -150px;
   }
 
   &__price {
-    padding-left: 12px;
-    border-left: 3px solid #B32C7D;
-    margin-right: 30px;
+    margin-left: 190px;
   }
 
   &__first {
-    @include text-style(2.4rem, 500, $dusty-purple);
-    font-family: $montserrat;
-    line-height: 29px;
+    @include text-style(2.4rem, 400, #CF6E95);
+    line-height: 27px;
     margin-bottom: 4px;
     text-decoration: line-through;
   }
 
   &__second {
-    @include text-style(4rem, 700, $white);
+    @include text-style(4rem, 700, #B22C7D);
     line-height: 48px;
-    font-family: $montserrat;
+    font-family: $kiev;
+    font-variation-settings: 'CONT' 469;
   }
 
   &__btn {
-
-    margin-bottom: 56px;
+    margin-bottom: 60px;
   }
 
   &__date {
     span {
-      @include text-style(1.8rem, 500, $dusty-purple);
-      font-family: $montserrat;
-      line-height: 22px;
+      @include text-style(2.4rem, 400, #CF6E95);
+      line-height: 27px;
       margin-bottom: 12px;
       display: block;
     }
 
     p {
-      @include text-style(3.2rem, 600, $white);
+      @include text-style(3.2rem, 500, #33C1C8);
+      font-variation-settings: 'CONT' 469, 'MIDL' 0;
+      text-shadow: 0 0 5px rgba(0, 244, 255, 0.76);
     }
   }
 
@@ -90,44 +94,40 @@
     }
 
     &__heading {
-      @include text-style(9.6rem, 400, $white);
+      font-size: 9.6rem;
       line-height: 110px;
       margin-bottom: 8px;
       text-align: center;
     }
 
     &__title {
-      @include text-style(3.2rem, 500, $dusty-purple);
+      font-size: 3.2rem;
       line-height: 39px;
-      font-family: $montserrat;
       margin-bottom: 72px;
       text-align: center;
     }
 
-    &__price-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 54px;
+    &__sale-price {
+      position: absolute;
+      left: 0;
     }
 
     &__price {
-      padding-left: 12px;
-      border-left: 3px solid #B32C7D;
-      margin-right: 30px;
+      margin-left: 400px;
     }
 
     &__first {
-      @include text-style(2.4rem, 500, $dusty-purple);
-      font-family: $montserrat;
-      line-height: 29px;
+      @include text-style(2.4rem, 400, #CF6E95);
+      line-height: 27px;
       margin-bottom: 4px;
       text-decoration: line-through;
     }
 
     &__second {
-      @include text-style(4rem, 700, $white);
+      @include text-style(4rem, 700, #B22C7D);
       line-height: 48px;
+      font-family: $kiev;
+      font-variation-settings: 'CONT' 469;
     }
 
     &__btn {
@@ -138,15 +138,16 @@
     &__date {
       text-align: center;
       span {
-        @include text-style(1.8rem, 500, $dusty-purple);
-        font-family: $montserrat;
-        line-height: 22px;
+        @include text-style(2.4rem, 400, #CF6E95);
+        line-height: 27px;
         margin-bottom: 12px;
         display: block;
       }
 
       p {
-        @include text-style(3.2rem, 600, $white);
+        @include text-style(3.2rem, 500, #33C1C8);
+        font-variation-settings: 'CONT' 469, 'MIDL' 0;
+        text-shadow: 0 0 5px rgba(0, 244, 255, 0.76);
       }
     }
 
@@ -158,7 +159,7 @@
 
   @include respond(phone) {
     &__heading {
-      @include text-style(5.6rem, 400, $white);
+      font-size: 5.6rem;
       line-height: 64px;
       margin-bottom: 8px;
       text-align: center;
@@ -172,23 +173,27 @@
       text-align: center;
     }
 
+    &__sale-price {
+      position: absolute;
+      left: -140px;
+    }
+
     &__price {
-      padding-left: 12px;
-      border-left: 3px solid #B32C7D;
-      margin-right: 26px;
+      margin-left: 160px;
     }
 
     &__first {
-      @include text-style(2rem, 500, $dusty-purple);
-      font-family: $montserrat;
-      line-height: 24px;
+      @include text-style(2rem, 400, #CF6E95);
+      line-height: 27px;
       margin-bottom: 4px;
       text-decoration: line-through;
     }
 
     &__second {
-      @include text-style(2.8rem, 700, $white);
-      line-height: 34px;
+      @include text-style(2.8rem, 700, #B22C7D);
+      line-height: 48px;
+      font-family: $kiev;
+      font-variation-settings: 'CONT' 469;
     }
 
     &__btn {
@@ -201,14 +206,13 @@
       text-align: center;
 
       span {
-        @include text-style(2.4rem, 500, $dusty-purple);
-        font-family: $montserrat;
+        @include text-style(2.4rem, 500, #CF6E95);
         line-height: 22px;
         margin-bottom: 12px;
       }
 
       p {
-        @include text-style(4rem, 600, $white);
+        @include text-style(4rem, 600, #33C1C8);
       }
     }
 

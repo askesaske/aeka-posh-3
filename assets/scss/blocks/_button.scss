@@ -1,10 +1,18 @@
 .button {
-  @include text-style(2.4rem, 600, $white);
-  padding: 16px 40px;
-  border-radius: 4px;
-  background: linear-gradient(92.38deg, #7C159D -18.89%, #AB0090 42.05%, #B8275D 101.68%);
+  @include text-style(2rem, 700, $white);
+  font-family: $kiev;
+  padding: 16px 32px;
+  border-radius: 20px;
+  background: #B22C7D;
+  box-shadow: 0 0 20px rgba(255, 109, 196, 0.5);
+  font-variation-settings: 'CONT' 469;
 
   transition: all .3s;
+
+  &--blue {
+    background: #33C1C8;
+    box-shadow: 0 0 20px rgba(255, 109, 196, 0.5);
+  }
 
   &:hover {
     background: #5F0165;
@@ -13,6 +21,7 @@
   &:active {
     background: linear-gradient(92.38deg, #661082 -18.89%, #760089 42.05%, #5E2372 101.68%);
   }
+
 
   @include respond(phone) {
     padding: 20px;

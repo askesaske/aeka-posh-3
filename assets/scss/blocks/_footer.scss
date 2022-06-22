@@ -1,11 +1,26 @@
 .footer {
   position: relative;
+  background-color: #B22C7D;
+
+  &__left {
+    position: absolute;
+    left: 0;
+    top: 60px;
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    top: 300px;
+  }
 
   &__container {
     @extend %container;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
   }
 
   &__top {
@@ -17,9 +32,10 @@
   }
 
   &__heading {
-    @include text-style(6.4rem, 400, $white);
-    line-height: 73px;
-    margin-bottom: 8px;
+    @include text-style(4.8rem, 500, $white);
+    font-family: $kiev;
+    line-height: 57px;
+    margin-bottom: 60px;
   }
 
   &__title {
@@ -35,17 +51,17 @@
   }
 
   &__price-old {
-    @include text-style(3.2rem, 500, $dusty-purple);
-    line-height: 39px;
+    @include text-style(3.2rem, 400, #FFB5D3);
+    line-height: 36px;
     text-decoration: line-through;
-    font-family: $montserrat;
     margin-bottom: 4px;
   }
 
   &__price-new {
     @include text-style(6.4rem, 700, $white);
+    font-family: $kiev;
     line-height: 78px;
-    font-family: $montserrat;
+    font-variation-settings: 'CONT' 469, 'MIDL' 0;
   }
 
   &__star {
@@ -166,14 +182,12 @@
       @include text-style(3.2rem, 500, $dusty-purple);
       line-height: 39px;
       text-decoration: line-through;
-      font-family: $montserrat;
       margin-bottom: 4px;
     }
 
     &__price-new {
       @include text-style(6.4rem, 700, $white);
       line-height: 78px;
-      font-family: $montserrat;
     }
 
     &__socials {
@@ -200,7 +214,6 @@
 
     &__link {
       @include text-style(1.2rem, 500, $dusty-purple);
-      font-family: $montserrat;
       line-height: 14px;
       text-decoration: underline;
       text-align: center;
@@ -212,9 +225,23 @@
   }
 
   @include respond(phone) {
+
+    &__left {
+      width: 150px;
+      left: -50px;
+      top: 190px;
+    }
+
+    &__right {
+      width: 150px;
+      top: 400px;
+      right: -20px;
+    }
+
     &__heading {
       @include text-style(3.2rem, 400, $white);
       line-height: 36px;
+      margin-bottom: 140px;
     }
 
     &__title {

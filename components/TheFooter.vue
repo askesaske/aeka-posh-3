@@ -1,37 +1,25 @@
 <template>
   <footer class="footer">
+    <img src="../assets/img/quote-shadow-left.svg" alt="" class="footer__left">
+    <img src="../assets/img/quote-shadow-right.svg" alt="" class="footer__right">
     <div class="footer__top">
       <div class="footer__container">
         <div class="footer__info">
-          <div class="footer__heading">Участвуй в интенсиве</div>
-          <div class="footer__title">и выигрывай призы!</div>
-          <button class="footer__btn footer__btn--desktop button" @click="openModal">Записаться</button>
+          <div class="footer__heading">
+            Участвуй в интенсиве <br>
+            и выигрывай призы!
+          </div>
+          <button class="footer__btn footer__btn--desktop button button--blue" @click="openModal">Записаться</button>
         </div>
 
         <div class="footer__price-box">
-          <svg class="footer__star footer__star--1" width="17" height="19">
-            <use href="../assets/img/icons.svg#star-1"></use>
-          </svg>
-          <svg class="footer__star footer__star--2" width="31" height="31">
-            <use href="../assets/img/icons.svg#star-2"></use>
-          </svg>
-          <svg class="footer__star footer__star--3" width="16" height="17">
-            <use href="../assets/img/icons.svg#star-3"></use>
-          </svg>
-          <svg class="footer__star footer__star--4" width="19" height="20">
-            <use href="../assets/img/icons.svg#star-4"></use>
-          </svg>
-          <svg class="footer__star footer__star--5" width="12" height="16">
-            <use href="../assets/img/icons.svg#star-5"></use>
-          </svg>
-
           <div class="footer__price-old">10 000 тенге</div>
           <div class="footer__price-new">4 990 тенге</div>
         </div>
       </div>
     </div>
 
-    <button class="footer__btn footer__btn--tab button" @click="openModal">Записаться</button>
+    <button class="footer__btn footer__btn--tab button button--blue" @click="openModal">Записаться</button>
 
     <img src="../assets/img/long-border.svg" alt="" class="footer__border">
 

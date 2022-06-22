@@ -2,17 +2,18 @@
   position: relative;
 
   &__title {
-    @include text-style(3.2rem, 400, #120011);
+    @include text-style(3.2rem, 400, #B22C7D);
+    font-variation-settings: 'CONT' 469, 'MIDL' 0;
+    font-family: $kiev;
     line-height: 36px;
     text-align: center;
     margin-bottom: 32px;
   }
 
   &__text {
-    @include text-style(1.4rem, 500, #120011);
+    @include text-style(1.6rem, 600, #CF6E95);
     line-height: 21px;
     text-align: center;
-    font-family: $montserrat;
   }
 
   &:before {

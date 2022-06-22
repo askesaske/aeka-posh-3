@@ -4,16 +4,17 @@
   &__left {
     position: absolute;
     left: 0;
-    bottom: -210px;
+    bottom: -50px;
   }
 
   &__right {
     position: absolute;
     right: 0;
-    top: -160px;
+    top: -120px;
   }
 
   &__container {
+    padding-top: 80px;
     @extend %container;
     display: flex;
     flex-direction: column;
@@ -28,23 +29,26 @@
   }
 
   &__title {
-    @include text-style(5.6rem, 400, $white);
-    font-style: italic;
-    line-height: 63px;
+    @include text-style(4.8rem, 500, #B22C7D);
+    font-family: $kiev;
+    line-height: 58px;
+    font-variation-settings: 'CONT' 469, 'MIDL' 0;
     text-align: center;
 
     margin-bottom: 112px;
   }
 
   &__border {
-    stroke: #BA95A3;
+    stroke: #33C1C8;
+    filter: drop-shadow(0px 0px 5px rgba(0, 244, 255, 0.76));
   }
 
   @include respond(tab-land) {
     &__title {
-      @include text-style(4.8rem, 400, $white);
-      font-style: italic;
-      line-height: 50px;
+      @include text-style(4.8rem, 500, #B22C7D);
+      font-family: $kiev;
+      line-height: 58px;
+      font-variation-settings: 'CONT' 469, 'MIDL' 0;
       text-align: center;
 
       margin-bottom: 112px;
@@ -55,13 +59,15 @@
     &__left {
       position: absolute;
       left: 0;
-      bottom: -210px;
+      bottom: 0px;
+      width: 150px;
     }
 
     &__right {
       position: absolute;
       right: 0;
-      top: -160px;
+      top: -50px;
+      width: 150px;
     }
 
     &__stars {
@@ -69,7 +75,7 @@
     }
 
     &__title {
-      @include text-style(3.2rem, 400, $white);
+      font-size: 3.2rem;
       line-height: 36px;
 
       margin-bottom: 160px;

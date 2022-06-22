@@ -11,6 +11,7 @@
           </h3>
 
           <div class="welcome-section__price-box">
+            <img src="../assets/img/icons/price-sale.svg" alt="" class="welcome-section__sale-price">
             <div class="welcome-section__price">
               <div class="welcome-section__first">
                 10 000 тенге
@@ -19,10 +20,6 @@
                 4 990 тенге!
               </div>
             </div>
-
-            <svg class="welcome-section__sale-price" width="120" height="120">
-              <use href="../assets/img/icons.svg#sale-price"></use>
-            </svg>
           </div>
 
           <button class="welcome-section__btn button" @click="openModal">
@@ -31,7 +28,7 @@
 
           <div class="welcome-section__date">
             <span>Дата старта</span>
-            <p>01 . 06 . 2022</p>
+            <p>23 . 05 . 2022</p>
           </div>
         </div>
 
@@ -40,15 +37,10 @@
     </section>
 
     <section class="main__section main__section--mb130 quote-section">
-      <img src="../assets/img/quote-shadow-left.png" alt="" class="quote-section__left">
-      <img src="../assets/img/quote-shadow-right.png" alt="" class="quote-section__right">
+      <img src="../assets/img/quote-shadow-left.svg" alt="" class="quote-section__left">
+      <img src="../assets/img/quote-shadow-right.svg" alt="" class="quote-section__right">
 
       <div class="quote-section__container">
-
-        <svg class="quote-section__stars" width="72" height="72">
-          <use href="../assets/img/icons.svg#stars"></use>
-        </svg>
-
         <div class="quote-section__title">
           “ Счастье женщины начинается с ее любви
           к самой себе ”
@@ -64,9 +56,7 @@
       <div class="prize-section__container">
         <div class="prize-section__left">
           <div class="prize-section__title">
-            Получи свой приз
-          </div>
-          <div class="prize-section__subtitle">
+            Получи свой приз <br>
             прямо сейчас!
           </div>
 
@@ -111,17 +101,18 @@
 
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
-                    <div class="speaker-card__name">Динара Сатжан</div>
-                    <a href="https://instagram.com/dinarasatzhan?igshid=YmMyMTA2M2Y="
+                    <div class="speaker-card__name">Анатолий Некрасов</div>
+                    <a href="https://www.instagram.com/anatoly_nekrasov/"
                        target="_blank"
                        class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
-                      <span>dinarasatzhan</span>
+                      <span>anatoly_nekrasov</span>
                     </a>
                     <div class="speaker-card__text">
-                      Журналист, предприниматель, ведущая, фэшн-продюсер, дизайнер
+                      Писатель, психолог.
+                      Автор книги «Материнская любовь»
                     </div>
                   </div>
                   <button class="speaker-card__btn button" @click="openModal">
@@ -135,18 +126,17 @@
 
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
-                    <div class="speaker-card__name">Акрам</div>
-                    <a href="https://instagram.com/akram_astrolog?igshid=YmMyMTA2M2Y="
+                    <div class="speaker-card__name">Ашир Раушан Рауанкызы</div>
+                    <a href="https://www.instagram.com/raushan.ashir/"
                        target="_blank"
                        class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
-                      <span>akram_astrolog</span>
+                      <span>raushan.ashir</span>
                     </a>
                     <div class="speaker-card__text">
-                      Астролог года 2019 по версии глянцевого журнала People and Teens. Является духовным наставником
-                      для многих сотен людей
+                      Психолог. Коуч с 5 летним стажем. Психологическое консультирование и психотерапия качества жизни. Наставник по чакропсихологии.
                     </div>
                   </div>
                   <button class="speaker-card__btn button" @click="openModal">
@@ -160,17 +150,17 @@
 
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
-                    <div class="speaker-card__name">Кунекей Нурлан</div>
-                    <a href="https://instagram.com/kunekei_finance?igshid=YmMyMTA2M2Y="
+                    <div class="speaker-card__name">Асия Фазылова</div>
+                    <a href="https://www.instagram.com/asiya_fazylova/"
                        target="_blank"
                        class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
-                      <span>kunekei_finance</span>
+                      <span>asiya_fazylova</span>
                     </a>
                     <div class="speaker-card__text">
-                      Финансист-практик с общим стажем 13 лет
+                      Телесный психолог
                     </div>
                   </div>
                   <button class="speaker-card__btn button" @click="openModal">
@@ -184,18 +174,17 @@
 
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
-                    <div class="speaker-card__name">Акгул Абдали</div>
-                    <a href="https://instagram.com/akgul.abdali?igshid=YmMyMTA2M2Y="
+                    <div class="speaker-card__name">Акрам Иманмадинов</div>
+                    <a href="https://www.instagram.com/akram_astrolog/"
                        target="_blank"
                        class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
-                      <span>akgul.abdali</span>
+                      <span>akram_astrolog</span>
                     </a>
                     <div class="speaker-card__text">
-                      Психолог-психотерапевт. Магистр психологии. Семейный психолог.
-                      Является членом Американской Психологической Ассоциации (APA)
+                      Астролог года 2019 по версии глянцевого журнала People and Teens. Является духовным наставником для многих сотен людей
                     </div>
                   </div>
                   <button class="speaker-card__btn button" @click="openModal">
@@ -209,18 +198,17 @@
 
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
-                    <div class="speaker-card__name">Акбота Аканова</div>
-                    <a href="https://instagram.com/akanova.psy?igshid=YmMyMTA2M2Y="
+                    <div class="speaker-card__name">Кунекей Нурлан</div>
+                    <a href="https://www.instagram.com/kunekei_finance/"
                        target="_blank"
                        class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
-                      <span>akanova.psy</span>
+                      <span>kunekei_finance</span>
                     </a>
                     <div class="speaker-card__text">
-                      Эксперт в сфере психологии. Квалифицированный психолог, корпоративный психолог
-                      и социолог
+                      Финансовый советник. Финансист-практик с общим стажем 14 лет
                     </div>
                   </div>
                   <button class="speaker-card__btn button" @click="openModal">
@@ -234,17 +222,17 @@
 
                 <div class="speaker-card__info">
                   <div class="speaker-card__box">
-                    <div class="speaker-card__name">Венера Номад</div>
-                    <a href="https://instagram.com/venera_nomad?igshid=YmMyMTA2M2Y="
+                    <div class="speaker-card__name">Натали Мамедова</div>
+                    <a href="https://www.instagram.com/natalie.mamedova/"
                        target="_blank"
                        class="speaker-card__inst">
                       <svg width="16" height="16">
                         <use href="../assets/img/icons.svg#inst"></use>
                       </svg>
-                      <span>venera_nomad</span>
+                      <span>natalie.mamedov</span>
                     </a>
                     <div class="speaker-card__text">
-                      Психолог и Сексолог
+                      Психолог - сексолог
                     </div>
                   </div>
                   <button class="speaker-card__btn button" @click="openModal">
@@ -272,42 +260,42 @@
         <div class="program-section__items">
           <div class="program-section__item">
             <div class="program-section__date">
-              <svg width="64" height="64">
+              <svg width="74" height="74">
                 <use href="../assets/img/icons.svg#date-star"></use>
               </svg>
-              <span>01.06.2022</span>
+              <span>04.07.2022</span>
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                Откуда черпать потенциал и где взять силы для больших жизненных свершений
+                Секреты счастливого брака. Дети
               </div>
               <div class="program-section__name">
-                Динара Сатжан
+                Анатолий Некрасов
               </div>
             </div>
           </div>
           <div class="program-section__item">
             <div class="program-section__date">
-              <svg width="64" height="64">
+              <svg width="74" height="74">
                 <use href="../assets/img/icons.svg#date-star"></use>
               </svg>
-              <span>02.06.2022</span>
+              <span>05.07.2022</span>
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                Конфликты в семейной жизни. Их решение.
+                Как энергия влияет на нашу реализацию? Как работать с выгораниями?
               </div>
               <div class="program-section__name">
-                Акрам
+                Раушан Ашир
               </div>
             </div>
           </div>
           <div class="program-section__item">
             <div class="program-section__date">
-              <svg width="64" height="64">
+              <svg width="74" height="74">
                 <use href="../assets/img/icons.svg#date-star"></use>
               </svg>
-              <span>03.06.2022</span>
+              <span>06.07.2022</span>
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
@@ -320,65 +308,65 @@
           </div>
           <div class="program-section__item">
             <div class="program-section__date">
-              <svg width="64" height="64">
+              <svg width="74" height="74">
                 <use href="../assets/img/icons.svg#date-star"></use>
               </svg>
-              <span>04.06.2022</span>
+              <span>07.07.2022</span>
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                Почему плохо быть «хорошей девочкой»?
+                Вся правда о мужчинах
               </div>
               <div class="program-section__name">
-                Акгул Абдали
+                Акрам
               </div>
             </div>
           </div>
           <div class="program-section__item">
             <div class="program-section__date">
-              <svg width="64" height="64">
+              <svg width="74" height="74">
                 <use href="../assets/img/icons.svg#date-star"></use>
               </svg>
-              <span>05.06.2022</span>
+              <span>08.07.2022</span>
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                Зрелость = успех. Как прийти к этому ?
+                Каких женщин выбирают мужчины? Как оставаться всегда желанной?
               </div>
               <div class="program-section__name">
-                Акбота Аканова
+                Натали Мамедова
               </div>
             </div>
           </div>
           <div class="program-section__item">
             <div class="program-section__date">
-              <svg width="64" height="64">
+              <svg width="74" height="74">
                 <use href="../assets/img/icons.svg#date-star"></use>
               </svg>
-              <span>06.06.2022</span>
+              <span>09.07.2022</span>
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                Как получать от мужчины больше?
+                Как перестать тревожиться и жить в кайф? 7 блоков в теле и их роль
               </div>
               <div class="program-section__name">
-                Венера Номад
+                Асия Фазылова
               </div>
             </div>
           </div>
           <div class="program-section__item">
             <div class="program-section__date">
-              <svg width="64" height="64">
+              <svg width="74" height="74">
                 <use href="../assets/img/icons.svg#date-star"></use>
               </svg>
-              <span>07.06.2022</span>
+              <span>10.07.2022</span>
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                Токсичный стыд - запрет на выражение себя.
+                Чем опасно сравнение себя с другими людьми, синдром самозванца и синдром fomo (боязнь упущенных возможностей)?
               </div>
               <div class="program-section__name">
-                Акбота Аканова
+                Раушан Ашир
               </div>
             </div>
           </div>

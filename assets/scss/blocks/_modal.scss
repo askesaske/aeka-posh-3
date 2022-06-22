@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: -120%;
-  background-color: #120011;
+  background-color: #FEE3E2;
   width: 100vw;
   height: 100vh;
   z-index: 101;
@@ -23,12 +23,12 @@
   &__left {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 120px;
   }
 
   &__right {
     position: absolute;
-    top: 0;
+    top: 200px;
     right: 0;
   }
 
@@ -46,7 +46,7 @@
   &__back {
     display: flex;
     align-items: center;
-    @include text-style(1.6rem, 500, $white);
+    @include text-style(1.6rem, 500, #B22C7D);
     font-family: $montserrat;
     cursor: pointer;
 
@@ -60,10 +60,12 @@
   }
 
   &__title {
-    @include text-style(4.8rem, 400, #FFF1E3);
-    line-height: 55px;
+    @include text-style(3.2rem, 700, #B22C7D);
+    line-height: 38px;
     margin-bottom: 12px;
     text-align: center;
+    font-variation-settings: 'CONT' 469, 'MIDL' 0;
+    font-family: $kiev;
 
     &--mb40 {
       margin-bottom: 40px;
@@ -71,12 +73,11 @@
   }
 
   &__subtitle {
-    @include text-style(3.2rem, 400, #FFF1E3);
-    line-height: 36px;
-    margin: 0 auto 64px;
+    @include text-style(2.4rem, 400, #CF6E95);
+    line-height: 27px;
+    margin: 0 auto 95px;
     text-align: center;
-    font-style: italic;
-    max-width: 632px;
+    max-width: 345px;
   }
 
   &__form {
@@ -108,12 +109,6 @@
   }
 
   &__prize-box {
-    width: 623px;
-    padding: 85px 40px 40px;
-    background: rgba(105, 36, 101, 0.5);
-    box-shadow: inset 0 2px 50px rgba(241, 192, 221, 0.2);
-    backdrop-filter: blur(12px);
-    border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,25 +120,26 @@
     }
 
     p {
-      @include text-style(2.4rem, 400, $dusty-purple);
+      @include text-style(2.4rem, 400, #CF6E95);
       line-height: 27px;
-      margin-bottom: 10px;
+      margin-bottom: 16px;
     }
 
     h3 {
-      @include text-style(3.2rem, 600, $white);
-      font-family: $montserrat;
+      @include text-style(3.2rem, 500, #B22C7D);
+      font-family: $kiev;
       line-height: 39px;
       text-align: center;
+      font-variation-settings: 'CONT' 469, 'MIDL' 0;
     }
   }
 
   &__under-text {
-    @include text-style(1.8rem, 600, $white);
-    font-family: $montserrat;
+    @include text-style(1.8rem, 600, #CF6E95);
     line-height: 22px;
-    margin-bottom: 56px;
+    margin: 0 auto 56px;
     text-align: center;
+    max-width: 350px;
 
     span {
       font-weight: 700;
@@ -159,9 +155,11 @@
     align-items: center;
 
     p {
-      @include text-style(1.2rem, 500, $dusty-purple);
+      @include text-style(1.2rem, 500, #B22C7D);
+      font-family: $kiev;
+      font-variation-settings: 'CONT' 469, 'MIDL' 0;
       line-height: 14.6px;
-      margin-bottom: 8px;
+      margin-bottom: 15px;
     }
 
     a {
@@ -175,6 +173,11 @@
   }
 
   @include respond(phone) {
+
+    &__left {
+      display: none;
+    }
+
     &__container {
       padding-top: 26px;
     }
@@ -184,7 +187,7 @@
     }
 
     &__title {
-      @include text-style(3.2rem, 400, #FFF1E3);
+      @include text-style(3.2rem, 700, #B22C7D);
       line-height: 36px;
 
       &--mb40 {
@@ -193,7 +196,7 @@
     }
 
     &__subtitle {
-      @include text-style(2.4rem, 400, #FFF1E3);
+      @include text-style(2.4rem, 400, #CF6E95);
       line-height: 27px;
       max-width: 100%;
     }
@@ -240,7 +243,7 @@
       align-items: center;
 
       p {
-        @include text-style(1.2rem, 500, $dusty-purple);
+        @include text-style(1.2rem, 500, #CF6E95);
         line-height: 14.6px;
         margin-bottom: 8px;
       }
@@ -254,5 +257,19 @@
         }
       }
     }
+  }
+}
+
+.success-btn {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  span {
+    @include text-style(1.4rem, 700, #B22C7D);
+    text-decoration: underline;
   }
 }
