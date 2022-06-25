@@ -39,7 +39,7 @@
                        v-model="phone">
                 <span class="placeholder">
                 Введите номер WhatsApp
-              </span>
+                </span>
               </div>
 
               <div class="modal__input-block input-block">
@@ -56,9 +56,14 @@
                 </span>
               </div>
 
+              <label class="modal__checkbox">
+                <input type="checkbox" v-model="checkbox">
+                Я соглашаюсь <a href="https://womenscommunity.kz/offer" target="_blank"> с договором оферты</a>
+              </label>
+
               <span class="modal__error-text" v-if="fail">Этот имейл уже крутил колесо</span>
 
-              <button class="modal__btn button" type="submit">
+              <button class="modal__btn button" type="submit" :disabled="!checkbox">
                 Перейти к оплате
               </button>
             </form>
@@ -77,7 +82,8 @@ export default {
       phone: '',
       email: '',
       inst: '',
-      fail: false
+      fail: false,
+      checkbox: false
     };
   },
   methods: {

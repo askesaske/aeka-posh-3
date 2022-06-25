@@ -91,9 +91,35 @@
     }
   }
 
+  &__checkbox {
+    display: flex;
+    align-items: center;
+
+    input {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    a {
+      margin-left: 5px;
+    }
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $kiev;
+  }
+
   &__btn {
     display: block;
     margin: 80px auto 0;
+
+    &:disabled {
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+      pointer-events: none;
+      cursor: none;
+    }
   }
 
   &__wheel {
