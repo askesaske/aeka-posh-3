@@ -53,7 +53,6 @@
               @rotateEnd="onRotateEnd"
               :prizeId="prizeId"
               :verify="false"
-              :duration="14000"
           >
             <img slot="wheel" src='../assets/img/wheel-of-fortune.png'/>
             <img slot="button" src="../assets/img/wheel-btn.svg" class="wheel__btn"/>
@@ -75,10 +74,11 @@
         </div>
 
         <div class="modal__under-text">
-          <div v-if="this.prizesOrder[this.prize.id-1].linkText">{{ this.prizesOrder[this.prize.id - 1].linkText }} <a
-              :href=this.prizesOrder[this.prize.id-1].link> {{ this.prizesOrder[this.prizeId - 1].link }} </a>.
-          </div>
-          Вся необходимая информация отправлена вам на почту по адресу <span>{{ user.email }}</span>
+<!--          <div v-if="this.prizesOrder[this.prize.id-1].linkText">{{ this.prizesOrder[this.prize.id - 1].linkText }} <a-->
+<!--              :href=this.prizesOrder[this.prize.id-1].link> {{ this.prizesOrder[this.prizeId - 1].link }} </a>.-->
+<!--          </div>-->
+          Чтобы получить приз, сделай скрин и выложи к себе в сторис с отметкой @aeka.posh @womenscommunity.kz <br> <br>
+          Приз и доступ к курсу придёт на <span>{{ user.email }}</span>
         </div>
 
         <button class="modal__btn button" @click="$router.push('/')">
@@ -89,7 +89,7 @@
           <p>В случае вопросов и доступа к курсу пишите на номер whatsapp </p>
 
 
-          <a href="https://api.whatsapp.com/message/QGQGYLGDBLRVC1?autoload=1&app_absent=0" class="success-btn"
+          <a href="https://wa.me/message/QGQGYLGDBLRVC1" class="success-btn"
              target="_blank">
             <svg width="24" height="24">
               <use href="../assets/img/icons.svg#wpp-5"></use>
@@ -125,16 +125,22 @@ export default {
       confEmail: '',
       prizes: [
         {
-          id: 2, //* The unique id of each prize, an integer greater than 0
-          value: '1 000 000 тг', //* Prize value, return value after spinning
+          id: 1, //* The unique id of each prize, an integer greater than 0
+          value: 'Extra интенсив', //* Prize value, return value after spinning
           probability: 10, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
+          img: 'extra.svg'
+        },
+        {
+          id: 2,
+          value: '1 000 000 тг',
+          probability: 10,
           img: 'million.svg'
         },
         {
           id: 3,
-          value: 'Курс по face-массажу',
+          value: 'Авторские медитации',
           probability: 10,
-          img: 'face.svg'
+          img: 'meditation.svg'
         },
         {
           id: 4,
@@ -144,7 +150,7 @@ export default {
         },
         {
           id: 5,
-          value: 'Beauty-бокс',
+          value: 'Beauty box',
           probability: 10,
           img: 'box.svg'
         },
@@ -156,15 +162,9 @@ export default {
         },
         {
           id: 7,
-          value: 'Закрытый VIP канал',
+          value: 'Стайлер Dyson',
           probability: 10,
-          img: 'chat.svg'
-        },
-        {
-          id: 1,
-          value: 'IPhone 13 PRO',
-          probability: 10,
-          img: 'iphone.svg'
+          img: 'dyson.svg'
         }
       ],
       prizesOrder: [
@@ -215,7 +215,7 @@ export default {
           link: 'https://t.me/+R3AtjIlRVCkxMzNi'
         }
       ],
-      prizeId: 7,
+      prizeId: 1,
       loader: false,
 
       prize: {},
@@ -269,7 +269,7 @@ export default {
             this.prizeId = res.data.prize.id
           })
           .catch(e => {
-            this.prizeId = 7
+            this.prizeId = 1
           })
     },
     onRotateEnd(prize) {

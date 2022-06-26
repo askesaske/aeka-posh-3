@@ -32,7 +32,7 @@
             </svg>
             Instagram
           </a>
-          <a href="https://api.whatsapp.com/message/QGQGYLGDBLRVC1?autoload=1&app_absent=0" target="_blank" class="footer__social">
+          <a href="https://wa.me/message/QGQGYLGDBLRVC1" target="_blank" class="footer__social">
             <svg width="28" height="28">
               <use href="../assets/img/icons.svg#wpp-2"></use>
             </svg>
