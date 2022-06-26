@@ -28,7 +28,7 @@
 
           <div class="welcome-section__date">
             <span>Дата старта</span>
-            <p>23 . 05 . 2022</p>
+            <p>04 . 07 . 2022</p>
           </div>
         </div>
 
