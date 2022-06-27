@@ -300,7 +300,7 @@
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                Как открыть бизнес пошагово? ИП, ТОО. Бухгалтерия
+                Cекреты управления деньгами
               </div>
               <div class="program-section__name">
                 Кунекей Нурлан
