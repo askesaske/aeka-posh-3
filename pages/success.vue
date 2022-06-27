@@ -74,10 +74,13 @@
         </div>
 
         <div class="modal__under-text">
-<!--          <div v-if="this.prizesOrder[this.prize.id-1].linkText">{{ this.prizesOrder[this.prize.id - 1].linkText }} <a-->
-<!--              :href=this.prizesOrder[this.prize.id-1].link> {{ this.prizesOrder[this.prizeId - 1].link }} </a>.-->
-<!--          </div>-->
-          Чтобы получить приз, сделай скрин и выложи к себе в сторис с отметкой @aeka.posh @womenscommunity.kz <br> <br>
+          <!--          <div v-if="this.prizesOrder[this.prize.id-1].linkText">{{ this.prizesOrder[this.prize.id - 1].linkText }} <a-->
+          <!--              :href=this.prizesOrder[this.prize.id-1].link> {{ this.prizesOrder[this.prizeId - 1].link }} </a>.-->
+          <!--          </div>-->
+          <span v-if="prize.id !== 1 && prize.id !== 3">
+            Чтобы получить приз, сделай скрин и выложи к себе в сторис с отметкой @aeka.posh @womenscommunity.kz
+            <br> <br>
+          </span>
           Приз и доступ к курсу придёт на <span>{{ user.email }}</span>
         </div>
 
