@@ -77,11 +77,14 @@
           <!--          <div v-if="this.prizesOrder[this.prize.id-1].linkText">{{ this.prizesOrder[this.prize.id - 1].linkText }} <a-->
           <!--              :href=this.prizesOrder[this.prize.id-1].link> {{ this.prizesOrder[this.prizeId - 1].link }} </a>.-->
           <!--          </div>-->
-          <span v-if="prize.id !== 1 && prize.id !== 3">
-            Чтобы получить приз, сделай скрин и выложи к себе в сторис с отметкой @aeka.posh @womenscommunity.kz
+          <span v-if="prize.id !== 1 && prize.id !== 3">Для получения своего ништяка,</span>
+          <span v-else>Чтобы получить приз,</span>
+          выложи скрин этой страницы с отметкой @aeka.posh @womenscommunity.kz
             <br> <br>
-          </span>
-          Приз и доступ к курсу придёт на <span>{{ user.email }}</span>
+
+          <span v-if="prize.id === 1">Доступ к интенсиву по <a href="https://t.me/+cmpnoa5ZloMxN2Ri" target="_blank">ссылке</a></span>
+          <span v-if="prize.id === 3">Доступ к авторским медитациям по <a href="https://t.me/+s86W9M9bzddhOTky" target="_blank">ссылке</a></span> <br>
+          Приз придёт на <span>{{ user.email }}</span>
         </div>
 
         <button class="modal__btn button" @click="$router.push('/')">
