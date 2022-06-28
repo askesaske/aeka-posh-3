@@ -316,7 +316,7 @@
             </div>
             <div class="program-section__info">
               <div class="program-section__text">
-                Вся правда о мужчинах
+                Решение семейных конфликтов. Продолжение
               </div>
               <div class="program-section__name">
                 Акрам
