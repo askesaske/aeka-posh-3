@@ -82,8 +82,8 @@
           выложи скрин этой страницы с отметкой @aeka.posh @womenscommunity.kz
             <br> <br>
 
-          <span v-if="prize.id === 1">Доступ к интенсиву по <a href="https://t.me/+cmpnoa5ZloMxN2Ri" target="_blank">ссылке</a></span>
-          <span v-if="prize.id === 3">Доступ к авторским медитациям по <a href="https://t.me/+s86W9M9bzddhOTky" target="_blank">ссылке</a></span> <br>
+          <span v-if="prize.id === 1">Доступ к интенсиву по <a href="https://t.me/+cmpnoa5ZloMxN2Ri" target="_blank">https://t.me/+cmpnoa5ZloMxN2Ri</a></span>
+          <span v-if="prize.id === 3">Доступ к авторским медитациям по <a href="https://t.me/+s86W9M9bzddhOTky" target="_blank">https://t.me/+s86W9M9bzddhOTky</a></span> <br>
           Приз придёт на <span>{{ user.email }}</span>
         </div>
 
