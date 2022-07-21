@@ -1,13 +1,13 @@
 .review-section {
   padding-bottom: 64px;
-  background-color: #F8D4D8;
+  background-color: #ffee97;
 
   &__container {
     @extend %container;
   }
 
   &__heading {
-    @include text-style(6.4rem, 500, #B22C7D);
+    @include text-style(6.4rem, 500, #732D72);
     font-family: $kiev;
     line-height: 73px;
     text-align: center;
@@ -32,12 +32,12 @@
     transform: translateY(-50%);
 
     svg {
-      fill: #B32C7D;
+      fill: #732D72;
     }
 
     &:disabled {
       svg {
-        fill: #BA95A3;
+        fill: #D786AC;
       }
     }
 
@@ -62,15 +62,15 @@
     background-color: transparent;
     width: 12px;
     height: 12px;
-    border: 1px solid #CF6E95;
+    border: 1px solid #732D72;
     border-radius: 50%;
 
     margin-right: 8px;
   }
 
   &__pagination-page.is-active {
-    background-color: #CF6E95;
-    border: 1px solid #CF6E95;
+    background-color: #732D72;
+    border: 1px solid #732D72;
   }
 
   @include respond(tab-land) {

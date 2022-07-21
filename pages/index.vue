@@ -10,8 +10,11 @@
             для девушек и женщин
           </h3>
 
+          <div class="welcome-section__sale-row">
+            <span v-for="i in 20">50% выгоды</span>
+          </div>
+
           <div class="welcome-section__price-box">
-            <img src="../assets/img/icons/price-sale.svg" alt="" class="welcome-section__sale-price">
             <div class="welcome-section__price">
               <div class="welcome-section__first">
                 10 000 тенге

@@ -80,3 +80,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Hauora';
+  src: local('Hauora'), local('Hauora'),
+  url('~assets/fonts/Hauora-Regular.woff2') format('woff2'),
+  url('~assets/fonts/Hauora-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hauora';
+  src: local('Hauora'), local('Hauora'),
+  url('~assets/fonts/Hauora-Medium.woff2') format('woff2'),
+  url('~assets/fonts/Hauora-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hauora';
+  src: local('Hauora'), local('Hauora'),
+  url('~assets/fonts/Hauora-SemiBold.woff2') format('woff2'),
+  url('~assets/fonts/Hauora-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+

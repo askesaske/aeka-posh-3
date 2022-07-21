@@ -1,12 +1,13 @@
 .speakers-section {
-  padding-bottom: 120px;
+  padding: 80px 0 120px;
+  background-color: #732D72;
 
   &__container {
     @extend %container;
   }
 
   &__heading {
-    @include text-style(6.4rem, 500, #B22C7D);
+    @include text-style(6.4rem, 500, #FFEE97);
     line-height: 76px;
     font-family: $kiev;
     font-variation-settings: 'CONT' 469, 'MIDL' 0;
@@ -26,12 +27,12 @@
     transform: translateY(-50%);
 
     svg {
-      fill: #B32C7D;
+      fill: #FFEE97;
     }
 
     &:disabled {
       svg {
-        fill: #BA95A3;
+        fill: #FFA8E9;
       }
     }
 
@@ -56,19 +57,21 @@
     background-color: transparent;
     width: 12px;
     height: 12px;
-    border: 1px solid #CF6E95;
+    border: 1px solid #FFEE97;
     border-radius: 50%;
 
     margin-right: 8px;
   }
 
   &__pagination-page.is-active {
-    background-color: #CF6E95;
-    border: 1px solid #CF6E95;
+    background-color: #FFEE97;
+    border: 1px solid #FFEE97;
   }
 
   &__btn {
     width: 343px;
+    background-color: #FFEE97;
+    color: #732D72;
     display: none;
   }
 
@@ -105,7 +108,7 @@
 
   @include respond(phone) {
     &__heading {
-      @include text-style(4.8rem, 400, #B22C7D);
+      font-size: 4.8rem;
       line-height: 54px;
       text-align: center;
       margin-bottom: 64px;

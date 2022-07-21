@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  background-color: #B22C7D;
+  background-color: #732D72;
 
   &__left {
     position: absolute;
@@ -32,7 +32,7 @@
   }
 
   &__heading {
-    @include text-style(4.8rem, 500, $white);
+    @include text-style(4.8rem, 500, #FFEE97);
     font-family: $kiev;
     line-height: 57px;
     margin-bottom: 60px;
@@ -51,14 +51,15 @@
   }
 
   &__price-old {
-    @include text-style(3.2rem, 400, #FFB5D3);
-    line-height: 36px;
+    @include text-style(3.2rem, 400, #EE98DA);
+    font-family: $hauora;
+    line-height: 43px;
     text-decoration: line-through;
     margin-bottom: 4px;
   }
 
   &__price-new {
-    @include text-style(6.4rem, 700, $white);
+    @include text-style(6.4rem, 700, #FFEE97);
     font-family: $kiev;
     line-height: 78px;
     font-variation-settings: 'CONT' 469, 'MIDL' 0;
@@ -104,7 +105,9 @@
   &__social {
     display: flex;
     align-items: center;
-    @include text-style(1.8rem, 400, $white);
+    @include text-style(1.8rem, 500, #FFEE97);
+    font-family: $kiev;
+    font-variation-settings: 'CONT' 469, 'MIDL' 0;
 
     svg {
       margin-right: 8px;
@@ -117,8 +120,8 @@
 
   &__link {
     display: block;
-    @include text-style(1.2rem, 500, $dusty-purple);
-    font-family: $montserrat;
+    @include text-style(1.2rem, 400, #FFA8E9);
+    font-family: $hauora;
     line-height: 14px;
     text-decoration: underline;
     text-align: right;
@@ -129,6 +132,8 @@
   }
 
   &__btn {
+    background-color: #FFEE97;
+    color: #732D72;
     &--tab {
       display: none;
     }
@@ -147,18 +152,8 @@
     }
 
     &__heading {
-      @include text-style(6.4rem, 400, $white);
-      line-height: 73px;
-      margin-bottom: 8px;
+      margin-bottom: 20px;
       text-align: center;
-    }
-
-    &__title {
-      @include text-style(4rem, 600, $white);
-      line-height: 46px;
-      font-style: italic;
-      text-align: center;
-      margin-bottom: 140px;
     }
 
     &__btn {
@@ -178,18 +173,6 @@
       text-align: center;
     }
 
-    &__price-old {
-      @include text-style(3.2rem, 500, $dusty-purple);
-      line-height: 39px;
-      text-decoration: line-through;
-      margin-bottom: 4px;
-    }
-
-    &__price-new {
-      @include text-style(6.4rem, 700, $white);
-      line-height: 78px;
-    }
-
     &__socials {
       display: flex;
       align-items: center;
@@ -198,29 +181,8 @@
       margin-bottom: 40px;
     }
 
-    &__social {
-      display: flex;
-      align-items: center;
-      @include text-style(1.8rem, 400, $white);
-
-      svg {
-        margin-right: 8px;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 0;
-      }
-    }
-
     &__link {
-      @include text-style(1.2rem, 500, $dusty-purple);
-      line-height: 14px;
-      text-decoration: underline;
       text-align: center;
-
-      &:not(:last-child) {
-        margin-bottom: 12px;
-      }
     }
   }
 
@@ -239,14 +201,9 @@
     }
 
     &__heading {
-      @include text-style(3.2rem, 400, $white);
+      font-size: 3.2rem;
       line-height: 36px;
       margin-bottom: 140px;
-    }
-
-    &__title {
-      @include text-style(2.8rem, 600, $white);
-      line-height: 32px;
     }
 
     &__btn {
@@ -256,17 +213,17 @@
     }
 
     &__price-old {
-      @include text-style(2.4rem, 500, $dusty-purple);
+      font-size: 2.4rem;
       line-height: 29px;
     }
 
     &__price-new {
-      @include text-style(4.8rem, 700, $white);
+      font-size: 4.8rem;
       line-height: 58px;
     }
 
     &__social {
-      @include text-style(1.6rem, 400, $white);
+      font-size: 1.6rem;
     }
   }
 }

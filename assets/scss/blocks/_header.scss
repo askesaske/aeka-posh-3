@@ -19,8 +19,9 @@
   }
 
   &__link {
-    @include text-style(2.4rem, 400, #B22C7D);
+    @include text-style(2.4rem, 500, #732D72);
     cursor: pointer;
+    font-family: $hauora;
 
     transition: all .3s;
 
@@ -42,7 +43,7 @@
     align-items: center;
     padding: 6px 12px;
     border-radius: 4px;
-    background: #2DACB1;
+    background: #602D73;
 
     transition: all .3s;
 

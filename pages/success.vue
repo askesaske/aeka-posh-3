@@ -44,15 +44,15 @@
         <div class="modal__wheel wheel">
           <img src="../assets/img/prize-arrow.svg" alt="" class="wheel__arrow">
           <FortuneWheel
-              class="wheel__main"
-              type="image"
-              :useWeight="true"
-              :prizes="prizes"
-              :angleBase="20"
-              @rotateStart="onImageRotateStart"
-              @rotateEnd="onRotateEnd"
-              :prizeId="prizeId"
-              :verify="false"
+            class="wheel__main"
+            type="image"
+            :useWeight="true"
+            :prizes="prizes"
+            :angleBase="20"
+            @rotateStart="onImageRotateStart"
+            @rotateEnd="onRotateEnd"
+            :prizeId="prizeId"
+            :verify="false"
           >
             <img slot="wheel" src='../assets/img/wheel-of-fortune.png'/>
             <img slot="button" src="../assets/img/wheel-btn.svg" class="wheel__btn"/>
@@ -67,16 +67,18 @@
         </div>
 
         <div class="modal__prize-box">
-          <img :src="require(`../assets/img/prizes/${prize.img}`)" alt="">
+          <div class="modal__img-box">
+            <img :src="require(`../assets/img/prizes/${prize.img}`)" alt="">
+          </div>
 
           <p>Вы выиграли</p>
           <h3>{{ prize.value }}</h3>
         </div>
 
         <div class="modal__under-text">
-<!--          <div v-if="this.prizesOrder[this.prize.id-1].linkText">{{ this.prizesOrder[this.prize.id - 1].linkText }} <a-->
-<!--              :href=this.prizesOrder[this.prize.id-1].link> {{ this.prizesOrder[this.prizeId - 1].link }} </a>.-->
-<!--          </div>-->
+          <!--          <div v-if="this.prizesOrder[this.prize.id-1].linkText">{{ this.prizesOrder[this.prize.id - 1].linkText }} <a-->
+          <!--              :href=this.prizesOrder[this.prize.id-1].link> {{ this.prizesOrder[this.prizeId - 1].link }} </a>.-->
+          <!--          </div>-->
           Чтобы получить приз, сделай скрин и выложи к себе в сторис с отметкой @aeka.posh @womenscommunity.kz <br> <br>
           Приз и доступ к курсу придёт на <span>{{ user.email }}</span>
         </div>
@@ -126,21 +128,21 @@ export default {
       prizes: [
         {
           id: 1, //* The unique id of each prize, an integer greater than 0
-          value: 'Extra интенсив', //* Prize value, return value after spinning
+          value: 'Доступ навсегда', //* Prize value, return value after spinning
           probability: 10, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
-          img: 'extra.svg'
+          img: 'forever.svg'
         },
         {
-          id: 2,
-          value: '1 000 000 тг',
-          probability: 10,
-          img: 'million.svg'
+          id: 2, //* The unique id of each prize, an integer greater than 0
+          value: 'Путевка или деньги', //* Prize value, return value after spinning
+          probability: 10, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
+          img: 'ticket.svg'
         },
         {
           id: 3,
-          value: 'Авторские медитации',
+          value: 'Видео-урок от стилиста',
           probability: 10,
-          img: 'meditation.svg'
+          img: 'video.svg'
         },
         {
           id: 4,
@@ -150,21 +152,21 @@ export default {
         },
         {
           id: 5,
-          value: 'Beauty box',
+          value: 'Beauty-средства',
           probability: 10,
-          img: 'box.svg'
+          img: 'beauty.svg'
         },
         {
           id: 6,
-          value: '50 000 тг',
+          value: 'Вебинар от врача',
           probability: 10,
-          img: 'fifty.svg'
+          img: 'vebinar.svg'
         },
         {
           id: 7,
-          value: 'Стайлер Dyson',
+          value: '50 000 тг',
           probability: 10,
-          img: 'dyson.svg'
+          img: 'fifty.svg'
         }
       ],
       prizesOrder: [

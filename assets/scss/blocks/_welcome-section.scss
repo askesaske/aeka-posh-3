@@ -11,8 +11,8 @@
     flex-shrink: 0;
   }
 
-  &__heading {
-    @include text-style(9.6rem, 500, #B22C7D);
+   &__heading {
+    @include text-style(9.6rem, 500, #732D72);
     font-family: $kiev;
     line-height: 110px;
     margin-bottom: 8px;
@@ -20,36 +20,57 @@
   }
 
   &__title {
-    @include text-style(4rem, 400, #B22C7D);
-    line-height: 45px;
-    margin-bottom: 72px;
+    @include text-style(4rem, 500, #B22C7D);
+    font-family: $hauora;
+    line-height: 49px;
+    margin-bottom: 64px;
   }
 
   &__price-box {
     display: flex;
     align-items: center;
+    padding-top: 48px;
     margin-bottom: 64px;
     position: relative;
   }
 
-  &__sale-price {
+  &__sale-row {
     position: absolute;
-    left: -150px;
+    left: 0;
+    background-color: #732D72;
+    width: 604px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    overflow: hidden;
+
+    span {
+      @include text-style(1.2rem, 500, #FFF7AB);
+      font-family: $kiev;
+      font-variation-settings: 'CONT' 469, 'MIDL' 0;
+      text-shadow: 0px 0px 5px rgba(134, 82, 217, 0.4);
+      flex-shrink: 0;
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
   }
 
   &__price {
-    margin-left: 190px;
   }
 
   &__first {
-    @include text-style(2.4rem, 400, #CF6E95);
+    @include text-style(2rem, 400, #954294);
+    font-family: $hauora;
     line-height: 27px;
     margin-bottom: 4px;
     text-decoration: line-through;
   }
 
   &__second {
-    @include text-style(4rem, 700, #B22C7D);
+    @include text-style(4rem, 700, #732D72);
     line-height: 48px;
     font-family: $kiev;
     font-variation-settings: 'CONT' 469;
@@ -61,16 +82,17 @@
 
   &__date {
     span {
-      @include text-style(2.4rem, 400, #CF6E95);
-      line-height: 27px;
+      @include text-style(2.4rem, 500, #CF6E95);
+      font-family: $hauora;
+      line-height: 32px;
       margin-bottom: 12px;
       display: block;
     }
 
     p {
-      @include text-style(3.2rem, 500, #33C1C8);
+      @include text-style(3.2rem, 500, #602D73);
+      font-family: $kiev;
       font-variation-settings: 'CONT' 469, 'MIDL' 0;
-      text-shadow: 0 0 5px rgba(0, 244, 255, 0.76);
     }
   }
 
@@ -107,27 +129,12 @@
       text-align: center;
     }
 
-    &__sale-price {
-      position: absolute;
-      left: 0;
+    &__sale-row {
+      width: 100%;
     }
 
     &__price {
-      margin-left: 400px;
-    }
-
-    &__first {
-      @include text-style(2.4rem, 400, #CF6E95);
-      line-height: 27px;
-      margin-bottom: 4px;
-      text-decoration: line-through;
-    }
-
-    &__second {
-      @include text-style(4rem, 700, #B22C7D);
-      line-height: 48px;
-      font-family: $kiev;
-      font-variation-settings: 'CONT' 469;
+      margin: 0 auto;
     }
 
     &__btn {
@@ -137,18 +144,6 @@
 
     &__date {
       text-align: center;
-      span {
-        @include text-style(2.4rem, 400, #CF6E95);
-        line-height: 27px;
-        margin-bottom: 12px;
-        display: block;
-      }
-
-      p {
-        @include text-style(3.2rem, 500, #33C1C8);
-        font-variation-settings: 'CONT' 469, 'MIDL' 0;
-        text-shadow: 0 0 5px rgba(0, 244, 255, 0.76);
-      }
     }
 
     &__img {
@@ -166,34 +161,17 @@
     }
 
     &__title {
-      @include text-style(2.2rem, 500, $dusty-purple);
-      line-height: 26px;
-      font-family: $montserrat;
-      margin-bottom: 40px;
+      font-size: 2rem;
+      margin-bottom: 30px;
       text-align: center;
     }
 
-    &__sale-price {
-      position: absolute;
-      left: -140px;
-    }
-
-    &__price {
-      margin-left: 160px;
-    }
-
     &__first {
-      @include text-style(2rem, 400, #CF6E95);
-      line-height: 27px;
-      margin-bottom: 4px;
-      text-decoration: line-through;
+      text-align: center;
     }
 
     &__second {
-      @include text-style(2.8rem, 700, #B22C7D);
-      line-height: 48px;
-      font-family: $kiev;
-      font-variation-settings: 'CONT' 469;
+      text-align: center;
     }
 
     &__btn {
@@ -204,16 +182,6 @@
 
     &__date {
       text-align: center;
-
-      span {
-        @include text-style(2.4rem, 500, #CF6E95);
-        line-height: 22px;
-        margin-bottom: 12px;
-      }
-
-      p {
-        @include text-style(4rem, 600, #33C1C8);
-      }
     }
 
     &__img {

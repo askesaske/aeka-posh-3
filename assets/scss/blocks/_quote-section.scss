@@ -29,7 +29,7 @@
   }
 
   &__title {
-    @include text-style(4.8rem, 500, #B22C7D);
+    @include text-style(4.8rem, 500, #732D72);
     font-family: $kiev;
     line-height: 58px;
     font-variation-settings: 'CONT' 469, 'MIDL' 0;
@@ -39,20 +39,7 @@
   }
 
   &__border {
-    stroke: #33C1C8;
-    filter: drop-shadow(0px 0px 5px rgba(0, 244, 255, 0.76));
-  }
-
-  @include respond(tab-land) {
-    &__title {
-      @include text-style(4.8rem, 500, #B22C7D);
-      font-family: $kiev;
-      line-height: 58px;
-      font-variation-settings: 'CONT' 469, 'MIDL' 0;
-      text-align: center;
-
-      margin-bottom: 112px;
-    }
+    stroke: #732D72;
   }
 
   @include respond(phone) {

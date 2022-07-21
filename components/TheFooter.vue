@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
-    <img src="../assets/img/quote-shadow-left.svg" alt="" class="footer__left">
-    <img src="../assets/img/quote-shadow-right.svg" alt="" class="footer__right">
+    <img src="../assets/img/footer-shadow-left.svg" alt="" class="footer__left">
+    <img src="../assets/img/footer-shadow-right.svg" alt="" class="footer__right">
     <div class="footer__top">
       <div class="footer__container">
         <div class="footer__info">
@@ -9,7 +9,7 @@
             Участвуй в интенсиве <br>
             и выигрывай призы!
           </div>
-          <button class="footer__btn footer__btn--desktop button button--blue" @click="openModal">Записаться</button>
+          <button class="footer__btn footer__btn--desktop button" @click="openModal">Записаться</button>
         </div>
 
         <div class="footer__price-box">

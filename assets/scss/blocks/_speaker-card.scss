@@ -11,14 +11,14 @@
   &__box {
     padding: 48px 32px 40px;
     border-radius: 20px;
-    background-color: #B22C7D;
+    background-color: #A931A7;
     width: 632px;
     flex-shrink: 0;
     margin-bottom: 64px;
   }
 
   &__name {
-    @include text-style(3.2rem, 700, $white);
+    @include text-style(3.2rem, 700, #FFEE97);
     font-family: $kiev;
     font-variation-settings: 'CONT' 469, 'MIDL' 0;
     line-height: 38px;
@@ -38,7 +38,8 @@
     }
 
     span {
-      @include text-style(1.6rem, 600, #FBDBEE);
+      @include text-style(1.6rem, 600, #FFA8E9);
+      font-family: $hauora;
     }
 
     &:after {
@@ -48,15 +49,20 @@
       bottom: 0;
       height: 1px;
       width: 100px;
-      background-color: #33C1C8;
+      background-color: #FFEE97;
     }
   }
 
   &__text {
-    @include text-style(1.6rem, 500, $white);
+    @include text-style(1.6rem, 500, #FFA8E9);
     font-family: $kiev;
     line-height: 19.5px;
     font-variation-settings: 'CONT' 469, 'MIDL' 0;
+  }
+
+  &__btn {
+    background-color: #FFEE97;
+    color: #732D72;
   }
 
   @include respond(tab-land) {
@@ -78,15 +84,13 @@
     &__box {
       padding: 48px 32px 40px;
       border-radius: 4px;
-      background-color: #B22C7D;
       width: 100%;
       flex-shrink: 0;
       margin-bottom: 0;
     }
 
     &__name {
-      @include text-style(3.2rem, 400, $white);
-      line-height: 36px;
+      font-size: 3.2rem;
       margin-bottom: 12px;
       text-align: center;
     }
@@ -94,33 +98,16 @@
     &__inst {
       display: flex;
       align-items: center;
-      padding-bottom: 24px;
-      position: relative;
-      margin-bottom: 24px;
       justify-content: center;
 
-      svg {
-        margin-right: 4px;
-      }
-
-      span {
-        @include text-style(1.6rem, 600, #FBDBEE);
-      }
-
       &:after {
-        content: '';
-        position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 0;
-        height: 1px;
-        width: 100px;
-        background-color: #BA95A3;
       }
     }
 
     &__text {
-      @include text-style(1.6rem, 600, $white);
+      font-size: 1.6rem;
       line-height: 19.5px;
       text-align: center;
     }

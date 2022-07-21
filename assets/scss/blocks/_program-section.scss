@@ -1,13 +1,13 @@
 .program-section {
   padding: 96px 0;
-  background-color: #F8D4D8;
+  background-color: #ffee97;
 
   &__container {
     @extend %container;
   }
 
   &__heading {
-    @include text-style(6.4rem, 500, #B22C7D);
+    @include text-style(6.4rem, 500, #732D72);
     font-family: $kiev;
     font-variation-settings: 'CONT' 469, 'MIDL' 0;
     line-height: 73px;
@@ -24,7 +24,7 @@
     justify-content: space-between;
 
     padding-bottom: 56px;
-    border-bottom: 1px solid rgba(186, 149, 163, 0.3);
+    border-bottom: 1px solid #E3D68D;
 
     &:not(:last-child) {
       margin-bottom: 56px;
@@ -40,7 +40,7 @@
     }
 
     span {
-      @include text-style(4rem, 700, #B22C7D);
+      @include text-style(4rem, 700, #732D72);
       font-variation-settings: 'CONT' 469, 'MIDL' 0;
       font-family: $kiev;
     }
@@ -52,7 +52,7 @@
   }
 
   &__text {
-    @include text-style(2.4rem, 500, #B22C7D);
+    @include text-style(2.4rem, 500, #732D72);
     line-height: 29px;
     margin-bottom: 16px;
     font-variation-settings: 'CONT' 469, 'MIDL' 0;
@@ -60,12 +60,12 @@
   }
 
   &__name {
-    @include text-style(2rem, 400, #CF6E95);
+    @include text-style(1.6rem, 500, #954294);
+    font-family: $hauora;
   }
 
   &__border {
-    stroke: #33C1C8;
-    filter: drop-shadow(0px 0px 5px rgba(0, 244, 255, 0.76));
+    stroke: #732D72;
     display: block;
     margin: 0 auto;
   }
@@ -106,7 +106,7 @@
       }
 
       span {
-        @include text-style(4rem, 400, #B32C7D);
+        font-size: 3.2rem;
       }
     }
 
@@ -116,16 +116,14 @@
     }
 
     &__text {
-      @include text-style(2.4rem, 500, #120011);
+      font-size: 2.4rem;
       line-height: 29px;
       margin-bottom: 16px;
-      font-family: $montserrat;
       text-align: center;
     }
 
     &__name {
-      @include text-style(2rem, 400, #B32C7D);
-      font-style: italic;
+      font-size: 2rem;
       text-align: center;
     }
 
@@ -137,18 +135,12 @@
 
   @include respond(phone) {
     &__heading {
-      @include text-style(4.8rem, 400, #B22C7D);
+      font-size: 4.8rem;
       line-height: 54px;
     }
 
-    &__date {
-      span {
-        @include text-style(3.2rem, 400, #B32C7D);
-      }
-    }
-
     &__text {
-      @include text-style(1.6rem, 500, #120011);
+      font-size: 2rem;
       line-height: 19px;
     }
   }

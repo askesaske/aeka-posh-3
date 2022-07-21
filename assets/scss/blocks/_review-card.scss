@@ -2,7 +2,7 @@
   position: relative;
 
   &__title {
-    @include text-style(3.2rem, 400, #B22C7D);
+    @include text-style(3.2rem, 500, #732D72);
     font-variation-settings: 'CONT' 469, 'MIDL' 0;
     font-family: $kiev;
     line-height: 36px;
@@ -11,7 +11,8 @@
   }
 
   &__text {
-    @include text-style(1.6rem, 600, #CF6E95);
+    @include text-style(1.6rem, 600, #BD8295);
+    font-family: $hauora;
     line-height: 21px;
     text-align: center;
   }

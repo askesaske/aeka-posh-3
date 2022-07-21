@@ -8,11 +8,11 @@ div.input-block input {
   width: 100%;
   padding: 10px 0;
   background-color: transparent;
-  border-bottom: 2px solid  #E8BDCD;
+  border-bottom: 2px solid  #732D72;
   outline:none;
 }
 div.input-block span.placeholder {
-  @include text-style(1.8rem, 600, #B22C7D);
+  @include text-style(1.8rem, 600, #732D72);
   position: absolute;
   margin: 17px 0;
   display: flex;
@@ -28,10 +28,11 @@ div.input-block input:valid + span.placeholder,
 div.input-block input:focus + span.placeholder {
   transform: scale(0.8) translateY(-30px);
   background: transparent;
+  font-family: $hauora;
 }
 div.input-block input:focus{
-  color: #B22C7D;
-  border-color: #33C1C8;
+  color: #732D72;
+  border-color: #E7A4D4;
 }
 div.input-block input:focus + span.placeholder {
   color: #CF6E95;
