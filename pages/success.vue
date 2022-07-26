@@ -265,17 +265,17 @@ export default {
           })
     },
     async onImageRotateStart() {
-      // await this.$axios.post('prizes/random', {
-      //   email: this.loadedConfEmail
-      // }, {
-      //   auth: auth
-      // })
-      //     .then(res => {
-      //       this.prizeId = res.data.prize.id
-      //     })
-      //     .catch(e => {
-      //       this.prizeId = 1
-      //     })
+      await this.$axios.post('prizes/random', {
+        email: this.loadedConfEmail
+      }, {
+        auth: auth
+      })
+          .then(res => {
+            this.prizeId = res.data.prize.id
+          })
+          .catch(e => {
+            this.prizeId = 1
+          })
     },
     onRotateEnd(prize) {
       this.prize = {
