@@ -80,7 +80,10 @@
           <!--              :href=this.prizesOrder[this.prize.id-1].link> {{ this.prizesOrder[this.prizeId - 1].link }} </a>.-->
           <!--          </div>-->
           Чтобы получить приз, сделай скрин и выложи к себе в сторис с отметкой @aeka.posh @womenscommunity.kz <br> <br>
-          Приз и доступ к курсу придёт на <span>{{ user.email }}</span>
+          <span v-if="prize.id === 6">Доступ к вебинару по ссылке <a href="https://t.me/+SZHvgFQBOSQ5MjIy">https://t.me/+SZHvgFQBOSQ5MjIy</a></span>
+          <span v-else-if="prize.id === 3">Доступ к уроку по ссылке <a href="https://t.me/+Tlofr9WxXbQwYzQy">https://t.me/+Tlofr9WxXbQwYzQy</a></span>
+          <span v-else-if="prize.id === 1">Доступ навсегда по ссылке <a href="https://t.me/+vSx7PdWhxb5iNWQy">https://t.me/+vSx7PdWhxb5iNWQy</a></span>
+          <span v-else>Приз придёт на <span class="bold">{{ user.email }}</span></span>
         </div>
 
         <button class="modal__btn button" @click="$router.push('/')">
@@ -125,6 +128,7 @@ export default {
   data() {
     return {
       confEmail: '',
+      prizeId: 1,
       prizes: [
         {
           id: 1, //* The unique id of each prize, an integer greater than 0
@@ -217,7 +221,6 @@ export default {
           link: 'https://t.me/+R3AtjIlRVCkxMzNi'
         }
       ],
-      prizeId: 1,
       loader: false,
 
       prize: {},
@@ -262,17 +265,17 @@ export default {
           })
     },
     async onImageRotateStart() {
-      await this.$axios.post('prizes/random', {
-        email: this.loadedConfEmail
-      }, {
-        auth: auth
-      })
-          .then(res => {
-            this.prizeId = res.data.prize.id
-          })
-          .catch(e => {
-            this.prizeId = 1
-          })
+      // await this.$axios.post('prizes/random', {
+      //   email: this.loadedConfEmail
+      // }, {
+      //   auth: auth
+      // })
+      //     .then(res => {
+      //       this.prizeId = res.data.prize.id
+      //     })
+      //     .catch(e => {
+      //       this.prizeId = 1
+      //     })
     },
     onRotateEnd(prize) {
       this.prize = {
