@@ -76,14 +76,12 @@
         </div>
 
         <div class="modal__under-text">
-          <!--          <div v-if="this.prizesOrder[this.prize.id-1].linkText">{{ this.prizesOrder[this.prize.id - 1].linkText }} <a-->
-          <!--              :href=this.prizesOrder[this.prize.id-1].link> {{ this.prizesOrder[this.prizeId - 1].link }} </a>.-->
-          <!--          </div>-->
-          Чтобы получить приз, сделай скрин и выложи к себе в сторис с отметкой @aeka.posh @womenscommunity.kz <br> <br>
-          <span v-if="prize.id === 6">Доступ к вебинару по ссылке <a href="https://t.me/+SZHvgFQBOSQ5MjIy">https://t.me/+SZHvgFQBOSQ5MjIy</a></span>
-          <span v-else-if="prize.id === 3">Доступ к уроку по ссылке <a href="https://t.me/+Tlofr9WxXbQwYzQy">https://t.me/+Tlofr9WxXbQwYzQy</a></span>
-          <span v-else-if="prize.id === 1">Доступ навсегда по ссылке <a href="https://t.me/+vSx7PdWhxb5iNWQy">https://t.me/+vSx7PdWhxb5iNWQy</a></span>
-          <span v-else>Приз придёт на <span class="bold">{{ user.email }}</span></span>
+          <span v-if="prize.id === 1">Для получения приза переходите по ссылке и подпишитесь: <a href="https://t.me/+vSx7PdWhxb5iNWQy">https://t.me/+vSx7PdWhxb5iNWQy</a></span>
+          <span v-if="prize.id === 2 || prize.id === 4 || prize.id === 7">Для получения своего ништяка, выложи скрин этой страницы с отметкой @aeka.posh @womenscommunity.kz</span>
+          <span v-if="prize.id === 3">Для получения приза переходите по ссылке и подпишитесь: <a href="https://t.me/+Tlofr9WxXbQwYzQy">https://t.me/+Tlofr9WxXbQwYzQy</a></span>
+          <span v-if="prize.id === 5">Для получения выигрыша: Выложите скрин который вы сделали на сайте после покупки, и отметьте страницу @aeka.posh и @womenscommunity.kz</span>
+          <span v-if="prize.id === 6">Для получения приза переходите по ссылке и подпишитесь: <a href="https://t.me/+SZHvgFQBOSQ5MjIy">https://t.me/+SZHvgFQBOSQ5MjIy</a></span>
+          <span>Приз и доступ к курсу придёт на <span class="bold">{{ user.email }}</span></span>
         </div>
 
         <button class="modal__btn button" @click="$router.push('/')">
@@ -91,7 +89,8 @@
         </button>
 
         <div class="modal__links">
-          <p>В случае вопросов и доступа к курсу пишите на номер whatsapp </p>
+          <p v-if="prize.id === 5">Далее отправьте менеджеру ваш адрес, чтобы вам как можно скорее доставили beauty средство:</p>
+          <p v-else>В случае возникновений вопросов напишите менеджеру по номеру:</p>
 
 
           <a href="https://wa.me/message/QGQGYLGDBLRVC1" class="success-btn"
@@ -138,7 +137,7 @@ export default {
         },
         {
           id: 2, //* The unique id of each prize, an integer greater than 0
-          value: 'Путевка или деньги', //* Prize value, return value after spinning
+          value: 'Путевка или 500.000 тенге', //* Prize value, return value after spinning
           probability: 10, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
           img: 'ticket.svg'
         },
