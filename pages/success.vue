@@ -81,7 +81,8 @@
           <span v-if="prize.id === 3">Для получения приза переходите по ссылке и подпишитесь: <a href="https://t.me/+Tlofr9WxXbQwYzQy">https://t.me/+Tlofr9WxXbQwYzQy</a></span>
           <span v-if="prize.id === 5">Для получения выигрыша: Выложите скрин который вы сделали на сайте после покупки, и отметьте страницу @aeka.posh и @womenscommunity.kz</span>
           <span v-if="prize.id === 6">Для получения приза переходите по ссылке и подпишитесь: <a href="https://t.me/+SZHvgFQBOSQ5MjIy">https://t.me/+SZHvgFQBOSQ5MjIy</a></span>
-          <span>Приз и доступ к курсу придёт на <span class="bold">{{ user.email }}</span></span>
+          <br>
+          <span>Доступ к курсу придёт на <span class="bold">{{ user.email }}</span></span>
         </div>
 
         <button class="modal__btn button" @click="$router.push('/')">
