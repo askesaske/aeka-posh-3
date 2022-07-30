@@ -156,7 +156,7 @@ export default {
         },
         {
           id: 5,
-          value: 'Beauty-средства',
+          value: 'Beauty-средство',
           probability: 10,
           img: 'beauty.svg'
         },
