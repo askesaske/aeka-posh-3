@@ -1,23 +1,21 @@
 <template>
   <header class="header">
     <div class="header__container">
-      <svg class="header__burger" width="32" height="32" @click="sidebar = true">
+      <svg class="header__burger" width="34" height="34" @click="sidebar = true">
         <use href="../assets/img/icons.svg#burger"></use>
       </svg>
       <ul class="header__links">
         <li class="header__link">Главная</li>
         <li class="header__link" v-scroll-to="{el: '#prize', offset: -100}">Выиграть приз</li>
-        <li class="header__link" v-scroll-to="{el: '#speakers', offset: -100}">Наши спикеры</li>
-        <li class="header__link" v-scroll-to="{el: '#program', offset: -100}">Программа интенсива</li>
-        <li class="header__link" v-scroll-to="{el: '#reviews', offset: -100}">Отзывы</li>
+        <li class="header__link" v-scroll-to="{el: '#program', offset: -100}">Программа</li>
       </ul>
 
       <a href="https://wa.me/message/QGQGYLGDBLRVC1" class="header__btn" target="_blank">
-        <svg width="24" height="24">
+        <svg width="32" height="32">
           <use href="../assets/img/icons.svg#wpp"></use>
         </svg>
 
-        <span>+7 (776) 502-36-36</span>
+        <span>+7 776 502 3636</span>
       </a>
     </div>
 

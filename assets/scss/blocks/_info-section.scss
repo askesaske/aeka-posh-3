@@ -1,0 +1,70 @@
+.info-section {
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 524px;
+    flex-shrink: 0;
+  }
+
+  &__info {
+    width: 632px;
+    flex-shrink: 0;
+    padding-top: 139px;
+    padding-left: 108px;
+    border-top: 1px solid $text;
+  }
+
+  &__heading {
+    @include text-style(4.7rem, 700, $text);
+    line-height: 57px;
+    margin-bottom: 32px;
+    font-family: $cormorant;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  &__text {
+    @include text-style(2rem, 600, rgba($text, .8));
+    line-height: 24.5px;
+  }
+
+  @include respond(tab-land) {
+    &__container {
+      @extend %container;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &__img {
+      margin-bottom: 80px;
+    }
+
+    &__info {
+      width: 100%;
+      padding-top: 40px;
+      padding-left: 0;
+    }
+
+    &__heading {
+      @include text-style(3rem, 700, $text);
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      @include text-style(1.6rem, 600, rgba($text, .8));
+      line-height: 19.5px;
+    }
+  }
+}

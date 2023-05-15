@@ -19,18 +19,15 @@
   }
 
   &__link {
-    @include text-style(2.4rem, 500, #732D72);
+    @include text-style(2rem, 500, $text);
     cursor: pointer;
-    font-family: $hauora;
-
-    transition: all .3s;
 
     &:hover {
-      color: #B32C7D;
+      color: $text;
     }
 
     &:active {
-      color: #BA95A3;
+      color: $text;
     }
 
     &:not(:last-child) {
@@ -41,27 +38,16 @@
   &__btn {
     display: flex;
     align-items: center;
-    padding: 6px 12px;
-    border-radius: 4px;
-    background: #602D73;
-
-    transition: all .3s;
-
-    &:hover {
-      background: #5F0165;
-    }
-
-    &:active {
-      background: linear-gradient(92.38deg, #661082 -18.89%, #760089 42.05%, #5E2372 101.68%);
-    }
 
     svg {
-      margin-right: 7px;
+      margin-right: 8px;
+      fill: $text;
     }
 
     span {
-      @include text-style(1.6rem, 500, #FEE3E2);
-      font-family: $kiev;
+      @include text-style(2rem, 500, $text);
+      font-family: $hind;
+      text-decoration: underline;
     }
   }
 
@@ -76,6 +62,12 @@
 
     &__burger {
       display: block;
+    }
+
+    &__btn {
+      span {
+        font-size: 1.6rem;
+      }
     }
   }
 }

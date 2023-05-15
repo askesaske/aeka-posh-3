@@ -1,5 +1,5 @@
 .sidebar {
-  background-color: #ffee97;
+  background-color: $main-color;
   position: fixed;
   top: 0;
   left: -120%;
@@ -32,9 +32,8 @@
     display: flex;
     align-items: center;
 
-    @include text-style(1.6rem, 600, #732D72);
-    font-family: $hauora;
-    margin-bottom: 170px;
+    @include text-style(1.6rem, 500, #FFF7F1);
+    margin-bottom: 97px;
 
     svg {
       margin-right: 8px;
@@ -44,23 +43,31 @@
   &__links {
     position: relative;
     z-index: 2;
-    margin-bottom: 160px;
+    margin-bottom: 353px;
   }
 
   &__link {
-    @include text-style(2.8rem, 500, #732D72);
-    font-family: $hauora;
-    line-height: 36px;
+    @include text-style(3.2rem, 500, #FFF7F1);
+    line-height: 38px;
 
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 38px;
     }
   }
 
   &__btn {
-    font-size: 2.8rem;
     min-width: 343px;
     position: relative;
     z-index: 2;
+  }
+
+  @include respond(tab-land) {
+    &__btn {
+      position: absolute;
+      bottom: 40px;
+      left: 16px;
+      z-index: 2;
+      width: calc(100vw - 32px);
+    }
   }
 }

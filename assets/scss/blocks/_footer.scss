@@ -1,229 +1,148 @@
 .footer {
-  position: relative;
-  background-color: #732D72;
-
-  &__left {
-    position: absolute;
-    left: 0;
-    top: 60px;
-  }
-
-  &__right {
-    position: absolute;
-    right: 0;
-    top: 300px;
-  }
+  background-image: url("~assets/img/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 109px;
+  padding-bottom: 32px;
 
   &__container {
     @extend %container;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
   }
 
   &__top {
-    padding: 190px 0 120px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
   }
 
-  &__info {
-
+  &__heart {
+    margin-bottom: 24px;
   }
 
   &__heading {
-    @include text-style(4.8rem, 500, #FFEE97);
-    font-family: $kiev;
-    line-height: 57px;
-    margin-bottom: 60px;
+    @include text-style(4rem, 600, $white);
+    font-family: $cormorant;
+    line-height: 48px;
+    margin-right: 340px;
+    text-transform: uppercase;
+
+    span {
+      font-style: italic;
+    }
   }
 
-  &__title {
-    @include text-style(4rem, 600, $white);
-    line-height: 46px;
-    font-style: italic;
-    margin-bottom: 48px;
+  &__active-box {
+    flex-shrink: 0;
   }
 
   &__price-box {
-    position: relative;
-    text-align: center;
-  }
+    margin-bottom: 48px;
+    padding-top: 24px;
+    width: 308px;
+    border-top: 1px solid $white;
 
-  &__price-old {
-    @include text-style(3.2rem, 400, #EE98DA);
-    font-family: $hauora;
-    line-height: 43px;
-    text-decoration: line-through;
-    margin-bottom: 4px;
-  }
-
-  &__price-new {
-    @include text-style(6.4rem, 700, #FFEE97);
-    font-family: $kiev;
-    line-height: 78px;
-    font-variation-settings: 'CONT' 469, 'MIDL' 0;
-  }
-
-  &__star {
-    position: absolute;
-
-    &--1 {
-      top: 0;
-      left: 27px;
+    h6 {
+      @include text-style(4rem, 700, $white);
+      line-height: 49px;
+      margin-bottom: 4px;
     }
 
-    &--2 {
-      right: 0;
-      top: -10px;
+    span {
+      @include text-style(2rem, 500, $white);
+      line-height: 24px;
     }
-
-    &--3 {
-      left: -20px;
-      bottom: -20px;
-    }
-
-    &--4 {
-      bottom: -20px;
-      left: 50%;
-    }
-
-    &--5 {
-      right: 20px;
-      bottom: -40px;
-    }
-  }
-
-  &__border {
-    width: 100%;
   }
 
   &__bottom {
-    padding: 24px 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__social {
     display: flex;
     align-items: center;
-    @include text-style(1.8rem, 500, #FFEE97);
-    font-family: $kiev;
-    font-variation-settings: 'CONT' 469, 'MIDL' 0;
-
-    svg {
-      margin-right: 8px;
-    }
+    @include text-style(1.6rem, 500, $white);
+    line-height: 19px;
 
     &:not(:last-child) {
-      margin-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    svg {
+      margin-right: 10px;
     }
   }
 
   &__link {
     display: block;
-    @include text-style(1.2rem, 400, #FFA8E9);
-    font-family: $hauora;
-    line-height: 14px;
-    text-decoration: underline;
+    @include text-style(1.4rem, 500, $white);
+    line-height: 17px;
     text-align: right;
+    text-decoration: underline;
 
     &:not(:last-child) {
-      margin-bottom: 12px;
+      margin-bottom: 31px;
     }
   }
 
-  &__btn {
-    background-color: #FFEE97;
-    color: #732D72;
-    &--tab {
-      display: none;
-    }
-  }
-
-  @include respond(tab-land) {
-    &__container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+  @include respond(phone) {
+    padding-top: 70px;
 
     &__top {
-      padding: 75px 0 90px;
+      flex-direction: column;
+      align-items: unset;
+      justify-content: unset;
+      margin-bottom: 40px;
     }
 
     &__heading {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    &__btn {
-      &--desktop {
-        display: none;
-      }
-
-      &--tab {
-        display: block;
-        width: 343px;
-        margin: 0 auto 90px;
-      }
+      @include text-style(3.6rem, 600, $white);
+      line-height: 43px;
+      margin-right: 0;
+      margin-bottom: 64px;
     }
 
     &__price-box {
-      position: relative;
-      text-align: center;
+      margin-bottom: 40px;
+      width: 193px;
+
+      h6 {
+        @include text-style(3.2rem, 700, $white);
+        line-height: 39px;
+      }
+
+      span {
+        @include text-style(1.6rem, 500, $white);
+        line-height: 19px;
+      }
+    }
+
+    &__bottom {
+      flex-direction: column;
+      align-items: unset;
+      justify-content: unset;
     }
 
     &__socials {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 100%;
       margin-bottom: 40px;
+    }
+
+    &__social {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
 
     &__link {
       text-align: center;
-    }
-  }
 
-  @include respond(phone) {
-
-    &__left {
-      width: 150px;
-      left: -50px;
-      top: 190px;
-    }
-
-    &__right {
-      width: 150px;
-      top: 400px;
-      right: -20px;
-    }
-
-    &__heading {
-      font-size: 3.2rem;
-      line-height: 36px;
-      margin-bottom: 140px;
-    }
-
-    &__btn {
-      &--tab {
-        width: 343px;
+      &:not(:last-child) {
+        margin-bottom: 13px;
       }
-    }
-
-    &__price-old {
-      font-size: 2.4rem;
-      line-height: 29px;
-    }
-
-    &__price-new {
-      font-size: 4.8rem;
-      line-height: 58px;
-    }
-
-    &__social {
-      font-size: 1.6rem;
     }
   }
 }

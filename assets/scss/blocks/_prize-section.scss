@@ -7,24 +7,30 @@
     justify-content: space-between;
   }
 
-  &__left {
-    width: 545px;
+  &__info {
+    padding-top: 80px;
+    border-top: 1px solid $text;
+    width: 631px;
     flex-shrink: 0;
   }
 
   &__title {
-    @include text-style(4.8rem, 500, #732D72);
-    line-height: 57px;
-    font-family: $kiev;
-    font-variation-settings: 'CONT' 469, 'MIDL' 0;
-    margin-bottom: 75px;
+    @include text-style(3.9rem, 700, $text);
+    line-height: 48px;
+    font-family: $cormorant;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    width: 530px;
   }
 
   &__subtitle {
-    @include text-style(4rem, 600, $white);
-    line-height: 46px;
-    font-style: italic;
+    @include text-style(2rem, 500, $text);
+    line-height: 24px;
     margin-bottom: 64px;
+
+    &--tab {
+      display: none;
+    }
   }
 
   &__btn {
@@ -34,19 +40,8 @@
     }
   }
 
-  &__right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__arrow {
-    margin-bottom: 10px;
-  }
-
   &__wheel {
-    width: 416px;
+    width: 524px;
   }
 
   @include respond(tab-land) {
@@ -58,25 +53,40 @@
       justify-content: center;
     }
 
-    &__left {
+    &__info {
       width: 100%;
       flex-shrink: 0;
+      padding-top: 32px;
     }
 
     &__title {
+      @include text-style(3rem, 700, $text);
+      line-height: 36px;
+      margin-bottom: 48px;
+      width: 100%;
       text-align: center;
     }
 
     &__subtitle {
-      @include text-style(4rem, 600, $white);
-      line-height: 46px;
-      font-style: italic;
-      margin-bottom: 56px;
-      text-align: center;
+      @include text-style(1.6rem, 600, $text);
+      line-height: 19px;
+      margin-bottom: 48px;
+
+      &--tab {
+        display: block;
+      }
+
+      &--desktop {
+        display: none;
+      }
+    }
+
+    &__wheel {
+      width: 100%;
+      margin-bottom: 32px;
     }
 
     &__btn {
-      width: 343px;
       &--desktop {
         display: none;
       }
@@ -84,43 +94,6 @@
       &--tab {
         display: block;
       }
-    }
-
-    &__right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &__arrow {
-      margin-bottom: 10px;
-    }
-
-    &__wheel {
-      width: 80%;
-      margin-bottom: 72px;
-    }
-  }
-
-  @include respond(phone) {
-    &__title {
-      font-size: 3.2rem;
-      line-height: 36px;
-      margin-bottom: 40px;
-    }
-
-    &__subtitle {
-      @include text-style(2.8rem, 600, $white);
-      line-height: 32px;
-    }
-
-    &__btn {
-      width: 100%;
-    }
-
-    &__wheel {
-      width: 100%;
     }
   }
 }

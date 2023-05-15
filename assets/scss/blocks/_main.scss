@@ -1,34 +1,34 @@
 .main {
-  padding-top: 116px;
+  padding-top: 112px;
 
   &__section {
 
-    &--mb190 {
-      margin-bottom: 190px;
+    &--welcome {
+      margin-bottom: 160px;
     }
 
-    &--mb130 {
-      margin-bottom: 130px;
+    &--info {
+      margin-bottom: 276px;
     }
 
-    &--mb250 {
-      margin-bottom: 250px;
+    &--prize {
+      margin-bottom: 160px;
     }
   }
 
   @include respond(phone) {
     &__section {
 
-      &--mb190 {
-        margin-bottom: 100px;
+      &--welcome {
+        margin-bottom: 96px;
       }
 
-      &--mb130 {
-        margin-bottom: 50px;
+      &--info {
+        margin-bottom: 160px;
       }
 
-      &--mb250 {
-        margin-bottom: 140px;
+      &--prize {
+        margin-bottom: 104px;
       }
     }
   }

@@ -17,23 +17,19 @@
 @import "blocks/header";
 @import "blocks/main";
 @import "blocks/welcome-section";
-@import "blocks/quote-section";
 @import "blocks/prize-section";
-@import "blocks/speakers-section";
-@import "blocks/speaker-card";
 @import "blocks/program-section";
-@import "blocks/review-section";
-@import "blocks/review-card";
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/input-block";
 @import "blocks/sidebar";
 @import "blocks/spinner";
+@import "blocks/info-section";
 
 html, body {
   font-size: 62.5%;
   font-family: $base-font;
-  background-color: #ffee97;
+  background-color: $main-color;
   overflow-x: hidden;
 }
 

@@ -1,30 +1,14 @@
 .button {
-  @include text-style(2rem, 700, $white);
-  font-family: $kiev;
-  padding: 16px 32px;
-  border-radius: 20px;
-  background: #602D73;
-  font-variation-settings: 'CONT' 469;
-
-  transition: all .3s;
-
-  &--blue {
-    background: #33C1C8;
-    box-shadow: 0 0 20px rgba(255, 109, 196, 0.5);
-  }
-
-  &:hover {
-    background: #5F0165;
-  }
-
-  &:active {
-    background: linear-gradient(92.38deg, #661082 -18.89%, #760089 42.05%, #5E2372 101.68%);
-  }
-
+  @include text-style(2.4rem, 700, $white);
+  font-family: $cormorant;
+  padding: 20px 32px;
+  border-radius: 40px;
+  background: $red;
+  text-transform: uppercase;
 
   @include respond(phone) {
     padding: 20px;
     width: 100%;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }

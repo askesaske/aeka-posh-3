@@ -1,147 +1,89 @@
 .program-section {
-  padding: 96px 0;
-  background-color: #ffee97;
+  padding-bottom: 136px;
 
   &__container {
     @extend %container;
+    display: flex;
+    align-items: flex-start;
   }
 
   &__heading {
-    @include text-style(6.4rem, 500, #732D72);
-    font-family: $kiev;
-    font-variation-settings: 'CONT' 469, 'MIDL' 0;
-    line-height: 73px;
-    margin-bottom: 96px;
+    width: 623px;
+    flex-shrink: 0;
+    padding-top: 48px;
+    @include text-style(5.6rem, 700, $text);
+    text-transform: uppercase;
+    border-top: 1px solid $text;
+    font-family: $cormorant;
+    margin-right: 124px;
   }
 
   &__items {
-    margin-bottom: 176px;
+    padding-top: 48px;
   }
 
   &__item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    padding-bottom: 56px;
-    border-bottom: 1px solid #E3D68D;
-
     &:not(:last-child) {
-      margin-bottom: 56px;
+      margin-bottom: 40px;
     }
   }
 
-  &__date {
+  &__item-name {
     display: flex;
     align-items: center;
+    @include text-style(3.2rem, 500, $text);
 
     svg {
-      margin-right: 16px;
-    }
-
-    span {
-      @include text-style(4rem, 700, #732D72);
-      font-variation-settings: 'CONT' 469, 'MIDL' 0;
-      font-family: $kiev;
+      margin-right: 12px;
     }
   }
 
-  &__info {
-    width: 740px;
-    flex-shrink: 0;
+  &__sub {
+    margin-top: 16px;
+    padding-left: 40px;
   }
 
-  &__text {
-    @include text-style(2.4rem, 500, #732D72);
-    line-height: 29px;
-    margin-bottom: 16px;
-    font-variation-settings: 'CONT' 469, 'MIDL' 0;
-    font-family: $kiev;
-  }
+  &__sub-name {
+    display: flex;
+    align-items: center;
+    @include text-style(2rem, 500, $text);
 
-  &__name {
-    @include text-style(1.6rem, 500, #954294);
-    font-family: $hauora;
-  }
+    svg {
+      margin-right: 12px;
+    }
 
-  &__border {
-    stroke: #732D72;
-    display: block;
-    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
   }
 
   @include respond(tab-land) {
+    padding-bottom: 104px;
+
+    &__container {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
     &__heading {
-      text-align: center;
-      margin-bottom: 72px;
+      width: 100%;
+      flex-shrink: 0;
+      padding-top: 40px;
+      @include text-style(4.8rem, 700, $text);
+      margin-right: 0;
+      margin-bottom: 40px;
     }
 
     &__items {
-      margin-bottom: 96px;
+      padding-top: 0;
     }
 
-    &__item {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-
-      padding-bottom: 0;
-      border-bottom: unset;
-
-      &:not(:last-child) {
-        margin-bottom: 48px;
-      }
+    &__item-name {
+      @include text-style(2.8rem, 500, $text);
     }
 
-    &__date {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-bottom: 16px;
-
-      svg {
-        margin-right: 0;
-        margin-bottom: 16px;
-      }
-
-      span {
-        font-size: 3.2rem;
-      }
-    }
-
-    &__info {
-      width: 100%;
-      flex-shrink: 0;
-    }
-
-    &__text {
-      font-size: 2.4rem;
-      line-height: 29px;
-      margin-bottom: 16px;
-      text-align: center;
-    }
-
-    &__name {
-      font-size: 2rem;
-      text-align: center;
-    }
-
-    &__border {
-      display: block;
-      margin: 0 auto;
-    }
-  }
-
-  @include respond(phone) {
-    &__heading {
-      font-size: 4.8rem;
-      line-height: 54px;
-    }
-
-    &__text {
-      font-size: 2rem;
-      line-height: 19px;
+    &__sub-name {
+      @include text-style(1.6rem, 500, $text);
     }
   }
 }
