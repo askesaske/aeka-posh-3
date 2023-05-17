@@ -1,8 +1,5 @@
 <template>
   <div class="modal">
-    <img src="../assets/img/quote-shadow-left.svg" alt="" class="modal__left">
-    <img src="../assets/img/quote-shadow-right.svg" alt="" class="modal__right">
-
     <div class="modal__container">
 
       <div class="modal__main">
@@ -15,12 +12,11 @@
 
         <div class="modal__wrapper">
           <div class="modal__register-box">
-            <div class="modal__title">
-              Регистрация
+            <div class="modal__title modal__title--left">
+                Регистрация
             </div>
-            <div class="modal__subtitle">
-              Зарегистрируйся на интенсив и выиграй
-              классный приз!
+            <div class="modal__subtitle modal__subtitle--left">
+                Зарегистрируйся и выиграй классный приз!
             </div>
 
             <form class="modal__form" @submit.prevent="onSubmit">

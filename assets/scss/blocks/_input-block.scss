@@ -2,17 +2,15 @@ div.input-block {
   position: relative;
 }
 div.input-block input {
-  @include text-style(2.4rem, 700, #CF6E95);
-  font-family: $kiev;
-  font-variation-settings: 'CONT' 469, 'MIDL' 0;
+  @include text-style(2rem, 600, $text);
   width: 100%;
   padding: 10px 0;
   background-color: transparent;
-  border-bottom: 2px solid  #732D72;
+  border-bottom: 2px solid  $text;
   outline:none;
 }
 div.input-block span.placeholder {
-  @include text-style(1.8rem, 600, #732D72);
+  @include text-style(2rem, 600, $text);
   position: absolute;
   margin: 17px 0;
   display: flex;
@@ -26,17 +24,17 @@ div.input-block span.placeholder {
 }
 div.input-block input:valid + span.placeholder,
 div.input-block input:focus + span.placeholder {
-  transform: scale(0.8) translateY(-30px);
+  transform: translateY(-25px);
   background: transparent;
-  font-family: $hauora;
 }
 div.input-block input:focus{
-  color: #732D72;
-  border-color: #E7A4D4;
+  color: $text;
+  border-bottom: 1px solid $text;
 }
 div.input-block input:focus + span.placeholder {
-  color: #CF6E95;
-  font-size: 1.4rem;
+  color: $text;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 input::-webkit-outer-spin-button,

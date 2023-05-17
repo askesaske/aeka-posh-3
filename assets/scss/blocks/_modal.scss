@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: -120%;
-  background-color: #FFEE97;
+  background-color: $main-color;
   width: 100vw;
   height: 100vh;
   z-index: 101;
@@ -20,18 +20,6 @@
     @include text-style(1.6rem, 400, #bd0404)
   }
 
-  &__left {
-    position: absolute;
-    left: 0;
-    bottom: 120px;
-  }
-
-  &__right {
-    position: absolute;
-    top: 200px;
-    right: 0;
-  }
-
   &__container {
     @extend %container;
     padding-top: 100px;
@@ -46,12 +34,12 @@
   &__back {
     display: flex;
     align-items: center;
-    @include text-style(1.6rem, 500, #732D72);
-    font-family: $montserrat;
+    @include text-style(1.6rem, 500, $text);
     cursor: pointer;
 
     svg {
       margin-right: 8px;
+      fill: $text;
     }
   }
 
@@ -60,12 +48,13 @@
   }
 
   &__title {
-    @include text-style(3.2rem, 700, #732D72);
-    line-height: 38px;
+    @include text-style(4rem, 700, $text);
+    line-height: 40px;
     margin-bottom: 12px;
     text-align: center;
-    font-variation-settings: 'CONT' 469, 'MIDL' 0;
-    font-family: $kiev;
+    font-family: $cormorant;
+    text-transform: uppercase;
+
 
     &--mb40 {
       margin-bottom: 40px;
@@ -73,12 +62,10 @@
   }
 
   &__subtitle {
-    @include text-style(2.4rem, 500, #954294);
-    font-family: $hauora;
-    line-height: 27px;
-    margin: 0 auto 95px;
+    @include text-style(1.6rem, 500, $text);
+    line-height: 19px;
+    margin: 0 auto 80px;
     text-align: center;
-    max-width: 345px;
   }
 
   &__form {
@@ -95,6 +82,7 @@
   &__checkbox {
     display: flex;
     align-items: center;
+    color: $text;
 
     input {
       cursor: pointer;
@@ -103,11 +91,12 @@
 
     a {
       margin-left: 5px;
+      text-decoration: underline;
+      color: $text;
     }
 
     font-size: 16px;
     font-weight: 600;
-    font-family: $kiev;
   }
 
   &__btn {
@@ -135,18 +124,6 @@
     margin-bottom: 10px;
   }
 
-  &__img-box {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 2px solid #AE4096;
-    background-color: #732D72;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 58px;
-  }
-
   &__prize-box {
     display: flex;
     flex-direction: column;
@@ -154,29 +131,27 @@
     margin: 0 auto 42px;
 
     img {
-      width: 90px;
+      flex-shrink: 0;
     }
 
     p {
-      @include text-style(2.4rem, 500, #924295);
+      @include text-style(2.4rem, 400, $text);
+      font-family: $hind;
       line-height: 32px;
       margin-bottom: 16px;
     }
 
     h3 {
-      @include text-style(3.2rem, 500, #732D72);
-      font-family: $kiev;
-      line-height: 39px;
+      @include text-style(4rem, 700, $text);
+      line-height: 40px;
       text-align: center;
-      font-variation-settings: 'CONT' 469, 'MIDL' 0;
     }
   }
 
   &__under-text {
-    @include text-style(1.8rem, 500, #924295);
-    font-family: $hauora;
-    line-height: 22px;
-    margin: 0 auto 56px;
+    @include text-style(1.6rem, 400, $text);
+    line-height: 19px;
+    margin: 0 auto 48px;
     text-align: center;
     max-width: 350px;
 
@@ -194,9 +169,7 @@
     align-items: center;
 
     p {
-      @include text-style(1.2rem, 500, #732D72);
-      font-family: $kiev;
-      font-variation-settings: 'CONT' 469, 'MIDL' 0;
+      @include text-style(1.2rem, 500, $text);
       line-height: 14.6px;
       margin-bottom: 15px;
     }
@@ -204,7 +177,9 @@
     a {
       display: flex;
       align-items: center;
-      @include text-style(1.4rem, 700, #732D72);
+      @include text-style(1.2rem, 600, $text);
+      text-decoration: underline;
+
       svg {
         margin-right: 8px;
       }
@@ -212,22 +187,23 @@
   }
 
   @include respond(phone) {
-
-    &__left {
-      display: none;
-    }
-
     &__container {
-      padding-top: 26px;
+      padding-top: 80px;
     }
 
     &__wrapper {
-      padding-top: 42px;
+      padding-top: 40px;
     }
 
     &__title {
-      font-size: 3.2rem;
-      line-height: 36px;
+
+      &--left {
+        text-align: left;
+      }
+
+      &--wheel {
+        font-size: 3.2rem;
+      }
 
       &--mb40 {
         margin-bottom: 32px;
@@ -235,9 +211,17 @@
     }
 
     &__subtitle {
-      font-size: 2.4rem;
-      line-height: 27px;
-      max-width: 100%;
+      &--left {
+        text-align: left;
+      }
+
+      &--wheel {
+        font-weight: 400;
+        width: 100%;
+      }
+
+      width: 300px;
+      margin: 0 auto 60px;
     }
 
     &__form {
@@ -272,43 +256,5 @@
         margin-bottom: 12px;
       }
     }
-
-    &__links {
-      width: 343px;
-      margin: 60px auto 0;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      p {
-        font-size: 1.2rem;
-        line-height: 14.6px;
-        margin-bottom: 8px;
-      }
-
-      a {
-        display: flex;
-        align-items: center;
-        @include text-style(1.4rem, 700, $dusty-purple);
-        svg {
-          margin-right: 8px;
-        }
-      }
-    }
-  }
-}
-
-.success-btn {
-  display: flex;
-  align-items: center;
-
-  svg {
-    margin-right: 8px;
-  }
-
-  span {
-    @include text-style(1.4rem, 700, #732D72);
-    text-decoration: underline;
   }
 }
