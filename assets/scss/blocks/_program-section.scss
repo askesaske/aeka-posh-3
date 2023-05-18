@@ -44,7 +44,7 @@
   }
 
   &__sub-name {
-    display: flex;
+   // display: flex;
     align-items: center;
     @include text-style(2rem, 500, $text);
 
@@ -56,6 +56,14 @@
       margin-bottom: 12px;
     }
   }
+
+
+  &__anchor {
+    align-items: center;
+    @include text-style(2rem, 500, $text);
+    text-decoration: none;
+  }
+
 
   @include respond(tab-land) {
     padding-bottom: 104px;
@@ -83,7 +91,7 @@
     }
 
     &__sub-name {
-      @include text-style(1.6rem, 500, $text);
+     // @include text-style(1.6rem, 500, $text);
     }
   }
 }

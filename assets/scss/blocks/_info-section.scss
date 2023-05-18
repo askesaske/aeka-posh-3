@@ -63,7 +63,7 @@
     }
 
     &__text {
-      @include text-style(1.6rem, 600, rgba($text, .8));
+     // @include text-style(1.6rem, 600, rgba($text, .8));
       line-height: 19.5px;
     }
   }
