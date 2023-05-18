@@ -20,7 +20,7 @@
   }
 
   &__heading {
-    @include text-style(4.7rem, 700, $text);
+    @include text-style(4rem, 700, $text);
     line-height: 57px;
     margin-bottom: 32px;
     font-family: $cormorant;
@@ -33,7 +33,7 @@
   }
 
   &__text {
-    @include text-style(2rem, 600, rgba($text, .8));
+    @include text-style(2.2rem, 600, rgba($text, .8));
     line-height: 24.5px;
   }
 
