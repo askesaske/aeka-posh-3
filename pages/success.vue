@@ -71,8 +71,9 @@
                 </div>
 
                 <div class="modal__under-text">
+                  <br>
                     <span v-if="prize.id === 1 || prize.id === 2 || prize.id === 3 || prize.id === 4 || prize.id === 6  || prize.id === 7 || prize.id === 8">Для получения своего бонуса, выложи скрин этой страницы! Не забудь отметить @aeka.posh и @aekas.notes
-
+                   <br>
                     </span>
                     <span v-if="prize.id === 5">Для получения своего бонуса, переходи по ссылке ниже:<a
                         href="https://t.me/+huLpArkbLbRlYWRi">https://t.me/+huLpArkbLbRlYWRi</a></span>
