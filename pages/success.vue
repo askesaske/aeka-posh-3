@@ -126,7 +126,7 @@ export default {
     data() {
         return {
             confEmail: '',
-            prizeId: 4,
+            prizeId: 5,
             prizes: [
                 {
                     id: 1, //* The unique id of each prize, an integer greater than 0
