@@ -148,41 +148,41 @@ export default {
                     img: '10k.svg'
                 },
                 {
-                    id: 4,
+                  id: 4,
+                  value: 'Beauty Box',
+                  probability: 10,
+                  img: 'box.svg'
+                },
+                {
+                    id: 5,
                     value: 'Бонусный эфир',
                     probability: 10,
                     img: 'lesson.svg'
                 },
                 {
-                    id: 5,
+                    id: 6,
                     value: 'Стайлер Dyson или 500 000 тг',
                     probability: 10,
                     img: 'dyson.svg'
                 },
                 {
-                    id: 6,
+                    id: 7,
                     value: '100 000 тг',
                     probability: 10,
                     img: '100k.svg'
                 },
                 {
-                    id: 7,
+                    id: 8,
                     value: 'iPhone 14 Pro или 500 000 тг',
                     probability: 10,
                     img: 'iphone.svg'
                 },
                 {
-                    id: 8,
+                    id: 9,
                     value: 'VIP доступ',
                     probability: 10,
                     img: 'vip.svg'
                 },
-                {
-                  id: 9,
-                  value: 'Beauty Box',
-                  probability: 10,
-                  img: 'box.svg'
-                }
             ],
             loader: false,
 
