@@ -175,6 +175,12 @@ export default {
                     value: 'VIP доступ',
                     probability: 10,
                     img: 'vip.svg'
+                },
+                {
+                  id: 9,
+                  value: 'Beauty Box',
+                  probability: 10,
+                  img: 'box.svg'
                 }
             ],
             loader: false,
