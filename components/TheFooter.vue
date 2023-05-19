@@ -23,7 +23,7 @@
 
             <div class="footer__bottom">
                 <div class="footer__socials">
-                    <a href="https://www.instagram.com/womenscommunity.kz/?igshid=YmMyMTA2M2Y=" target="_blank"
+                    <a href="https://instagram.com/aekas.notes?igshid=NTc4MTIwNjQ2YQ==" target="_blank"
                        class="footer__social">
                         <svg width="24" height="24">
                             <use href="../assets/img/icons.svg#inst-2"></use>

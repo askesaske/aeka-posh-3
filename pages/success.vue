@@ -71,28 +71,27 @@
                 </div>
 
                 <div class="modal__under-text">
-                    <span v-if="prize.id === 1">Для получения приза переходите по ссылке и подпишитесь: <a
-                        href="https://t.me/+vSx7PdWhxb5iNWQy">https://t.me/+vSx7PdWhxb5iNWQy</a></span>
-                    <span v-if="prize.id === 2 || prize.id === 4 || prize.id === 7">Для получения своего ништяка, выложи скрин этой страницы с отметкой @aeka.posh @womenscommunity.kz</span>
-                    <span v-if="prize.id === 3">Для получения приза переходите по ссылке и подпишитесь: <a
-                        href="https://t.me/+Tlofr9WxXbQwYzQy">https://t.me/+Tlofr9WxXbQwYzQy</a></span>
-                    <span v-if="prize.id === 5">Для получения выигрыша: Выложите скрин который вы сделали на сайте после покупки, и отметьте страницу @aeka.posh и @womenscommunity.kz</span>
-                    <span v-if="prize.id === 6">Для получения приза переходите по ссылке и подпишитесь: <a
-                        href="https://t.me/+SZHvgFQBOSQ5MjIy">https://t.me/+SZHvgFQBOSQ5MjIy</a></span>
+                    <span v-if="prize.id === 8">Для получения своего бонуса, переходи по ссылке ниже:
+                      <a
+                        href="https://t.me/+twOeAZCPw3c3MTQy">https://t.me/+twOeAZCPw3c3MTQy
+                      </a>
+                    </span>
+                    <span v-if="prize.id === 1 || prize.id === 5 || prize.id === 7 || prize.id === 3 || prize.id === 6 || prize.id === 2">Для получения своего бонуса, выложи скрин этой страницы! Не забудь отметить @aeka.posh и @aekas.notes
+                    </span>
+                    <span v-if="prize.id === 4">Для получения своего бонуса, переходи по ссылке ниже:<a
+                        href="https://t.me/+huLpArkbLbRlYWRi">https://t.me/+huLpArkbLbRlYWRi</a></span>
                     <br>
+                    <br>
+
                     <span>Доступ к курсу придёт на <span class="bold">{{ user.email }}</span></span>
                 </div>
 
                 <button class="modal__btn button" @click="$router.push('/')">
-                    Хорошо
+                  Все понятно
                 </button>
 
                 <div class="modal__links">
-                    <p v-if="prize.id === 5">Далее отправьте менеджеру ваш адрес, чтобы вам как можно скорее доставили
-                        beauty средство:</p>
-                    <p v-else>В случае возникновений вопросов напишите менеджеру по номеру:</p>
-
-
+                    <p>Если еще остались вопросы обращайтесь по номеру:</p>
                     <a href="https://wa.me/message/QGQGYLGDBLRVC1"
                        target="_blank">
                         <svg width="17" height="16">
@@ -149,7 +148,7 @@ export default {
                 },
                 {
                     id: 4,
-                    value: 'Доп.урок',
+                    value: 'Бонусный эфир',
                     probability: 10,
                     img: 'lesson.svg'
                 },
