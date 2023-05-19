@@ -99,7 +99,7 @@
                             <svg width="23" height="23">
                                 <use href="../assets/img/icons.svg#rectangle"></use>
                             </svg>
-                          1. Гайникен
+                          1. Букенова Гайникен
                         </div>
 
                         <div class="program-section__sub">
