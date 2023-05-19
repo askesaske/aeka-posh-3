@@ -90,7 +90,7 @@
         <section class="main__section program-section" id="program">
             <div class="program-section__container">
                 <div class="program-section__heading">
-                    Программа курса
+                   Гости моих записей
                 </div>
 
                 <div class="program-section__items">
