@@ -23,7 +23,7 @@
 
             <div class="modal__wrapper" v-if="showFail">
                 <div class="modal__title">
-                    Вы уже крутили барабан
+                    Вы уже крутили колесо
                 </div>
                 <button class="modal__btn button" @click="$router.push('/')">
                     Хорошо
@@ -35,7 +35,7 @@
                     Получи свой приз!
                 </div>
                 <div class="modal__subtitle modal__subtitle--wheel">
-                    Крути барабан и выигрывай прямо сейчас
+                    Крути колесо и выигрывай прямо сейчас
                 </div>
 
                 <div class="modal__wheel wheel">
@@ -75,10 +75,10 @@
                     <span v-if="prize.id === 1 || prize.id === 2 || prize.id === 3 || prize.id === 4 || prize.id === 6  || prize.id === 7 || prize.id === 8">Для получения своего бонуса, выложи скрин этой страницы! Не забудь отметить @aeka.posh и @aekas.notes
                    <br>
                     </span>
-                    <span v-if="prize.id === 5">Для получения своего бонуса, переходи по ссылке ниже:<a
+                    <span v-if="prize.id === 5">Для получения своего бонуса, переходи по ссылке ниже: <a
                         href="https://t.me/+huLpArkbLbRlYWRi">https://t.me/+huLpArkbLbRlYWRi</a></span>
 
-                  <span v-if="prize.id === 9">Для получения своего бонуса, переходи по ссылке ниже:<a
+                  <span v-if="prize.id === 9">Для получения своего бонуса, переходи по ссылке ниже: <a
                       href="https://t.me/+twOeAZCPw3c3MTQy">https://t.me/+twOeAZCPw3c3MTQy</a></span>
                     <br>
                     <br>
