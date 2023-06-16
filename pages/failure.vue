@@ -3,7 +3,7 @@
     <div class="modal__container modal__container--sm">
 
       <div class="modal__wrapper">
-        <div class="modal__title">
+        <div class="modal__title modal__title--normal">
           Произошла ошибка, попробуйте еще раз
         </div>
         <button class="modal__btn button" @click="$router.push('/')">

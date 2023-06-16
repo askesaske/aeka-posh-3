@@ -1,0 +1,199 @@
+.cards-section {
+  position: relative;
+  z-index: 2;
+  &__container {
+    @extend %container;
+    padding: 0 100px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__card {
+    width: 527px;
+    height: 300px;
+    border: 2px solid $main-color;
+    border-radius: 24px;
+    background-color: #FEF4EC;
+    box-shadow: 4px 4px 0px #F4BDC9;
+    padding: 24px;
+
+    img {
+      margin-bottom: 23px;
+    }
+
+    p {
+      @include text-style(2.4rem, 600, $main-color);
+      line-height: 29px;
+      margin-bottom: 12px;
+      font-family: $montserrat;
+    }
+
+    h4 {
+      @include text-style(6.4rem, 400, $text);
+      line-height: 91px;
+    }
+
+    &--orange {
+      box-shadow: 4px 4px 0px #F6CE5C;
+      background-color: $main-color;
+
+      p {
+        color: rgba($white, .46);
+      }
+
+      h4 {
+        color: #FEF4EC;
+      }
+    }
+  }
+
+  &__long {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0 59px 0 108px;
+    background-size: cover;
+    background-image: url("~assets/img/card-bg.png");
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 4px 4px 0px #EB683E;
+    margin-bottom: 64px;
+  }
+
+  &__text-wrap {
+    margin-left: 115px;
+
+    p {
+      margin-bottom: 12px;
+      @include text-style(2.4rem, 600, $main-color);
+      line-height: 29px;
+      font-family: $montserrat;
+
+      span {
+        &:last-child {
+          margin-left: 16px;
+          color: $text;
+          text-decoration: line-through;
+        }
+      }
+    }
+
+    h6 {
+      @include text-style(6.4rem, 400, $text);
+      line-height: 91px;
+    }
+  }
+
+  &__sticker {
+    position: absolute;
+    top: 31px;
+    right: 59px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include respond(tab-land) {
+    &__container {
+      padding: 0 9px;
+    }
+
+    &__row {
+      margin-bottom: 11px;
+    }
+
+    &__card {
+      width: 170px;
+      height: 170px;
+      border-radius: 8px;
+      padding: 16px 12px 12px;
+
+      img {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 19px;
+      }
+
+      p {
+        @include text-style(1.3rem, 600, $main-color);
+        line-height: 15px;
+        margin-bottom: 5px;
+      }
+
+      h4 {
+        @include text-style(3.2rem, 400, $text);
+        line-height: 45px;
+      }
+
+      &--orange {
+        box-shadow: 4px 4px 0px #F6CE5C;
+        background-color: $main-color;
+
+        p {
+          color: #FFE7DF;
+        }
+
+        h4 {
+          color: #FEF4EC;
+        }
+      }
+    }
+
+    &__long {
+      position: relative;
+      height: 112px;
+      padding: 0 0 0 12px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+
+      img:first-child {
+        width: 72px;
+      }
+    }
+
+    &__text-wrap {
+      margin-left: 31px;
+
+      p {
+        margin-bottom: 4px;
+        @include text-style(1.4rem, 600, $main-color);
+        line-height: 17px;
+        font-family: $montserrat;
+
+        span {
+          &:last-child {
+            margin-left: 8px;
+            color: $text;
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      h6 {
+        @include text-style(3.2rem, 400, $text);
+        line-height: 45px;
+      }
+    }
+
+    &__sticker {
+      width: 54px;
+      height: 54px;
+      position: absolute;
+      top: 12px;
+      right: 6px;
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

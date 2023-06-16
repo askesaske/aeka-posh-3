@@ -1,11 +1,9 @@
 <template>
     <div class="sidebar">
-
         <div class="sidebar__close" @click="$emit('close')">
             <svg width="32" height="32">
-                <use href="../assets/img/icons.svg#close"></use>
+                <use href="../assets/img/icons.svg#close-2"></use>
             </svg>
-            Закрыть
         </div>
 
         <div class="sidebar__links">

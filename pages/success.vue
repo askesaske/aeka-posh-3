@@ -3,7 +3,7 @@
         <div class="modal__container modal__container--sm">
 
             <div class="modal__wrapper" v-if="showEmail">
-                <div class="modal__title">
+                <div class="modal__title modal__title--normal">
                     Введите пожалуйста ваш email
                 </div>
 
@@ -22,7 +22,7 @@
             </div>
 
             <div class="modal__wrapper" v-if="showFail">
-                <div class="modal__title">
+                <div class="modal__title modal__title--normal">
                     Вы уже крутили колесо
                 </div>
                 <button class="modal__btn button" @click="$router.push('/')">
@@ -31,7 +31,7 @@
             </div>
 
             <div class="modal__wrapper" v-if="showWheel">
-                <div class="modal__title modal__title--wheel">
+                <div class="modal__title modal__title--wheel modal__title--normal">
                     Получи свой приз!
                 </div>
                 <div class="modal__subtitle modal__subtitle--wheel">
@@ -51,7 +51,7 @@
                         :prizeId="prizeId"
                         :verify="false"
                     >
-                        <img slot="wheel" src='../assets/img/wheel-of-fortune.png'/>
+                        <img slot="wheel" src='../assets/img/wheel.svg'/>
                         <img slot="button" src="../assets/img/wheel-btn.svg" class="wheel__btn"/>
                     </FortuneWheel>
                 </div>
@@ -59,26 +59,26 @@
             </div>
 
             <div class="modal__wrapper" v-if="showPrize">
-                <div class="modal__title modal__title--mb40">
-                    Получи свой приз!
+                <div class="modal__title modal__title--mb40 modal__title--normal">
+                    Поздравляем!
                 </div>
 
                 <div class="modal__prize-box">
-                    <img :src="require(`../assets/img/prizes/${prize.img}`)" alt="">
-
+<!--                    <img :src="require(`../assets/img/prizes/${prize.img}`)" alt="">-->
+                    <img src="../assets/img/prize-main.png" alt="">
                     <p>Вы выиграли</p>
                     <h3>{{ prize.value }}</h3>
                 </div>
 
                 <div class="modal__under-text">
                   <br>
-                    <span v-if="prize.id === 1 || prize.id === 2 || prize.id === 3 || prize.id === 4 || prize.id === 6  || prize.id === 7 || prize.id === 8">Для получения своего бонуса, выложи скрин этой страницы! Не забудь отметить @aeka.posh и @aekas.notes
+                    <span v-if="prize.id === 1 || prize.id === 2 || prize.id === 3 || prize.id === 4 || prize.id === 6  || prize.id === 7">Для получения своего бонуса, выложи скрин этой страницы! Не забудь отметить @aeka.posh и @aekas.notes
                    <br>
                     </span>
-                    <span v-if="prize.id === 5">Для получения своего бонуса, переходи по ссылке ниже: <a
+                    <span v-if="prize.id === 3">Для получения своего бонуса, переходи по ссылке ниже: <a
                         href="https://t.me/+huLpArkbLbRlYWRi">https://t.me/+huLpArkbLbRlYWRi</a></span>
 
-                  <span v-if="prize.id === 9">Для получения своего бонуса, переходи по ссылке ниже: <a
+                  <span v-if="prize.id === 7">Для получения своего бонуса, переходи по ссылке ниже: <a
                       href="https://t.me/+twOeAZCPw3c3MTQy">https://t.me/+twOeAZCPw3c3MTQy</a></span>
                     <br>
                     <br>
@@ -87,7 +87,7 @@
                 </div>
 
                 <button class="modal__btn button" @click="$router.push('/')">
-                  Все понятно
+                  Хорошо
                 </button>
 
                 <div class="modal__links">
@@ -102,7 +102,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
         <Spinner v-if="loader"/>
     </div>
@@ -126,63 +125,45 @@ export default {
     data() {
         return {
             confEmail: '',
-            prizeId: 5,
+            prizeId: 7,
             prizes: [
                 {
                     id: 1, //* The unique id of each prize, an integer greater than 0
-                    value: '1 000 000 тг', //* Prize value, return value after spinning
+                    value: '50 000 тг', //* Prize value, return value after spinning
                     probability: 10, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
-                    img: 'million.svg'
                 },
                 {
                     id: 2, //* The unique id of each prize, an integer greater than 0
-                    value: '50 000 тг', //* Prize value, return value after spinning
+                    value: '1 000 000 тг', //* Prize value, return value after spinning
                     probability: 10, //* Probability, up to 4 decimal places (the sum of the probabilities of all prizes
-                    img: '50k.svg'
                 },
                 {
                     id: 3,
-                    value: '10 000 тг',
+                    value: 'Бонус эфир',
                     probability: 10,
-                    img: '10k.svg'
                 },
                 {
                   id: 4,
-                  value: 'Beauty Box',
+                  value: 'Бьюти бокс',
                   probability: 10,
-                  img: 'box.svg'
                 },
                 {
                     id: 5,
-                    value: 'Бонусный эфир',
+                    value: '10 000 тг',
                     probability: 10,
-                    img: 'lesson.svg'
                 },
                 {
                     id: 6,
-                    value: 'Стайлер Dyson или 500 000 тг',
+                    value: '500 000 тг',
                     probability: 10,
-                    img: 'dyson.svg'
                 },
                 {
                     id: 7,
-                    value: '100 000 тг',
-                    probability: 10,
-                    img: '100k.svg'
-                },
-                {
-                    id: 8,
-                    value: 'iPhone 14 Pro или 500 000 тг',
-                    probability: 10,
-                    img: 'iphone.svg'
-                },
-                {
-                    id: 9,
                     value: 'VIP доступ',
                     probability: 10,
-                    img: 'vip.svg'
                 },
             ],
+
             loader: false,
 
             prize: {},

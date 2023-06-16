@@ -60,7 +60,7 @@
               <span class="modal__error-text" v-if="fail">Этот имейл уже крутил колесо</span>
 
               <button class="modal__btn button" type="submit" :disabled="!checkbox">
-                Перейти к оплате
+                Записаться
               </button>
             </form>
           </div>

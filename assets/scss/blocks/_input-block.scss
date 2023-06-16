@@ -6,7 +6,7 @@ div.input-block input {
   width: 100%;
   padding: 10px 0;
   background-color: transparent;
-  border-bottom: 2px solid  $text;
+  border-bottom: 1px solid rgba(205, 69, 10, 0.6);
   outline:none;
 }
 div.input-block span.placeholder {
@@ -29,12 +29,13 @@ div.input-block input:focus + span.placeholder {
 }
 div.input-block input:focus{
   color: $text;
-  border-bottom: 1px solid $text;
+  border-bottom: 2px solid  #CD450A;
 }
 div.input-block input:focus + span.placeholder {
-  color: $text;
+  color: #CD450A;
   font-weight: 400;
   font-size: 1.2rem;
+  font-family: $montserrat;
 }
 
 input::-webkit-outer-spin-button,

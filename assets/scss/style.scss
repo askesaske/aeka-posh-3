@@ -25,11 +25,13 @@
 @import "blocks/sidebar";
 @import "blocks/spinner";
 @import "blocks/info-section";
+@import "blocks/cards-section";
+@import "blocks/hueta-section";
 
 html, body {
   font-size: 62.5%;
   font-family: $base-font;
-  background-color: $main-color;
+  background-color: #FFF7F1;
   overflow-x: hidden;
 }
 

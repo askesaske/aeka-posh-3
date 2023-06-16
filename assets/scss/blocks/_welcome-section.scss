@@ -1,113 +1,166 @@
 .welcome-section {
+  padding-top: 175px;
 
+  &__bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   &__container {
+    z-index: 2;
     @extend %container;
     position: relative;
+    display: flex;
+    align-items: flex-start;
   }
 
-  &__info {
-    padding-top: 229px;
+  &__images {
+    display: flex;
+    align-items: flex-start;
     position: relative;
-    z-index: 1;
-    flex-shrink: 0;
-    width: 632px;
+    margin-right: 124px;
   }
 
-  &__heading {
-    @include text-style(9rem, 600, $text);
-    font-family: $cormorant;
-    line-height: 96px;
-    margin-bottom: 72px;
+  &__column {
+    display: flex;
+    flex-direction: column;
 
-    span {
-      font-style: italic;
-      font-weight: 700;
+    &--1 {
+      padding-top: 43px;
+      margin-right: 16px;
+    }
+
+    img {
+      margin-bottom: 16px;
     }
   }
 
   &__btn {
-    margin-bottom: 160px;
-  }
+    width: 308px;
+    height: 308px;
+    border-radius: 8px;
+    background-color: $main-color;
+    padding: 24px 20px 32px;
+    cursor: pointer;
 
-  &__items {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-top: 37px;
-    border-top: 1px solid $text;
-  }
-
-  &__item {
-    h6 {
-      @include text-style(3.2rem, 700, $text);
-      line-height: 40px;
-      margin-bottom: 4px;
+    img {
+      display: block;
+      margin-bottom: 48px;
     }
+
+    p {
+      @include text-style(6.4rem, 600, $white);
+      font-family: $cormorant;
+      font-style: italic;
+      line-height: 54px;
+      letter-spacing: -3.5px;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 610px;
+    left: 570px;
+    
+    img {
+      position: absolute;
+      top: 118px;
+      left: -23px;
+      width: 171px;
+      transform: scale(3.8);
+    }
+  }
+
+  &__text {
+    @include text-style(8rem, 400, $text);
+    line-height: 115px;
+    padding-top: 407px;
 
     span {
-      @include text-style(1.6rem, 600, $text);
-      line-height: 19px;
-    }
-  }
-
-  &__img {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    &--sm {
-      display: none;
+      color: $main-color;
+      font-family: $cormorant;
+      font-weight: 600;
+      font-style: italic;
+      letter-spacing: -3.5px;
     }
   }
 
   @include respond(tab-land) {
-    &__info {
-      padding-top: 0;
-      width: 100%;
+    padding-top: 102px;
+    &__container {
+      flex-direction: column-reverse;
     }
 
-    &__heading {
-      @include text-style(5.9rem, 700, $main-color);
-      line-height: 71px;
-      margin-bottom: 532px;
+    &__text {
+      @include text-style(4.8rem, 400, $text);
+      line-height: 68px;
+      padding-top: 0;
+      margin-bottom: 48px;
 
       span {
-        color: $main-color;
+        font-size: 5.6rem;
       }
-    }
-
-    &__btn {
-      margin-bottom: 56px;
     }
   }
 
   @include respond(phone) {
-    &__heading {
-      padding-top: 24px;
-      padding-left: 16px;
-      margin-bottom: 425px;
+    &__container {
+      padding: 0 8px;
     }
 
-    &__img {
-      right: 15px;
+    &__images {
+      margin-right: 0;
+    }
 
-      &--sm {
+    &__column {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+
+      &--1 {
+        padding-top: 64px;
+        margin-right: 7px;
+      }
+
+      img {
+        margin-bottom: 7px;
+        width: 176px;
+        height: 176px;
+        flex-shrink: 0;
+      }
+    }
+
+    &__btn {
+      width: 176px;
+      height: 176px;
+      padding: 16px 12px 20px;
+      cursor: pointer;
+
+      img {
         display: block;
+        margin-bottom: 20px;
+        width: 60px;
+        height: 60px;
       }
 
-      &--lg {
-        display: none;
+      p {
+        @include text-style(3.2rem, 600, $white);
+        line-height: 31px;
       }
     }
 
-    &__items {
-      flex-wrap: wrap;
-    }
+    &__arrow {
+      position: absolute;
+      top: 350px;
+      left: 235px;
 
-    &__item {
-      &:first-child {
-        margin-bottom: 40px;
+      p {
+        @include text-style(1.6rem, 400, #CD450A);
+        line-height: 22px;
+        top: 120px;
+        left: -80px;
       }
     }
   }

@@ -1,5 +1,4 @@
 .sidebar {
-  background-color: $main-color;
   position: fixed;
   top: 0;
   left: -120%;
@@ -9,6 +8,10 @@
   z-index: 100;
 
   transition: all .3s;
+
+  background-image: url("~assets/img/welcome-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &--active {
     left: 0;
@@ -47,11 +50,11 @@
   }
 
   &__link {
-    @include text-style(3.2rem, 500, #FFF7F1);
-    line-height: 38px;
+    @include text-style(4rem, 500, $text);
+    line-height: 60px;
 
     &:not(:last-child) {
-      margin-bottom: 38px;
+      margin-bottom: 16px;
     }
   }
 

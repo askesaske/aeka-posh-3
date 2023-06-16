@@ -2,98 +2,93 @@
 
   &__container {
     @extend %container;
+  }
+
+  &__title {
+    @include text-style(5.6rem, 400, $text);
+    line-height: 80px;
+    text-align: right;
+    margin-bottom: 68px;
+
+    span {
+      @include text-style(6.4rem, 600, $main-color);
+      letter-spacing: -0.05em;
+      font-style: italic;
+      font-family: $cormorant;
+    }
+  }
+
+  &__row {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
   }
 
   &__info {
-    padding-top: 80px;
-    border-top: 1px solid $text;
-    width: 631px;
-    flex-shrink: 0;
+    text-align: right;
+    padding-bottom: 85px;
   }
 
-  &__title {
-    @include text-style(3.9rem, 700, $text);
-    line-height: 48px;
-    font-family: $cormorant;
-    margin-bottom: 32px;
-    text-transform: uppercase;
-    width: 530px;
-  }
-
-  &__subtitle {
-    @include text-style(2rem, 500, $text);
-    line-height: 24px;
+  &__text {
+    @include text-style(3.2rem, 600, $main-color);
+    font-family: $montserrat;
+    line-height: 39px;
     margin-bottom: 64px;
-
-    &--tab {
-      display: none;
-    }
+    width: 416px;
   }
 
-  &__btn {
-
-    &--tab {
+  &__space {
+    &--mobile {
       display: none;
     }
-  }
-
-  &__wheel {
-    width: 524px;
   }
 
   @include respond(tab-land) {
-    &__container {
-      @extend %container;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    &__info {
-      width: 100%;
-      flex-shrink: 0;
-      padding-top: 32px;
-    }
-
-    &__title {
-      @include text-style(3rem, 700, $text);
-      line-height: 36px;
-      margin-bottom: 48px;
-      width: 100%;
-      text-align: center;
-    }
-
-    &__subtitle {
-      @include text-style(1.6rem, 600, $text);
-      line-height: 19px;
-      margin-bottom: 48px;
-
-      &--tab {
-        display: block;
-      }
-
+    &__space {
       &--desktop {
         display: none;
+      }
+
+      &--mobile {
+        display: block;
+      }
+    }
+    &__title {
+      @include text-style(3.6rem, 400, $text);
+      line-height: 51px;
+      text-align: right;
+      margin-bottom: 48px;
+
+      span {
+        @include text-style(4.2rem, 600, $main-color);
+        letter-spacing: -0.05em;
+        font-style: italic;
+        font-family: $cormorant;
       }
     }
 
     &__wheel {
-      width: 100%;
       margin-bottom: 32px;
     }
 
-    &__btn {
-      &--desktop {
-        display: none;
-      }
+    &__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-      &--tab {
-        display: block;
-      }
+    &__info {
+      text-align: center;
+      padding-bottom: 0;
+    }
+
+    &__text {
+      @include text-style(2rem, 600, $main-color);
+      font-family: $montserrat;
+      line-height: 24px;
+      margin-bottom: 40px;
+      width: 100%;
     }
   }
 }

@@ -11,6 +11,10 @@
 
   transition: all .5s;
 
+  background-image: url("~assets/img/welcome-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   &--active {
     left: 0;
     transition: all .5s;
@@ -48,12 +52,15 @@
   }
 
   &__title {
-    @include text-style(4rem, 700, $text);
-    line-height: 40px;
+    @include text-style(4rem, 400, $text);
+    line-height: 57px;
     margin-bottom: 12px;
     text-align: center;
-    font-family: $cormorant;
     text-transform: uppercase;
+
+    &--normal {
+      text-transform: unset;
+    }
 
 
     &--mb40 {
@@ -62,10 +69,12 @@
   }
 
   &__subtitle {
-    @include text-style(1.6rem, 500, $text);
+    @include text-style(1.6rem, 600, #CD450A);
     line-height: 19px;
-    margin: 0 auto 80px;
+    margin: 0 auto 48px;
     text-align: center;
+    font-family: $montserrat;
+    width: 260px;
   }
 
   &__form {
@@ -132,12 +141,13 @@
 
     img {
       flex-shrink: 0;
+      margin-bottom: 16px;
     }
 
     p {
-      @include text-style(2.4rem, 400, $text);
-      font-family: $hind;
+      @include text-style(2.4rem, 400, #CD450A);
       line-height: 32px;
+      font-family: $montserrat;
       margin-bottom: 16px;
     }
 
@@ -167,9 +177,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: $montserrat;
 
     p {
-      @include text-style(1.2rem, 500, $text);
+      @include text-style(1.2rem, 500, #EB683E);
       line-height: 14.6px;
       margin-bottom: 15px;
     }
@@ -177,7 +188,7 @@
     a {
       display: flex;
       align-items: center;
-      @include text-style(1.2rem, 600, $text);
+      @include text-style(1.2rem, 600, #EB683E);
       text-decoration: underline;
 
       svg {
@@ -211,6 +222,8 @@
     }
 
     &__subtitle {
+      margin: 0 0 60px;
+
       &--left {
         text-align: left;
       }
@@ -221,7 +234,7 @@
       }
 
       width: 300px;
-      margin: 0 auto 60px;
+
     }
 
     &__form {
@@ -236,6 +249,7 @@
 
     &__btn {
       display: block;
+      width: 100%;
       margin: 80px auto 0;
     }
 

@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 4;
 
   &__container {
     @extend %container;
@@ -19,7 +20,7 @@
   }
 
   &__link {
-    @include text-style(2rem, 500, $text);
+    @include text-style(2rem, 400, $text);
     cursor: pointer;
 
     &:hover {
@@ -45,18 +46,17 @@
     }
 
     span {
-      @include text-style(2rem, 500, $text);
-      font-family: $hind;
-      text-decoration: underline;
+      @include text-style(1.8rem, 400, $text);
     }
   }
-
 
   &__burger {
     display: none;
   }
 
   @include respond(tab-land) {
+    padding: 15px 0;
+
     &__links {
       display: none;
     }
@@ -67,7 +67,7 @@
 
     &__btn {
       span {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
     }
   }

@@ -1,34 +1,52 @@
 .main {
-  padding-top: 112px;
+
 
   &__section {
 
     &--welcome {
-      margin-bottom: 160px;
+      margin-bottom: 220px;
     }
 
-    &--info {
-      margin-bottom: 276px;
+    &--cards {
+      margin-bottom: 128px;
+    }
+
+    &--hueta {
+      margin-bottom: 85px;
     }
 
     &--prize {
       margin-bottom: 160px;
     }
+
+    &--program {
+      margin-bottom: 300px;
+    }
   }
 
-  @include respond(phone) {
+  @include respond(tab-land) {
+
+
     &__section {
 
       &--welcome {
-        margin-bottom: 96px;
+        margin-bottom: 185px;
       }
 
-      &--info {
-        margin-bottom: 160px;
+      &--cards {
+        margin-bottom: 200px;
+      }
+
+      &--hueta {
+        margin-bottom: 104px;
       }
 
       &--prize {
         margin-bottom: 104px;
+      }
+
+      &--program {
+        margin-bottom: 100px;
       }
     }
   }

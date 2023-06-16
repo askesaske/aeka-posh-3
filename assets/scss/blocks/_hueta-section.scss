@@ -1,0 +1,98 @@
+.hueta-section {
+  &__container {
+    @extend %container;
+    padding: 0 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__first {
+    padding-top: 50px;
+  }
+
+  &__heading {
+    @include text-style(5.6rem, 400, $text);
+    line-height: 58px;
+    margin-bottom: 72px;
+
+    span {
+      @include text-style(6.4rem, 600, $main-color);
+      font-style: italic;
+      font-family: $cormorant;
+      letter-spacing: -0.05em;
+    }
+  }
+
+  &__text {
+    @include text-style(1.6rem, 600, $main-color);
+    line-height: 19.5px;
+    width: 632px;
+    margin-bottom: 40px;
+  }
+
+  &__author {
+    @include text-style(2.4rem, 600, $text);
+    line-height: 35px;
+    font-style: italic;
+    font-family: $cormorant;
+    letter-spacing: -0.05em;
+    text-align: right;
+  }
+
+  &__img {
+    &--mobile {
+      display: none;
+    }
+  }
+
+  @include respond(tab-land) {
+    &__container {
+      position: relative;
+      @extend %container;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &__first {
+      padding-top: 0px;
+    }
+
+    &__heading {
+      @include text-style(3.2rem, 400, $text);
+      line-height: 39px;
+      margin-bottom: 55px;
+      width: 172px;
+
+      span {
+        @include text-style(4rem, 600, $main-color);
+        font-style: italic;
+        font-family: $cormorant;
+        letter-spacing: -0.05em;
+      }
+    }
+
+    &__text {
+      @include text-style(1.6rem, 600, $main-color);
+      line-height: 19.5px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    &__img {
+      &--desktop {
+        display: none;
+      }
+
+      &--mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 212px;
+      }
+    }
+  }
+}

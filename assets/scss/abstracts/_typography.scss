@@ -1,153 +1,57 @@
 @font-face {
   font-family: 'Cormorant';
-  src: url('~assets/fonts/CormorantInfant-SemiBold.eot');
-  src: url('~assets/fonts/CormorantInfant-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/CormorantInfant-SemiBold.woff2') format('woff2'),
-  url('~assets/fonts/CormorantInfant-SemiBold.woff') format('woff'),
-  url('~assets/fonts/CormorantInfant-SemiBold.ttf') format('truetype');
+  src: url('~assets/fonts/CormorantGaramond-SemiBoldItalic.eot');
+  src: url('~assets/fonts/CormorantGaramond-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('~assets/fonts/CormorantGaramond-SemiBoldItalic.woff2') format('woff2'),
+  url('~assets/fonts/CormorantGaramond-SemiBoldItalic.woff') format('woff'),
+  url('~assets/fonts/CormorantGaramond-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
-  font-style: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Cormorant';
-  src: url('~assets/fonts/CormorantInfant-Medium.eot');
-  src: url('~assets/fonts/CormorantInfant-Medium.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/CormorantInfant-Medium.woff2') format('woff2'),
-  url('~assets/fonts/CormorantInfant-Medium.woff') format('woff'),
-  url('~assets/fonts/CormorantInfant-Medium.ttf') format('truetype');
+  font-family: 'Montserrat';
+  src: url('~assets/fonts/Montserrat-Medium.eot');
+  src: url('~assets/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('~assets/fonts/Montserrat-Medium.woff2') format('woff2'),
+  url('~assets/fonts/Montserrat-Medium.woff') format('woff'),
+  url('~assets/fonts/Montserrat-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Cormorant';
-  src: url('~assets/fonts/CormorantInfant-Regular.eot');
-  src: url('~assets/fonts/CormorantInfant-Regular.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/CormorantInfant-Regular.woff2') format('woff2'),
-  url('~assets/fonts/CormorantInfant-Regular.woff') format('woff'),
-  url('~assets/fonts/CormorantInfant-Regular.ttf') format('truetype');
+  font-family: 'Montserrat';
+  src: url('~assets/fonts/Montserrat-SemiBold.eot');
+  src: url('~assets/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('~assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+  url('~assets/fonts/Montserrat-SemiBold.woff') format('woff'),
+  url('~assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roca';
+  src: local('Roca One Regular'), local('Roca-One-Regular'),
+  url('~assets/fonts/RocaOne-Rg.woff2') format('woff2'),
+  url('~assets/fonts/RocaOne-Rg.woff') format('woff'),
+  url('~assets/fonts/RocaOne-Rg.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cormorant';
-  src: url('~assets/fonts/CormorantInfant-Light.eot');
-  src: url('~assets/fonts/CormorantInfant-Light.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/CormorantInfant-Light.woff2') format('woff2'),
-  url('~assets/fonts/CormorantInfant-Light.woff') format('woff'),
-  url('~assets/fonts/CormorantInfant-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cormorant';
-  src: url('~assets/fonts/CormorantInfant-Bold.eot');
-  src: url('~assets/fonts/CormorantInfant-Bold.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/CormorantInfant-Bold.woff2') format('woff2'),
-  url('~assets/fonts/CormorantInfant-Bold.woff') format('woff'),
-  url('~assets/fonts/CormorantInfant-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hind';
-  src: url('~assets/fonts/HindMadurai-Bold.eot');
-  src: url('~assets/fonts/HindMadurai-Bold.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/HindMadurai-Bold.woff2') format('woff2'),
-  url('~assets/fonts/HindMadurai-Bold.woff') format('woff'),
-  url('~assets/fonts/HindMadurai-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hind';
-  src: url('~assets/fonts/HindMadurai-Medium.eot');
-  src: url('~assets/fonts/HindMadurai-Medium.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/HindMadurai-Medium.woff2') format('woff2'),
-  url('~assets/fonts/HindMadurai-Medium.woff') format('woff'),
-  url('~assets/fonts/HindMadurai-Medium.ttf') format('truetype');
+  font-family: 'Bogart Trial';
+  src: url('~assets/fonts/BogartTrial-Medium.eot');
+  src: url('~assets/fonts/BogartTrial-Medium.eot?#iefix') format('embedded-opentype'),
+  url('~assets/fonts/BogartTrial-Medium.woff2') format('woff2'),
+  url('~assets/fonts/BogartTrial-Medium.woff') format('woff'),
+  url('~assets/fonts/BogartTrial-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hind';
-  src: url('~assets/fonts/HindMadurai-SemiBold.eot');
-  src: url('~assets/fonts/HindMadurai-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/HindMadurai-SemiBold.woff2') format('woff2'),
-  url('~assets/fonts/HindMadurai-SemiBold.woff') format('woff'),
-  url('~assets/fonts/HindMadurai-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hind';
-  src: url('~assets/fonts/HindMadurai-Regular.eot');
-  src: url('~assets/fonts/HindMadurai-Regular.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/HindMadurai-Regular.woff2') format('woff2'),
-  url('~assets/fonts/HindMadurai-Regular.woff') format('woff'),
-  url('~assets/fonts/HindMadurai-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hind';
-  src: url('~assets/fonts/HindMadurai-Light.eot');
-  src: url('~assets/fonts/HindMadurai-Light.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/HindMadurai-Light.woff2') format('woff2'),
-  url('~assets/fonts/HindMadurai-Light.woff') format('woff'),
-  url('~assets/fonts/HindMadurai-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('~assets/fonts/Gilroy-Regular.eot');
-  src: url('~assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/Gilroy-Regular.woff2') format('woff2'),
-  url('~assets/fonts/Gilroy-Regular.woff') format('woff'),
-  url('~assets/fonts/Gilroy-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('~assets/fonts/Gilroy-Bold.eot');
-  src: url('~assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/Gilroy-Bold.woff2') format('woff2'),
-  url('~assets/fonts/Gilroy-Bold.woff') format('woff'),
-  url('~assets/fonts/Gilroy-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('~assets/fonts/Gilroy-SemiBold.eot');
-  src: url('~assets/fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/Gilroy-SemiBold.woff2') format('woff2'),
-  url('~assets/fonts/Gilroy-SemiBold.woff') format('woff'),
-  url('~assets/fonts/Gilroy-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('~assets/fonts/Gilroy-Medium.eot');
-  src: url('~assets/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-  url('~assets/fonts/Gilroy-Medium.woff2') format('woff2'),
-  url('~assets/fonts/Gilroy-Medium.woff') format('woff'),
-  url('~assets/fonts/Gilroy-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
+  font-display: swap;
 }

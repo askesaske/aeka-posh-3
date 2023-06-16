@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header__container">
-      <svg class="header__burger" width="34" height="34" @click="sidebar = true">
+      <svg class="header__burger" width="42" height="12" @click="sidebar = true">
         <use href="../assets/img/icons.svg#burger"></use>
       </svg>
       <ul class="header__links">
@@ -11,7 +11,7 @@
       </ul>
 
       <a href="https://wa.me/message/QGQGYLGDBLRVC1" class="header__btn" target="_blank">
-        <svg width="32" height="32">
+        <svg width="24" height="24">
           <use href="../assets/img/icons.svg#wpp"></use>
         </svg>
 
