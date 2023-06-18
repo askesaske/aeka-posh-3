@@ -72,19 +72,21 @@
 
                 <div class="modal__under-text">
                   <br>
-                    <span v-if="prize.id === 1 || prize.id === 2 || prize.id === 3 || prize.id === 4 || prize.id === 6  || prize.id === 7">Для получения своего бонуса, выложи скрин этой страницы! Не забудь отметить @aeka.posh и @aekas.notes
+                    <span v-if="prize.id === 1 || prize.id === 2 || prize.id === 4 || prize.id === 5  || prize.id === 6">Для получения своего бонуса, выложи скрин этой страницы! Не забудь отметить @aeka.posh и @aekas.notes
                    <br>
                     </span>
                     <span v-if="prize.id === 3">Для получения своего бонуса, переходи по ссылке ниже: <a
-                        href="https://t.me/+huLpArkbLbRlYWRi">https://t.me/+huLpArkbLbRlYWRi</a></span>
+                        href="https://t.me/+08NVK0lMMGlhYzdi">https://t.me/+08NVK0lMMGlhYzdi</a></span>
 
                   <span v-if="prize.id === 7">Для получения своего бонуса, переходи по ссылке ниже: <a
-                      href="https://t.me/+twOeAZCPw3c3MTQy">https://t.me/+twOeAZCPw3c3MTQy</a></span>
+                      href="https://t.me/+twOeAZCPw3c3MTQy">https://t.me/+voSBL2L-8LkyNWMy</a></span>
                     <br>
                     <br>
 
                     <span>Доступ к курсу придёт на <span class="bold">{{ user.email }}</span></span>
+                  <span>Возврата НЕТ!</span>
                 </div>
+
 
                 <button class="modal__btn button" @click="$router.push('/')">
                   Хорошо
