@@ -35,7 +35,7 @@
                     <div class="cards-section__card">
                         <img src="../assets/img/card-1.png" alt="">
                         <p>Начало программы</p>
-                        <h4>25 июня</h4>
+                        <h4>26 июня</h4>
                     </div>
 
                     <div class="cards-section__card cards-section__card--orange">
@@ -59,28 +59,28 @@
             </div>
         </section>
 
-        <section class="main__section main__section--hueta hueta-section">
-            <div class="hueta-section__container">
-                <div class="hueta-section__first">
-                    <div class="hueta-section__heading">
+        <section class="main__section main__section--author author-section">
+            <div class="author-section__container">
+                <div class="author-section__first">
+                    <div class="author-section__heading">
                         У вас будет доступ <br>
                         <span>в закрытый</span> аккаунт
                     </div>
 
-                    <div class="hueta-section__text">
+                    <div class="author-section__text">
                         Привет! В своих записях я делюсь своими мыслями обо всем на свете, говорю о вере, и просто
                         рассуждаю о нашем, женском)Давно хотела собрать в одном, укромном месте всё, что трогает мою
                         душу и то, о чем могу говорить часами 😊Пусть это будет нашим с вами тайным островком, о котором
                         будем знать только мы 🤫🤍Налейте себе чашку чая, устраивайтесь поудобнее в любимом диване, и
                         приготовьтесь, будет очень уютно 💫
                     </div>
-                    <div class="hueta-section__author">
+                    <div class="author-section__author">
                         -Записи Аеки
                     </div>
                 </div>
 
-                <img src="../assets/img/hueta-img.png" alt="" class="hueta-section__img hueta-section__img--desktop">
-                <img src="../assets/img/hueta-img-sm.png" alt="" class="hueta-section__img hueta-section__img--mobile">
+                <img src="../assets/img/author-img.png" alt="" class="author-section__img author-section__img--desktop">
+                <img src="../assets/img/author-img-sm.png" alt="" class="author-section__img author-section__img--mobile">
             </div>
         </section>
 
@@ -120,51 +120,35 @@
                     <div class="program-section__card">
                         <div class="program-section__title">
                             <img src="../assets/img/program-1.png" alt="">
-                            Букенова Гайникен
+                          Наргис Сагинова
                         </div>
 
                         <div class="program-section__items">
                             <div class="program-section__item">
-                                <a href="https://www.instagram.com/gainikenbee/" target="_blank">
-                                    @gainikenbee
+                                <a href="https://www.instagram.com/nargis_saginova/" target="_blank">
+                                  @nargis_saginova
                                 </a>
                             </div>
-                            <div class="program-section__item">Основательница женского сообщества @kisva_community</div>
-                            <div class="program-section__item">Тема: Нафс</div>
+                            <div class="program-section__item">Психолог детско-родительских отношений, специалист фундаментального воспитания, а также подростковый карьерный  коуч</div>
+                            <div class="program-section__item">Тема: Современная мама. Как не выгореть, воспитывая детей</div>
                         </div>
                     </div>
 
                     <div class="program-section__card">
                         <div class="program-section__title">
                             <img src="../assets/img/program-2.png" alt="">
-                            Букенова Гайникен
+                          Акбота Аканова
                         </div>
 
                         <div class="program-section__items">
                             <div class="program-section__item">
-                                <a href="https://www.instagram.com/gainikenbee/" target="_blank">
-                                    @gainikenbee
+                                <a href="https://www.instagram.com/akanova.psy/" target="_blank">
+                                  @akanova.psy
                                 </a>
                             </div>
-                            <div class="program-section__item">Основательница женского сообщества @kisva_community</div>
-                            <div class="program-section__item">Тема: Нафс</div>
-                        </div>
-                    </div>
-
-                    <div class="program-section__card">
-                        <div class="program-section__title">
-                            <img src="../assets/img/program-3.png" alt="">
-                            Букенова Гайникен
-                        </div>
-
-                        <div class="program-section__items">
-                            <div class="program-section__item">
-                                <a href="https://www.instagram.com/gainikenbee/" target="_blank">
-                                    @gainikenbee
-                                </a>
-                            </div>
-                            <div class="program-section__item">Основательница женского сообщества @kisva_community</div>
-                            <div class="program-section__item">Тема: Нафс</div>
+                            <div class="program-section__item">Эксперт в сфере психологии. Квалифицированный психолог, корпоративный психолог и социолог</div>
+                            <div class="program-section__item">Тема: Достаточно ли я хорошая?! <br>
+                              Синдром отличницы, или что я должна миру</div>
                         </div>
                     </div>
                 </div>

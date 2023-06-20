@@ -20,7 +20,7 @@
   &__cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    //justify-content: space-between;
   }
 
   &__card {
@@ -30,6 +30,7 @@
     background-size: cover;
     overflow: hidden;
     border-radius: 8px;
+    margin-right: 40px;
     box-shadow: 4px 4px 0px #EB683E;
     padding: 36px 20px 40px 24px;
   }
