@@ -199,11 +199,11 @@
 
   @include respond(phone) {
     &__container {
-      padding-top: 80px;
+      padding-top: 40px;
     }
 
     &__wrapper {
-      padding-top: 40px;
+      padding-top: 0;
     }
 
     &__title {

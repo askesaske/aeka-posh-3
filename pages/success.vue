@@ -84,6 +84,7 @@
                     <br>
 
                     <span>Доступ к курсу придёт на <span class="bold">{{ user.email }}</span></span>
+                    <br>
                   <span>Возврата НЕТ!</span>
                 </div>
 

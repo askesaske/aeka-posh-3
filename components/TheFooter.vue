@@ -23,7 +23,7 @@
                 <img src="../assets/img/footer-sticker.png" alt="" class="footer__sticker">
             </div>
 
-            <button class="footer__btn button footer__btn--mobile">
+            <button class="footer__btn button footer__btn--mobile" @click="openModal">
                 Записаться
             </button>
         </div>
