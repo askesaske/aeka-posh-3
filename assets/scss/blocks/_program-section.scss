@@ -19,7 +19,6 @@
 
   &__cards {
     display: flex;
-    align-items: center;
     //justify-content: space-between;
   }
 
@@ -42,6 +41,7 @@
     margin-bottom: 40px;
 
     img {
+      height: 60px;
       margin-right: 20px;
     }
   }
@@ -96,12 +96,14 @@
     }
 
     &__cards {
-      display: flex;
-      align-items: center;
       justify-content: space-between;
       overflow-x: auto;
       padding-right: 10px;
       padding-bottom: 10px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     &__card {

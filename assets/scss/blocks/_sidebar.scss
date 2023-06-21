@@ -6,6 +6,7 @@
   height: 100vh;
   padding: 24px 16px;
   z-index: 100;
+  overflow: auto;
 
   transition: all .3s;
 
@@ -67,10 +68,11 @@
   @include respond(tab-land) {
     &__btn {
       position: absolute;
+      min-width: unset;
       bottom: 40px;
       left: 16px;
+      right: 16px;
       z-index: 2;
-      width: calc(100vw - 32px);
     }
   }
 }
