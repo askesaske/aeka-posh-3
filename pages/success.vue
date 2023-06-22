@@ -75,11 +75,15 @@
                     <span v-if="prize.id === 1 || prize.id === 2 || prize.id === 4 || prize.id === 5  || prize.id === 6">Для получения своего бонуса, выложи скрин этой страницы! Не забудь отметить @aeka.posh и @aekas.notes
                    <br>
                     </span>
-                    <span v-if="prize.id === 3">Для получения своего бонуса, переходи по ссылке ниже: <a
+                    <span v-if="prize.id === 3">Для получения своего бонуса, переходи по ссылке ниже:
+                      <br>
+                      <a
                         href="https://t.me/+08NVK0lMMGlhYzdi">https://t.me/+08NVK0lMMGlhYzdi</a></span>
 
-                  <span v-if="prize.id === 7">Для получения своего бонуса, переходи по ссылке ниже: <a
-                      href="https://t.me/+twOeAZCPw3c3MTQy">https://t.me/+voSBL2L-8LkyNWMy</a></span>
+                  <span v-if="prize.id === 7">Для получения своего бонуса, переходи по ссылке ниже:
+                    <br>
+                    <a
+                      href="https://t.me/+voSBL2L-8LkyNWMy">https://t.me/+voSBL2L-8LkyNWMy</a></span>
                     <br>
                     <br>
 
@@ -220,7 +224,7 @@ export default {
                   this.prizeId = res.data.prize.id
                 })
                 .catch(e => {
-                  this.prizeId = 4
+                  this.prizeId = 7
                 })
         },
         onRotateEnd(prize) {
