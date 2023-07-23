@@ -33,9 +33,20 @@ export default {
     mounted() {
         let now = new Date();
 
-        let then = new Date(now);
-        then.setHours(24, 0, 0, 0);
-        this.tillTomorrow = then - now;
+        let first = new Date(2023, 6, 28, 0, 0, 0);
+        let second = new Date(2023, 6, 30, 0, 0, 0);
+
+        if (first > now) {
+            this.tillTomorrow = first - now;
+            this.$emit('price', '3 900');
+
+            return;
+        }
+
+        if (second > now) {
+            this.tillTomorrow = second - now;
+            this.$emit('price', '4 900');
+        }
     }
 }
 </script>

@@ -16,7 +16,7 @@
                     <div class="footer__title">
                         Стоимость <span>5 000 тенге</span>
                     </div>
-                    <h6>3 000 тенге</h6>
+                    <h6>{{ price }} тенге</h6>
                 </div>
                 <img src="../assets/img/footer-sticker.png" alt="" class="footer__sticker">
                 <div class="footer__timer">
@@ -24,7 +24,7 @@
                         Повышение цены через
                     </p>
                     <span>
-                        <CountDown />
+                        <CountDown @price="changePrice" />
                     </span>
                 </div>
             </div>
@@ -68,9 +68,17 @@ export default {
     components: {
         CountDown
     },
+    data() {
+        return {
+            price: '3 900'
+        }
+    },
     methods: {
         openModal() {
             this.$store.dispatch('setModalState', true)
+        },
+        changePrice(val) {
+            this.price = val;
         }
     }
 }

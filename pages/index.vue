@@ -49,7 +49,7 @@
                         <p>
                             Стоимость
                         </p>
-                        <h6>3 000 тенге</h6>
+                        <h6>{{ price }} тенге</h6>
                     </div>
                     <img src="../assets/img/sticker.png" alt="" class="cards-section__sticker">
                     <div class="cards-section__timer">
@@ -57,7 +57,7 @@
                             Повышение цены через
                         </p>
                         <span>
-                            <CountDown />
+                            <CountDown @price="changePrice" />
                         </span>
                     </div>
                 </div>
@@ -215,7 +215,8 @@ export default {
     },
     data() {
         return {
-            modalState: false
+            modalState: false,
+            price: '3 900'
         };
     },
     methods: {
@@ -224,6 +225,9 @@ export default {
         },
         closeModal() {
             this.$store.dispatch('setModalState', false)
+        },
+        changePrice(val) {
+            this.price = '3 900'
         }
     },
     computed: {
