@@ -2,6 +2,9 @@
 
   &__container {
     @extend %container;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   &__title {
@@ -9,42 +12,56 @@
     line-height: 80px;
     text-align: right;
     margin-bottom: 68px;
+    width: 786px;
 
     span {
-      @include text-style(6.4rem, 600, $main-color);
+      @include text-style(6.4rem, 600, $yellow);
       letter-spacing: -0.05em;
       font-style: italic;
       font-family: $cormorant;
     }
-  }
 
-  &__row {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
+    &--desktop {
+      display: block;
+    }
 
-  &__info {
-    text-align: right;
-    padding-bottom: 85px;
-  }
-
-  &__text {
-    @include text-style(3.2rem, 600, $main-color);
-    font-family: $montserrat;
-    line-height: 39px;
-    margin-bottom: 64px;
-    width: 416px;
-  }
-
-  &__space {
     &--mobile {
       display: none;
     }
   }
 
+  &__info {
+    text-align: right;
+  }
+
+  &__text {
+    @include text-style(3.2rem, 500, $main-color);
+    font-family: $inter;
+    line-height: 39px;
+    margin: 0 0 64px auto;
+    width: 416px;
+  }
+
   @include respond(tab-land) {
-    &__space {
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__title {
+      @include text-style(3.6rem, 400, $text);
+      line-height: 51px;
+      text-align: right;
+      margin-bottom: 48px;
+      width: unset;
+
+      span {
+        @include text-style(4.2rem, 600, $yellow);
+        letter-spacing: -0.05em;
+        font-style: italic;
+        font-family: $cormorant;
+      }
+
       &--desktop {
         display: none;
       }
@@ -53,29 +70,9 @@
         display: block;
       }
     }
-    &__title {
-      @include text-style(3.6rem, 400, $text);
-      line-height: 51px;
-      text-align: right;
-      margin-bottom: 48px;
-
-      span {
-        @include text-style(4.2rem, 600, $main-color);
-        letter-spacing: -0.05em;
-        font-style: italic;
-        font-family: $cormorant;
-      }
-    }
 
     &__wheel {
       margin-bottom: 32px;
-    }
-
-    &__row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
 
     &__info {
@@ -84,11 +81,17 @@
     }
 
     &__text {
-      @include text-style(2rem, 600, $main-color);
-      font-family: $montserrat;
+      @include text-style(2rem, 500, $main-color);
+      font-family: $inter;
       line-height: 24px;
       margin-bottom: 40px;
       width: 100%;
+    }
+
+    &__btn {
+      background-color: #FFD455;
+      box-shadow: 0px 3px 0px 0px #FFC005;
+      color: #002A50;
     }
   }
 }

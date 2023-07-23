@@ -17,7 +17,7 @@
         </div>
 
         <button class="sidebar__btn button" @click="openModal">
-            ЗАПИСАТЬСЯ
+            Записаться
         </button>
     </div>
 </template>

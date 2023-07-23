@@ -20,15 +20,15 @@
   }
 
   &__link {
-    @include text-style(2rem, 400, $text);
+    @include text-style(2rem, 400, $main-color);
     cursor: pointer;
 
     &:hover {
-      color: $text;
+      color: $main-color;
     }
 
     &:active {
-      color: $text;
+      color: $main-color;
     }
 
     &:not(:last-child) {
@@ -42,11 +42,12 @@
 
     svg {
       margin-right: 8px;
-      fill: $text;
+      fill: $main-color;
     }
 
     span {
-      @include text-style(1.8rem, 400, $text);
+      @include text-style(1.8rem, 400, $main-color);
+      font-family: $inter;
     }
   }
 

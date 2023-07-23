@@ -2,7 +2,6 @@
   position: fixed;
   top: 0;
   left: -120%;
-  background-color: $main-color;
   width: 100vw;
   height: 100vh;
   z-index: 101;
@@ -11,9 +10,7 @@
 
   transition: all .5s;
 
-  background-image: url("~assets/img/welcome-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #FBFAF2;
 
   &--active {
     left: 0;
@@ -56,12 +53,10 @@
     line-height: 57px;
     margin-bottom: 12px;
     text-align: center;
-    text-transform: uppercase;
 
     &--normal {
       text-transform: unset;
     }
-
 
     &--mb40 {
       margin-bottom: 40px;
@@ -69,11 +64,11 @@
   }
 
   &__subtitle {
-    @include text-style(1.6rem, 600, #CD450A);
+    @include text-style(1.6rem, 500, #7AABE2);
     line-height: 19px;
     margin: 0 auto 48px;
     text-align: center;
-    font-family: $montserrat;
+    font-family: $inter;
     width: 260px;
   }
 
@@ -145,7 +140,7 @@
     }
 
     p {
-      @include text-style(2.4rem, 400, #CD450A);
+      @include text-style(2.4rem, 400, #7AABE2);
       line-height: 32px;
       font-family: $montserrat;
       margin-bottom: 16px;
@@ -180,7 +175,7 @@
     font-family: $montserrat;
 
     p {
-      @include text-style(1.2rem, 500, #EB683E);
+      @include text-style(1.2rem, 500, $main-color);
       line-height: 14.6px;
       margin-bottom: 15px;
     }
@@ -188,7 +183,7 @@
     a {
       display: flex;
       align-items: center;
-      @include text-style(1.2rem, 600, #EB683E);
+      @include text-style(1.2rem, 600, $main-color);
       text-decoration: underline;
 
       svg {

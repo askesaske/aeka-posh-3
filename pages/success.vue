@@ -16,7 +16,7 @@
                     </div>
 
                     <button class="modal__btn button" type="submit">
-                        КРУТИТЬ КОЛЕСО
+                        Крутить колесо
                     </button>
                 </form>
             </div>

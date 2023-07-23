@@ -1,7 +1,5 @@
 <template>
     <footer class="footer">
-        <img src="../assets/img/welcome-bg.png" alt="" class="footer__bg">
-
         <div class="footer__container footer__container--1">
             <div class="footer__info">
                 <div class="footer__heading">
@@ -21,6 +19,14 @@
                     <h6>3 000 тенге</h6>
                 </div>
                 <img src="../assets/img/footer-sticker.png" alt="" class="footer__sticker">
+                <div class="footer__timer">
+                    <p>
+                        Повышение цены через
+                    </p>
+                    <span>
+                        <CountDown />
+                    </span>
+                </div>
             </div>
 
             <button class="footer__btn button footer__btn--mobile" @click="openModal">
@@ -56,7 +62,12 @@
 </template>
 
 <script>
+import CountDown from "@/components/CountDown";
+
 export default {
+    components: {
+        CountDown
+    },
     methods: {
         openModal() {
             this.$store.dispatch('setModalState', true)

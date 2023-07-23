@@ -1,7 +1,6 @@
 <template>
     <main class="main">
         <section class="main__section main__section--welcome welcome-section">
-            <img src="../assets/img/welcome-bg.png" alt="" class="welcome-section__bg">
             <div class="welcome-section__container">
                 <div class="welcome-section__images">
                     <div class="welcome-section__column welcome-section__column--1">
@@ -35,10 +34,10 @@
                     <div class="cards-section__card">
                         <img src="../assets/img/card-1.png" alt="">
                         <p>Начало программы</p>
-                        <h4>26 июня</h4>
+                        <h4>25 июня</h4>
                     </div>
 
-                    <div class="cards-section__card cards-section__card--orange">
+                    <div class="cards-section__card cards-section__card--blue">
                         <img src="../assets/img/card-2.png" alt="">
                         <p>Длительность</p>
                         <h4>7 дней</h4>
@@ -48,12 +47,19 @@
                     <img src="../assets/img/card-3.png" alt="">
                     <div class="cards-section__text-wrap">
                         <p>
-                            <span>Стоимость</span>
-                            <span>5 000 тенге</span>
+                            Стоимость
                         </p>
                         <h6>3 000 тенге</h6>
                     </div>
                     <img src="../assets/img/sticker.png" alt="" class="cards-section__sticker">
+                    <div class="cards-section__timer">
+                        <p>
+                            Повышение цены через
+                        </p>
+                        <span>
+                            <CountDown />
+                        </span>
+                    </div>
                 </div>
                 <button class="cards-section__btn button" @click="openModal">Записаться</button>
             </div>
@@ -67,35 +73,46 @@
                         <span>в закрытый</span> аккаунт
                     </div>
 
-                    <div class="author-section__text">
-                        Привет! В своих записях я делюсь своими мыслями обо всем на свете, говорю о вере, и просто
-                        рассуждаю о нашем, женском)Давно хотела собрать в одном, укромном месте всё, что трогает мою
-                        душу и то, о чем могу говорить часами 😊Пусть это будет нашим с вами тайным островком, о котором
-                        будем знать только мы 🤫🤍Налейте себе чашку чая, устраивайтесь поудобнее в любимом диване, и
-                        приготовьтесь, будет очень уютно 💫
-                    </div>
-                    <div class="author-section__author">
-                        -Записи Аеки
+                    <div class="author-section__text-wrap">
+                        <div class="author-section__text">
+                            Привет! В своих записях я делюсь своими мыслями обо всем на свете, говорю о вере, и просто
+                            рассуждаю о нашем, женском)Давно хотела собрать в одном, укромном месте всё, что трогает мою
+                            душу и то, о чем могу говорить часами 😊Пусть это будет нашим с вами тайным островком, о
+                            котором
+                            будем знать только мы 🤫🤍Налейте себе чашку чая, устраивайтесь поудобнее в любимом диване, и
+                            приготовьтесь, будет очень уютно 💫
+                        </div>
+                        <div class="author-section__author">
+                            -Записи Аеки
+                        </div>
                     </div>
                 </div>
 
                 <img src="../assets/img/author-img.png" alt="" class="author-section__img author-section__img--desktop">
-                <img src="../assets/img/author-img-sm.png" alt="" class="author-section__img author-section__img--mobile">
+                <img src="../assets/img/author-img-sm.png" alt=""
+                     class="author-section__img author-section__img--mobile">
             </div>
         </section>
 
         <section class="main__section main__section--prize prize-section" id="prize">
             <div class="prize-section__container">
-                <div class="prize-section__title">
-                    За приобретение <br class="prize-section__space prize-section__space--mobile">
+                <div class="prize-section__title prize-section__title--mobile">
+                    За приобретение
                     моих <span>записок</span> <br>
-                    я приготовила <br class="prize-section__space prize-section__space--mobile">
-                    для вас <br class="prize-section__space prize-section__space--desktop">
+                    я приготовила <br>
+                    для вас
                     <span>подарки</span>
                 </div>
+                <img src="../assets/img/wheel.svg" alt="" class="prize-section__wheel">
 
-                <div class="prize-section__row">
-                    <img src="../assets/img/wheel.svg" alt="" class="prize-section__wheel">
+                <div class="prize-section__second">
+                    <div class="prize-section__title prize-section__title--desktop">
+                        За приобретение
+                        моих <span>записок</span> <br>
+                        я приготовила
+                        для вас <br>
+                        <span>подарки</span>
+                    </div>
 
                     <div class="prize-section__info">
                         <div class="prize-section__text">
@@ -120,35 +137,63 @@
                     <div class="program-section__card">
                         <div class="program-section__title">
                             <img src="../assets/img/program-1.png" alt="">
-                          Наргис Сагинова
+                            Наргис Сагинова
                         </div>
 
                         <div class="program-section__items">
                             <div class="program-section__item">
                                 <a href="https://www.instagram.com/nargis_saginova/" target="_blank">
-                                  @nargis_saginova
+                                    @nargis_saginova
                                 </a>
                             </div>
-                            <div class="program-section__item">Психолог детско-родительских отношений, специалист фундаментального воспитания, а также подростковый карьерный  коуч</div>
-                            <div class="program-section__item">Тема: Современная мама. Как не выгореть, воспитывая детей</div>
+                            <div class="program-section__item">Психолог детско-родительских отношений, специалист
+                                фундаментального воспитания, а также подростковый карьерный коуч
+                            </div>
+                            <div class="program-section__item">Тема: Современная мама. Как не выгореть, воспитывая
+                                детей
+                            </div>
                         </div>
                     </div>
 
-                    <div class="program-section__card">
-                        <div class="program-section__title">
+                    <div class="program-section__card program-section__card--blue">
+                        <div class="program-section__title program-section__title--blue">
                             <img src="../assets/img/program-2.png" alt="">
-                          Акбота Аканова
+                            Акбота Аканова
                         </div>
 
                         <div class="program-section__items">
-                            <div class="program-section__item">
+                            <div class="program-section__item program-section__item--blue">
                                 <a href="https://www.instagram.com/akanova.psy/" target="_blank">
-                                  @akanova.psy
+                                    @akanova.psy
                                 </a>
                             </div>
-                            <div class="program-section__item">Эксперт в сфере психологии. Квалифицированный психолог, корпоративный психолог и социолог</div>
-                            <div class="program-section__item">Тема: Достаточно ли я хорошая?! <br>
-                              Синдром отличницы, или что я должна миру</div>
+                            <div class="program-section__item program-section__item--blue">Эксперт в сфере психологии. Квалифицированный психолог,
+                                корпоративный психолог и социолог
+                            </div>
+                            <div class="program-section__item program-section__item--blue">Тема: Достаточно ли я хорошая?! <br>
+                                Синдром отличницы, или что я должна миру
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="program-section__card program-section__card--yellow">
+                        <div class="program-section__title program-section__title--blue">
+                            <img src="../assets/img/program-3.png" alt="">
+                            Акбота Аканова
+                        </div>
+
+                        <div class="program-section__items">
+                            <div class="program-section__item program-section__item--blue">
+                                <a href="https://www.instagram.com/akanova.psy/" target="_blank">
+                                    @akanova.psy
+                                </a>
+                            </div>
+                            <div class="program-section__item program-section__item--blue">Эксперт в сфере психологии. Квалифицированный психолог,
+                                корпоративный психолог и социолог
+                            </div>
+                            <div class="program-section__item program-section__item--blue">Тема: Достаточно ли я хорошая?! <br>
+                                Синдром отличницы, или что я должна миру
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,10 +206,12 @@
 
 <script>
 import Modal from "@/components/Modal";
+import CountDown from "@/components/CountDown";
 
 export default {
     components: {
-        Modal
+        Modal,
+        CountDown
     },
     data() {
         return {

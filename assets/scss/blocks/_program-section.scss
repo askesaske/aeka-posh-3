@@ -10,7 +10,7 @@
     margin-bottom: 64px;
 
     span {
-      @include text-style(6.4rem, 600, $main-color);
+      @include text-style(6.4rem, 600, $yellow);
       line-height: 77.5px;
       letter-spacing: -0.05em;
       font-family: $cormorant;
@@ -24,25 +24,36 @@
 
   &__card {
     width: 416px;
-    background-image: url("~assets/img/program-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
     border-radius: 8px;
     margin-right: 40px;
-    box-shadow: 4px 4px 0px #EB683E;
+    box-shadow: 4px 4px 0px #FFD455;
     padding: 36px 20px 40px 24px;
+    background-color: $main-color;
+
+    &--blue {
+      background-color: #7AABE2;
+      box-shadow: 4px 4px 0px $main-color;
+    }
+
+    &--yellow {
+      background-color: #FFEE97;
+      box-shadow: 4px 4px 0px #7AABE2;
+    }
   }
 
   &__title {
     display: flex;
     align-items: center;
-    @include text-style(2.4rem, 400, $text);
-    margin-bottom: 40px;
+    @include text-style(2.4rem, 400, #FFD455);
+    margin-bottom: 52px;
 
     img {
       height: 60px;
       margin-right: 20px;
+    }
+
+    &--blue {
+      color: #002A50;
     }
   }
 
@@ -52,12 +63,12 @@
 
   &__item {
     position: relative;
-    @include text-style(1.4rem, 600, #AE3500);
+    @include text-style(1.4rem, 500, #FFD455);
     line-height: 17px;
-    font-family: $montserrat;
+    font-family: $inter;
 
     a {
-      color: #AE3500;
+      color: #FFD455;
     }
 
     &:first-child {
@@ -74,10 +85,22 @@
       width: 5px;
       height: 5px;
       border-radius: 50%;
-      background-color: #AE3500;
+      background-color: #FFD455;
       top: 50%;
       left: -13px;
       transform: translateY(-50%);
+    }
+
+    &--blue {
+      color: #002A50;
+
+      a {
+        color: #002A50;
+      }
+
+      &:before {
+        background-color: #002A50;
+      }
     }
   }
 
@@ -90,7 +113,7 @@
       text-align: center;
 
       span {
-        @include text-style(5.4rem, 600, $main-color);
+        @include text-style(5.4rem, 600, $yellow);
         line-height: 51px;
       }
     }
@@ -120,7 +143,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      @include text-style(2.4rem, 400, $text);
+      @include text-style(2.4rem, 400, #FFD455);
       margin-bottom: 20px;
 
       img {

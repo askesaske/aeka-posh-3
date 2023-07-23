@@ -10,9 +10,7 @@
 
   transition: all .3s;
 
-  background-image: url("~assets/img/welcome-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #FBFAF2;
 
   &--active {
     left: 0;
@@ -36,7 +34,7 @@
     display: flex;
     align-items: center;
 
-    @include text-style(1.6rem, 500, #FFF7F1);
+    @include text-style(1.6rem, 500, $main-color);
     margin-bottom: 97px;
 
     svg {

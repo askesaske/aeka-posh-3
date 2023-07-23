@@ -24,6 +24,7 @@ export default {
         '@plugins/repositories.js',
         '@plugins/wheel.js',
         '@plugins/v-scroll.js',
+        '@plugins/v-countdown.js'
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
