@@ -137,63 +137,34 @@
                     <div class="program-section__card">
                         <div class="program-section__title">
                             <img src="../assets/img/program-1.png" alt="">
-                            Наргис Сагинова
+                          Акбота Аканова
                         </div>
 
                         <div class="program-section__items">
                             <div class="program-section__item">
-                                <a href="https://www.instagram.com/nargis_saginova/" target="_blank">
-                                    @nargis_saginova
+                                <a href="https://www.instagram.com/akanova.psy/" target="_blank">
+                                  @akanova.psy
                                 </a>
                             </div>
-                            <div class="program-section__item">Психолог детско-родительских отношений, специалист
-                                фундаментального воспитания, а также подростковый карьерный коуч
-                            </div>
-                            <div class="program-section__item">Тема: Современная мама. Как не выгореть, воспитывая
-                                детей
-                            </div>
+                            <div class="program-section__item">Эксперт в сфере психологии. Квалифицированный психолог, корпоративный психолог и социолог</div>
+                            <div class="program-section__item">Тема: Важность замедления. Что происходит когда мы разрешаем себе остановиться</div>
                         </div>
                     </div>
 
                     <div class="program-section__card program-section__card--blue">
                         <div class="program-section__title program-section__title--blue">
                             <img src="../assets/img/program-2.png" alt="">
-                            Акбота Аканова
+                          Ая Нурдаулеткызы
                         </div>
 
                         <div class="program-section__items">
                             <div class="program-section__item program-section__item--blue">
-                                <a href="https://www.instagram.com/akanova.psy/" target="_blank">
-                                    @akanova.psy
+                                <a href="https://www.instagram.com/aya_nurdauletkyzy/" target="_blank">
+                                  @aya_nurdauletkyzy
                                 </a>
                             </div>
-                            <div class="program-section__item program-section__item--blue">Эксперт в сфере психологии. Квалифицированный психолог,
-                                корпоративный психолог и социолог
-                            </div>
-                            <div class="program-section__item program-section__item--blue">Тема: Достаточно ли я хорошая?! <br>
-                                Синдром отличницы, или что я должна миру
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="program-section__card program-section__card--yellow">
-                        <div class="program-section__title program-section__title--blue">
-                            <img src="../assets/img/program-3.png" alt="">
-                            Акбота Аканова
-                        </div>
-
-                        <div class="program-section__items">
-                            <div class="program-section__item program-section__item--blue">
-                                <a href="https://www.instagram.com/akanova.psy/" target="_blank">
-                                    @akanova.psy
-                                </a>
-                            </div>
-                            <div class="program-section__item program-section__item--blue">Эксперт в сфере психологии. Квалифицированный психолог,
-                                корпоративный психолог и социолог
-                            </div>
-                            <div class="program-section__item program-section__item--blue">Тема: Достаточно ли я хорошая?! <br>
-                                Синдром отличницы, или что я должна миру
-                            </div>
+                            <div class="program-section__item program-section__item--blue">Магистр педогогики и психологии. Практикующий психолог в методе транзактный анализ</div>
+                            <div class="program-section__item program-section__item--blue">Тема: Как быть успешным на расслабоне</div>
                         </div>
                     </div>
                 </div>
