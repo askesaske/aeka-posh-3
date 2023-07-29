@@ -78,12 +78,12 @@
                     <span v-if="prize.id === 3">Для получения своего бонуса, переходи по ссылке ниже:
                       <br>
                       <a
-                        href="https://t.me/+08NVK0lMMGlhYzdi">https://t.me/+08NVK0lMMGlhYzdi</a></span>
+                        href="https://t.me/+h1M0YHTU6JphMDdi">https://t.me/+h1M0YHTU6JphMDdi</a></span>
 
                   <span v-if="prize.id === 7">Для получения своего бонуса, переходи по ссылке ниже:
                     <br>
                     <a
-                      href="https://t.me/+voSBL2L-8LkyNWMy">https://t.me/+voSBL2L-8LkyNWMy</a></span>
+                      href="https://t.me/+8Us0tjYBqtQ3OWJi">https://t.me/+8Us0tjYBqtQ3OWJi</a></span>
                     <br>
                     <br>
 
