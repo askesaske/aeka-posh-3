@@ -34,7 +34,7 @@
                     <div class="cards-section__card">
                         <img src="../assets/img/card-1.png" alt="">
                         <p>Начало программы</p>
-                        <h4>25 июня</h4>
+                        <h4>3 августа</h4>
                     </div>
 
                     <div class="cards-section__card cards-section__card--blue">

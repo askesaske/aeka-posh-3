@@ -33,8 +33,8 @@ export default {
     mounted() {
         let now = new Date();
 
-        let first = new Date(2023, 7, 30, 0, 0, 0);
-        let second = new Date(2023, 8, 1, 0, 0, 0);
+        let first = new Date(2023, 6, 31, 0, 0, 0);
+        let second = new Date(2023, 7, 1, 0, 0, 0);
 
         if (first > now) {
             this.tillTomorrow = first - now;
