@@ -227,7 +227,7 @@ export default {
             this.$store.dispatch('setModalState', false)
         },
         changePrice(val) {
-            this.price = '3 900'
+            this.price = val;
         }
     },
     computed: {
