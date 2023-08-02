@@ -70,7 +70,7 @@ export default {
     },
     data() {
         return {
-            price: '3 900'
+            price: '4 900'
         }
     },
     methods: {

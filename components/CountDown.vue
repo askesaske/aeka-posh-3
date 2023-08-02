@@ -38,7 +38,7 @@ export default {
 
         if (first > now) {
             this.tillTomorrow = first - now;
-            this.$emit('price', '3 900');
+            this.$emit('price', '4 900');
 
             return;
         }
