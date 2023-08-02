@@ -187,7 +187,7 @@ export default {
     data() {
         return {
             modalState: false,
-            price: '3 900'
+            price: '4 900'
         };
     },
     methods: {
